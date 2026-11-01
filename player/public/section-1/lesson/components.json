@@ -1,0 +1,1948 @@
+{
+  "specVersion": "v1",
+  "course": {
+    "title": "Blood Culture Sampling",
+    "producer": "Bodhi Learning Labs",
+    "sourceFile": "Blood_Culture_Sampling.pptx",
+    "sourceSlideCount": 42,
+    "splitRationale": "The source names its own two sections and the split holds: slides 4-16 are 'what a blood culture is and what a good one requires', slides 17-39 are 'how you actually take one and what you are accountable for'. That is a shift from knowing to doing, and each half runs about 12 minutes of narration - comfortably inside one sitting. Each section ships as its own SCORM package with its own welcome, objectives and results slide, as this studio does.",
+    "learningTimeTotalMin": 33,
+    "learningTimeNote": "Indicative seat time to work through the module once, attentively: narration at 140 words per minute, plus 6s per panel the learner opens, plus per-question time for each knowledge check, plus a 10% allowance for pauses, replays and navigation. On-screen text is not counted separately because it is revealed in step with the narration that explains it.",
+    "authoringTool": "Articulate Storyline 360",
+    "interactionsSpecVersion": "1.0",
+    "interactionsReference": "references/scorm-and-interactions.md",
+    "buildChecklist": [
+      "Import the authored deck, or rebuild the slides on the client master.",
+      "Set the player per `player` — sidebar off, HOME and EXIT top right, bottom bar on.",
+      "Add the on-slide slide counter bound to the player variables.",
+      "Build each interaction as slide layers on its own slide, not as separate slides.",
+      "Give every layer its own audio and pause the base track when a layer opens.",
+      "Sync each base-layer reveal cue to the narration line beside it.",
+      "Build knowledge checks with three feedback layers over two attempts.",
+      "Source the images listed in `media` and replace the placeholder frames.",
+      "Record the voiceover from `audio_manifest`.",
+      "Set reporting and completion per `scorm`, then publish."
+    ]
+  },
+  "review": {
+    "smeQueries": [
+      {
+        "id": "Q1",
+        "source_slides": [
+          12,
+          22
+        ],
+        "issue": "The recommended adult blood volume is given two different ways. Slide 12 states 8-10 mL per bottle. Slide 22 states 20-30 mL per set, typically 10 mL in each bottle - which implies either a third bottle or 10-15 mL per bottle. The storyboard teaches 8-10 mL per bottle throughout, from slide 12. Please confirm the figure to teach, as this is the single most important determinant of culture yield and learners will be audited against it.",
+        "blocking": true
+      },
+      {
+        "id": "Q2",
+        "source_slides": [
+          11,
+          12,
+          13,
+          14,
+          16,
+          20,
+          21,
+          22,
+          23
+        ],
+        "issue": "A text box reading 'Abnormal muscle function' appears on nine slides. Treated as leftover text from the deck this template was cloned from, and excluded. Please confirm it is not intended content.",
+        "blocking": false
+      },
+      {
+        "id": "Q3",
+        "source_slides": [
+          3,
+          5,
+          31
+        ],
+        "issue": "The course menu and the Section 1 contents slide both list 'Common Bloodstream Pathogens' as a Section 1 topic, but the organisms slide sits at slide 31, inside Section 2. The storyboard places it at the end of Section 1, following the menu. Please confirm.",
+        "blocking": false
+      },
+      {
+        "id": "Q4",
+        "source_slides": [
+          8,
+          9
+        ],
+        "issue": "'Before starting antibiotics' appears in the indications list on slide 8, but it is a timing rule rather than an indication - the same point is made properly on slide 9. It has been kept in both places. Please confirm, or let us drop it from the indications list.",
+        "blocking": false
+      },
+      {
+        "id": "Q5",
+        "source_slides": [
+          16,
+          20
+        ],
+        "issue": "Two text problems in the source: the heading on slide 20 reads 'Proecdure', and the body placeholder on slide 16 repeats 'Order of Draw' twice. Both corrected silently. Flagging in case either signals missing content.",
+        "blocking": false
+      },
+      {
+        "id": "Q6",
+        "source_slides": [
+          14,
+          21
+        ],
+        "issue": "Slide 14 lists chlorhexidine, povidone-iodine and isopropyl alcohol as options with chlorhexidine preferred in adults; slide 21 instructs chlorhexidine specifically. Please confirm whether the procedure mandates chlorhexidine or allows the alternatives, and whether there is a paediatric or neonatal exception.",
+        "blocking": false
+      },
+      {
+        "id": "Q7",
+        "source_slides": [
+          42
+        ],
+        "issue": "The CLSI blood culture guideline is cited as the 2007 approved guideline. Please confirm this is the edition in force at your institution, or supply the current one.",
+        "blocking": false
+      }
+    ],
+    "sourceConflicts": [
+      {
+        "slide": "2.03",
+        "field": "navigation",
+        "source": {
+          "next": "2.04",
+          "prev": "2.02",
+          "home": "2.01"
+        },
+        "used": {
+          "prev": "2.02",
+          "next": "2.05",
+          "home": "2.01"
+        },
+        "resolution": "rebuilt from player order; source pointed at an embedded or missing slide"
+      },
+      {
+        "slide": "2.05",
+        "field": "navigation",
+        "source": {
+          "next": "2.06",
+          "prev": "2.04",
+          "home": "2.01"
+        },
+        "used": {
+          "prev": "2.03",
+          "next": "2.06",
+          "home": "2.01"
+        },
+        "resolution": "rebuilt from player order; source pointed at an embedded or missing slide"
+      }
+    ],
+    "deckMatching": []
+  },
+  "modules": [
+    {
+      "moduleId": "module_01",
+      "number": 1,
+      "title": "Section 1: Understanding Blood Culture Sampling",
+      "scopingSentence": "This module is divided into 2 sections. In this section, you will learn what a bloodstream infection is, what a blood culture does, and what a good specimen requires - timing, sets, volume, site, antisepsis and order of draw.",
+      "objectives": [
+        {
+          "id": 1,
+          "text": "Define bloodstream infection and blood culture",
+          "level": "understand"
+        },
+        {
+          "id": 2,
+          "text": "List the indications for blood culture collection",
+          "level": "remember"
+        },
+        {
+          "id": 3,
+          "text": "Explain the timing, number of sets and recommended blood volume",
+          "level": "understand"
+        },
+        {
+          "id": 4,
+          "text": "Select appropriate collection sites and antiseptic agents",
+          "level": "apply"
+        },
+        {
+          "id": 5,
+          "text": "Describe the correct order of draw for each collection device",
+          "level": "understand"
+        },
+        {
+          "id": 6,
+          "text": "Identify the common causative organisms of bloodstream infection",
+          "level": "remember"
+        }
+      ],
+      "learningTime": {
+        "narration": 9.4,
+        "interaction": 1,
+        "assessment": 3.4,
+        "silent": 0.2,
+        "pacing_allowance_min": 1.4,
+        "total_min": 16,
+        "narration_words": 1321,
+        "interaction_panels": 10,
+        "indicative": "14–19 minutes"
+      },
+      "scorm": {
+        "standard": "SCORM 1.2",
+        "lms_title": "Blood Culture Sampling — Section 1: Understanding Blood Culture Sampling",
+        "completion_tracked_by": "slides_viewed",
+        "view_threshold": 20,
+        "slides_viewed_mode": "project",
+        "pass_percent": 80,
+        "pass_status": "pass",
+        "fail_status": "incomplete",
+        "submit_unanswered": "all",
+        "note": "Completion comes from viewing every slide, not from the quiz score. A learner who answers everything correctly but skips a slide is incomplete."
+      },
+      "player": {
+        "sidebar_enabled": false,
+        "menu_panel": null,
+        "top_right_links": [
+          {
+            "label": "HOME",
+            "action": "jump_to_slide",
+            "target": "first_slide",
+            "ignore_slide_lock": true
+          },
+          {
+            "label": "EXIT",
+            "action": "close_player",
+            "ignore_slide_lock": true
+          }
+        ],
+        "bottom_bar": {
+          "enabled": true,
+          "play_pause": true,
+          "seekbar": true,
+          "seekbar_readonly": false,
+          "replay": true,
+          "volume": true,
+          "fullscreen": true
+        },
+        "closed_captions": false,
+        "search": false,
+        "settings": false,
+        "playback_speed": false,
+        "slide_lock": false,
+        "theme_accent": "#4FBDF4",
+        "note": "Sidebar is off, so there is no player menu. Any menu in this course is built on-slide from hotspots."
+      },
+      "slideFurniture": {
+        "counter": "%_playerVars.menuSlideNumber%  of  %_playerVars.menuTotalSlides%",
+        "counter_note": "Bind the player variables rather than typing numbers — they go stale the moment a slide is inserted.",
+        "breadcrumb": "Course name | Section or topic, top left in the header band",
+        "logo": "Client logo, top right in the header band"
+      },
+      "playerSlideCount": 20,
+      "embeddedSourceSlides": [],
+      "slides": [
+        {
+          "slideId": "slide_1_01",
+          "sourceSlideId": "1.01",
+          "order": 1,
+          "layout": "title",
+          "title": "Blood Culture Sampling",
+          "breadcrumb": null,
+          "sourceSlides": [
+            1,
+            4
+          ],
+          "objectiveRefs": [],
+          "designRationale": "Cover. One anchor photograph of the procedure itself, so the learner meets the task before the theory.",
+          "devNotes": null,
+          "navigation": {
+            "prev": null,
+            "next": "slide_1_02",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_01_heading",
+              "type": "heading",
+              "props": {
+                "text": "Blood Culture Sampling",
+                "level": 1,
+                "sourceField": "course.title"
+              }
+            },
+            {
+              "id": "slide_1_01_byline",
+              "type": "paragraph",
+              "props": {
+                "text": "Prepared by Bodhi Learning Labs",
+                "role": "byline",
+                "sourceField": "course.producer"
+              }
+            },
+            {
+              "id": "slide_1_01_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Gloved hands inoculating a blood culture bottle at the bedside",
+                "searchTerms": "blood culture bottle collection nurse",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=blood%20culture%20bottle%20collection%20nurse&type=photo",
+                    "note": "Blood culture collection photos"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=blood%20culture%20bottle%20collection%20nurse&type=photo&people=include",
+                    "note": "Same search, people only"
+                  }
+                ],
+                "placement": "left",
+                "sizeIn": [
+                  5.4,
+                  4.4
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_02",
+          "sourceSlideId": "1.02",
+          "order": 2,
+          "layout": "objectives",
+          "title": "Learning objectives",
+          "breadcrumb": "Blood Culture Sampling | Objectives",
+          "sourceSlides": [
+            2
+          ],
+          "objectiveRefs": [],
+          "designRationale": "Objectives revealed one per narration line. Scoped to Section 1 - the procedure, contamination, interpretation and nursing responsibility objectives are taught in Section 2 and appear there.",
+          "devNotes": "Objectives taught in Section 2: perform collection using aseptic technique, prevent contamination and maintain specimen quality, interpret results, describe nursing responsibilities.",
+          "navigation": {
+            "prev": "slide_1_01",
+            "next": "slide_1_03",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_02_heading",
+              "type": "heading",
+              "props": {
+                "text": "Learning objectives",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_02_objectives",
+              "type": "objectivesList",
+              "props": {
+                "intro": "By the end of this module, you will be able to:",
+                "items": [
+                  {
+                    "id": 1,
+                    "text": "Define bloodstream infection and blood culture",
+                    "level": "understand"
+                  },
+                  {
+                    "id": 2,
+                    "text": "List the indications for blood culture collection",
+                    "level": "remember"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Explain the timing, number of sets and recommended blood volume",
+                    "level": "understand"
+                  },
+                  {
+                    "id": 4,
+                    "text": "Select appropriate collection sites and antiseptic agents",
+                    "level": "apply"
+                  },
+                  {
+                    "id": 5,
+                    "text": "Describe the correct order of draw for each collection device",
+                    "level": "understand"
+                  },
+                  {
+                    "id": 6,
+                    "text": "Identify the common causative organisms of bloodstream infection",
+                    "level": "remember"
+                  }
+                ],
+                "sourceField": "module.objectives",
+                "introSource": "authored deck"
+              }
+            },
+            {
+              "id": "slide_1_02_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Simple line-art target or goal icon, single colour",
+                "searchTerms": "target goal icon line art",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=target%20goal%20icon%20line%20art&type=photo",
+                    "note": "Icon library - pick a single-colour outline target"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=target%20goal%20icon%20line%20art&type=photo&people=include",
+                    "note": "Same search, people only"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  2.6,
+                  2.6
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            },
+            {
+              "id": "slide_1_02_decktext_1",
+              "type": "paragraph",
+              "props": {
+                "text": "This module is divided into 2 sections. In this section, you will learn what a bloodstream infection is, what a blood culture does, and what a good specimen requires - timing, sets, volume, site, antisepsis and order of draw.",
+                "role": "scope",
+                "source": "module.scopingSentence"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_03",
+          "sourceSlideId": "1.03",
+          "order": 3,
+          "layout": "icon-row",
+          "title": "What this course covers",
+          "breadcrumb": "Blood Culture Sampling | Menu",
+          "sourceSlides": [
+            3,
+            5
+          ],
+          "objectiveRefs": [],
+          "designRationale": "The source menu lists seventeen sub-topics, which is a table of contents rather than a screen. Collapsed to the eight topics of this section, with Section 2's eight reachable from its own menu - a learner choosing a topic should see choices, not an index.",
+          "devNotes": "Menu - each chip is a hotspot to that topic, with a visited state. Section 2 carries its own menu of the remaining eight topics.",
+          "navigation": {
+            "prev": "slide_1_02",
+            "next": "slide_1_04",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q3"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_03_heading",
+              "type": "heading",
+              "props": {
+                "text": "What this course covers",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_03_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Click a topic to begin."
+              }
+            },
+            {
+              "id": "slide_1_03_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "Bloodstream infection and blood culture",
+                    "icon": {
+                      "name": "blood drop",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Indications",
+                    "icon": {
+                      "name": "alert",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Timing of collection",
+                    "icon": {
+                      "name": "clock",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Sets and blood volume",
+                    "icon": {
+                      "name": "half tube",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Site selection",
+                    "icon": {
+                      "name": "injection site swelling",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Skin antisepsis",
+                    "icon": {
+                      "name": "spray bottle",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Order of draw",
+                    "icon": {
+                      "name": "arrows apart",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Common bloodstream pathogens",
+                    "icon": {
+                      "name": "search",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ],
+                "interaction": {
+                  "type": "menu",
+                  "trigger": "click",
+                  "visitedState": true,
+                  "targets": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                  ],
+                  "targetStatus": "unresolved",
+                  "note": "Menu - each chip is a hotspot to that topic, with a visited state. Section 2 carries its own menu of the remaining eight topics."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_04",
+          "sourceSlideId": "1.04",
+          "order": 4,
+          "layout": "definition",
+          "title": "What is a bloodstream infection?",
+          "breadcrumb": "Blood Culture Sampling / Definition",
+          "sourceSlides": [
+            6
+          ],
+          "objectiveRefs": [
+            1
+          ],
+          "designRationale": "One idea stated precisely, with the clinical stakes beside it. A definition slide rather than bullets, because the whole module rests on understanding why a sterile compartment growing organisms is an emergency.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_03",
+            "next": "slide_1_05",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_04_heading",
+              "type": "heading",
+              "props": {
+                "text": "What is a bloodstream infection?",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_04_definition",
+              "type": "definition",
+              "props": {
+                "terms": [
+                  {
+                    "term": "Bloodstream infection (BSI)",
+                    "description": "Bacteria or fungi present in blood that is normally sterile"
+                  },
+                  {
+                    "term": "Why it matters",
+                    "description": "Can lead to sepsis  ·  may progress to septic shock  ·  requires rapid diagnosis and targeted antimicrobial therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_1_04_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Clinician reviewing a deteriorating patient at the bedside, monitor visible",
+                "searchTerms": "sepsis patient hospital bed monitor",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=sepsis%20patient%20hospital%20bed%20monitor&type=photo",
+                    "note": "Acute care bedside scenes"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=sepsis%20patient%20hospital%20bed%20monitor&type=photo&people=include",
+                    "note": "Same search, people only"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  3.6,
+                  2.8
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            },
+            {
+              "id": "slide_1_04_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "warning",
+                "text": "Untreated sepsis can progress to septic shock, multi-organ failure and death. Early identification through blood culture is what makes targeted therapy possible.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_05",
+          "sourceSlideId": "1.05",
+          "order": 5,
+          "layout": "definition",
+          "title": "What is a blood culture?",
+          "breadcrumb": "Blood Culture Sampling / Definition",
+          "sourceSlides": [
+            7
+          ],
+          "objectiveRefs": [
+            1
+          ],
+          "designRationale": "The second half of the definition pair, kept separate because the learner needs to hold 'what is wrong with the patient' and 'what the test does' as two distinct ideas before the procedure begins.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_04",
+            "next": "slide_1_06",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_05_heading",
+              "type": "heading",
+              "props": {
+                "text": "What is a blood culture?",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_05_definition",
+              "type": "definition",
+              "props": {
+                "terms": [
+                  {
+                    "term": "Blood culture",
+                    "description": "A microbiological culture of peripheral blood - growth indicates systemic infection such as septicaemia"
+                  },
+                  {
+                    "term": "What a positive culture gives you",
+                    "description": "The causative organism identified, and antibiotic sensitivity tested"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_1_05_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Microbiology laboratory technician handling culture bottles in an incubator",
+                "searchTerms": "microbiology laboratory blood culture incubator",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=microbiology%20laboratory%20blood%20culture%20incubator&type=photo",
+                    "note": "Laboratory processing scenes"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=microbiology%20laboratory%20blood%20culture%20incubator&type=photo&people=include",
+                    "note": "Same search, people only"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  3.6,
+                  2.8
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_06",
+          "sourceSlideId": "1.06",
+          "order": 6,
+          "layout": "process",
+          "title": "Collection has four steps",
+          "breadcrumb": "Blood Culture Sampling / Definition",
+          "sourceSlides": [
+            7
+          ],
+          "objectiveRefs": [
+            1
+          ],
+          "designRationale": "The source states these four steps in a sentence inside a paragraph, where they read as an aside. They are the spine of the whole module, so they get a numbered track of their own - the learner should be able to name them before meeting the nineteen detailed steps in Section 2.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_05",
+            "next": "slide_1_07",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_06_heading",
+              "type": "heading",
+              "props": {
+                "text": "Collection has four steps",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_06_process",
+              "type": "process",
+              "props": {
+                "steps": [
+                  {
+                    "label": "Explanation and consent"
+                  },
+                  {
+                    "label": "Preparation"
+                  },
+                  {
+                    "label": "Procedure"
+                  },
+                  {
+                    "label": "Aftercare"
+                  }
+                ],
+                "numbered": true
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_07",
+          "sourceSlideId": "1.07",
+          "order": 7,
+          "layout": "icon-row",
+          "title": "When to collect a blood culture",
+          "breadcrumb": "Blood Culture Sampling / Indications",
+          "sourceSlides": [
+            8
+          ],
+          "objectiveRefs": [
+            2
+          ],
+          "designRationale": "Nine indications, flat, no order, each short - icons so the eye lands on one at a time and the learner can recognise their own patient. A table has nothing to put in a second column.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_06",
+            "next": "slide_1_08",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q4"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_07_heading",
+              "type": "heading",
+              "props": {
+                "text": "When to collect a blood culture",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_07_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "Fever above 38 C",
+                    "icon": {
+                      "name": "thermometer",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Hypothermia below 36 C",
+                    "icon": {
+                      "name": "snowflake",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Chills and rigors",
+                    "icon": {
+                      "name": "fainting",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Suspected sepsis",
+                    "icon": {
+                      "name": "alert",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Suspected infective endocarditis",
+                    "icon": {
+                      "name": "heart",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Central line infection",
+                    "icon": {
+                      "name": "infusion pump",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Neutropenic fever",
+                    "icon": {
+                      "name": "shield",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Unexplained hypotension",
+                    "icon": {
+                      "name": "patient monitor",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Before starting antibiotics",
+                    "icon": {
+                      "name": "pill bottle",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_08",
+          "sourceSlideId": "1.08",
+          "order": 8,
+          "layout": "chip-detail",
+          "title": "When to draw, and when not to wait",
+          "breadcrumb": "Blood Culture Sampling / Timing",
+          "sourceSlides": [
+            9
+          ],
+          "objectiveRefs": [
+            3
+          ],
+          "designRationale": "Four timing rules that each need a sentence of reasoning - 'obtain at onset of fever' means nothing without 'because that is when organisms are in the blood'. Chips with bodies, and the one rule that overrides the others pulled into a warning.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_07",
+            "next": "slide_1_09",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q4"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_08_heading",
+              "type": "heading",
+              "props": {
+                "text": "When to draw, and when not to wait",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_08_cards",
+              "type": "cardGrid",
+              "props": {
+                "cards": [
+                  {
+                    "title": "Before the first dose of antibiotics",
+                    "body": "Antibiotics reduce the chance of detecting the causative organism."
+                  },
+                  {
+                    "title": "At the onset of fever or chills",
+                    "body": "Microorganisms are most likely to be present in the bloodstream at that moment."
+                  },
+                  {
+                    "title": "Immediately, if sepsis is suspected",
+                    "body": "Do not wait for a fever spike and do not delay treatment."
+                  },
+                  {
+                    "title": "Multiple sets, separate sites",
+                    "body": "Improves accuracy and helps distinguish true infection from contamination."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_1_08_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "warning",
+                "text": "If sepsis is suspected, collect now. Never delay antibiotics waiting for a fever - treatment and collection happen together.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_09",
+          "sourceSlideId": "1.09",
+          "order": 9,
+          "layout": "knowledge-check",
+          "title": "Check your understanding!",
+          "breadcrumb": "Blood Culture Sampling / Question",
+          "sourceSlides": [
+            10
+          ],
+          "objectiveRefs": [
+            3
+          ],
+          "designRationale": "A scenario rather than a recall question, placed immediately after the timing rules, because the judgement a nurse actually makes is whether a dose already given changes what they do.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_08",
+            "next": "slide_1_10",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_09_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_09_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Select the correct answer and click Submit."
+              }
+            },
+            {
+              "id": "slide_1_09_question",
+              "type": "multipleChoice",
+              "props": {
+                "questionType": "Multiple Choice Question - Text",
+                "stem": "A patient with suspected bloodstream infection has already received one dose of antibiotics at another hospital. Which statement is most appropriate regarding blood culture collection?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Blood culture should not be collected",
+                    "correct": false
+                  },
+                  {
+                    "key": "B",
+                    "text": "Blood culture should still be collected as soon as possible",
+                    "correct": true
+                  },
+                  {
+                    "key": "C",
+                    "text": "Wait for 24 hours before collecting the sample",
+                    "correct": false
+                  },
+                  {
+                    "key": "D",
+                    "text": "Collect only if the patient develops chills",
+                    "correct": false
+                  }
+                ],
+                "correctKeys": [
+                  "B"
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_1_09_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_09_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Although blood cultures are ideally collected before antibiotics, they should still be obtained if treatment has already started, as they may still identify the causative organism.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_09_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "Although blood cultures are ideally collected before antibiotics, they should still be obtained if treatment has already started, as they may still identify the causative organism.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_10",
+          "sourceSlideId": "1.10",
+          "order": 10,
+          "layout": "table",
+          "title": "How many sets?",
+          "breadcrumb": "Blood Culture Sampling / Sets",
+          "sourceSlides": [
+            11
+          ],
+          "objectiveRefs": [
+            3
+          ],
+          "designRationale": "Clinical situation against recommended sets - two-dimensional, so the source table is kept as a real table. A 'why' column surfaces the reasoning that was only in the narration, which is what turns a lookup into teaching.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_09",
+            "next": "slide_1_11",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q2"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_10_heading",
+              "type": "heading",
+              "props": {
+                "text": "How many sets?",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_10_table",
+              "type": "table",
+              "props": {
+                "headers": [
+                  "Clinical situation",
+                  "Recommended sets",
+                  "Why"
+                ],
+                "rows": [
+                  [
+                    "Routine sepsis evaluation",
+                    "2 sets",
+                    "Standard sensitivity for suspected sepsis"
+                  ],
+                  [
+                    "Infective endocarditis",
+                    "3 sets",
+                    "Improves detection of the causative organism"
+                  ],
+                  [
+                    "Persistent bacteraemia",
+                    "2-4 sets",
+                    "Accurate diagnosis and monitoring over time"
+                  ]
+                ],
+                "colWidthsIn": [
+                  4.2,
+                  2.8,
+                  5.4
+                ],
+                "revealItems": "index 0 = header row, 1..n = body rows"
+              }
+            },
+            {
+              "id": "slide_1_10_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "note",
+                "text": "Sets come from separate venipuncture sites. Two bottles drawn from one site is one set, not two.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_11",
+          "sourceSlideId": "1.11",
+          "order": 11,
+          "layout": "table",
+          "title": "How much blood?",
+          "breadcrumb": "Blood Culture Sampling / Volume",
+          "sourceSlides": [
+            12
+          ],
+          "objectiveRefs": [
+            3
+          ],
+          "designRationale": "Age group against volume - a lookup the learner will return to, so a real table. This is the single highest-yield fact in the module, which is why it gets its own slide and a warning rather than a line inside the procedure.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_10",
+            "next": "slide_1_12",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q1",
+            "Q2"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_11_heading",
+              "type": "heading",
+              "props": {
+                "text": "How much blood?",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_11_table",
+              "type": "table",
+              "props": {
+                "headers": [
+                  "Age group",
+                  "Volume per bottle"
+                ],
+                "rows": [
+                  [
+                    "Adults",
+                    "8-10 mL"
+                  ],
+                  [
+                    "Children",
+                    "1-5 mL"
+                  ],
+                  [
+                    "Neonates",
+                    "0.5-2 mL"
+                  ]
+                ],
+                "colWidthsIn": [
+                  5,
+                  5
+                ],
+                "revealItems": "index 0 = header row, 1..n = body rows"
+              }
+            },
+            {
+              "id": "slide_1_11_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "warning",
+                "text": "Adequate blood volume is the single most important factor affecting culture yield. Under-filling a bottle is the commonest reason a real infection is missed.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_12",
+          "sourceSlideId": "1.12",
+          "order": 12,
+          "layout": "image-focus",
+          "title": "The blood culture set",
+          "breadcrumb": "Blood Culture Sampling / The bottles",
+          "sourceSlides": [
+            11,
+            12,
+            20
+          ],
+          "objectiveRefs": [
+            3
+          ],
+          "designRationale": "A nurse has to recognise the two bottles on sight, find the volume markings and check the seal before they draw. That is learned by looking, not by reading, so it gets its own image-focus slide with the four things to check beside it.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_11",
+            "next": "slide_1_13",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q1",
+            "Q2",
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_12_heading",
+              "type": "heading",
+              "props": {
+                "text": "The blood culture set",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_12_points",
+              "type": "bulletList",
+              "props": {
+                "items": [
+                  "Aerobic bottle - usually blue-capped, for organisms that need oxygen",
+                  "Anaerobic bottle - usually purple or orange-capped, for organisms that do not",
+                  "Volume markings on the label - fill to the mark, not by eye",
+                  "Expiry date and an intact seal - check both before you start"
+                ],
+                "style": "checklist"
+              }
+            },
+            {
+              "id": "slide_1_12_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Pair of aerobic and anaerobic blood culture bottles side by side, labels and fill markings legible",
+                "searchTerms": "aerobic anaerobic blood culture bottles pair",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=aerobic%20anaerobic%20blood%20culture%20bottles%20pair&type=photo",
+                    "note": "Bottle pairs - choose one where the fill markings and cap colours are clearly visible"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=aerobic%20anaerobic%20blood%20culture%20bottles%20pair&type=photo&people=include",
+                    "note": "Same search, people only"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  4.8,
+                  3.6
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            },
+            {
+              "id": "slide_1_12_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "warning",
+                "text": "Never use a bottle that is expired, leaking, or whose seal is broken. It will not support growth and the specimen will be rejected.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_13",
+          "sourceSlideId": "1.13",
+          "order": 13,
+          "layout": "chip-detail",
+          "title": "Where to draw from",
+          "breadcrumb": "Blood Culture Sampling / Site selection",
+          "sourceSlides": [
+            13
+          ],
+          "objectiveRefs": [
+            4
+          ],
+          "designRationale": "Three rules about site, each carrying a condition - 'avoid IV lines' is wrong without 'unless catheter infection is suspected'. Chips with bodies so the exception travels with the rule rather than being lost.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_12",
+            "next": "slide_1_14",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q2"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_13_heading",
+              "type": "heading",
+              "props": {
+                "text": "Where to draw from",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_13_cards",
+              "type": "cardGrid",
+              "props": {
+                "cards": [
+                  {
+                    "title": "Peripheral venipuncture is preferred",
+                    "body": "Lower contamination risk and more reliable results"
+                  },
+                  {
+                    "title": "Avoid drawing from intravenous lines",
+                    "body": "Unless a catheter-related bloodstream infection is suspected"
+                  },
+                  {
+                    "title": "Suspected central line infection",
+                    "body": "One set from the catheter and one from a peripheral vein, for comparison"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_1_13_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "tip",
+                "text": "The paired draw is the point: if the catheter sample turns positive well before the peripheral one, the line is the source.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_14",
+          "sourceSlideId": "1.14",
+          "order": 14,
+          "layout": "image-focus",
+          "title": "Skin antisepsis",
+          "breadcrumb": "Blood Culture Sampling / Skin antisepsis",
+          "sourceSlides": [
+            14,
+            21
+          ],
+          "objectiveRefs": [
+            4
+          ],
+          "designRationale": "Antisepsis is a technique, not a fact - the motion, the coverage and the drying are all things the learner has to see performed. Its own image-focus slide, with the agents listed beside the image and the one rule that is most often broken as a warning.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_13",
+            "next": "slide_1_15",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q2",
+            "Q6"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_14_heading",
+              "type": "heading",
+              "props": {
+                "text": "Skin antisepsis",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_14_points",
+              "type": "bulletList",
+              "props": {
+                "items": [
+                  "Chlorhexidine - preferred in adults",
+                  "Povidone-iodine",
+                  "Isopropyl alcohol",
+                  "Clean back-and-forth or in a circular motion, then let it dry"
+                ],
+                "style": "checklist"
+              }
+            },
+            {
+              "id": "slide_1_14_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Gloved hand cleaning a forearm venipuncture site with an antiseptic swab",
+                "searchTerms": "skin antisepsis swab venipuncture site",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=skin%20antisepsis%20swab%20venipuncture%20site&type=photo",
+                    "note": "Skin prep photos - choose one showing the swab in contact with the site"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=skin%20antisepsis%20swab%20venipuncture%20site&type=photo&people=include",
+                    "note": "Same search, people only"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  4.8,
+                  3.6
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            },
+            {
+              "id": "slide_1_14_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "warning",
+                "text": "Let the antiseptic dry completely, and do not touch the site afterwards. Wet antiseptic has not worked yet, and a re-palpated site is contaminated.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_15",
+          "sourceSlideId": "1.15",
+          "order": 15,
+          "layout": "knowledge-check",
+          "title": "Check your understanding!",
+          "breadcrumb": "Blood Culture Sampling / Question",
+          "sourceSlides": [
+            13,
+            14
+          ],
+          "objectiveRefs": [
+            4
+          ],
+          "designRationale": "Added. Antisepsis and site selection were taught but never checked, and the drying rule is the single most broken step in the whole procedure - every distractor here is a real shortcut.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_14",
+            "next": "slide_1_16",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q2",
+            "Q6"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_15_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_15_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Select the correct answer and click Submit."
+              }
+            },
+            {
+              "id": "slide_1_15_question",
+              "type": "multipleChoice",
+              "props": {
+                "questionType": "Multiple Choice Question - Text",
+                "stem": "You have cleaned the venipuncture site with chlorhexidine. The patient is restless and you are short of time. What should you do next?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Wipe the site dry with sterile gauze and proceed",
+                    "correct": false
+                  },
+                  {
+                    "key": "B",
+                    "text": "Allow the antiseptic to dry completely, then proceed without touching the site",
+                    "correct": true
+                  },
+                  {
+                    "key": "C",
+                    "text": "Re-palpate the vein to be certain, then proceed",
+                    "correct": false
+                  },
+                  {
+                    "key": "D",
+                    "text": "Proceed immediately - chlorhexidine acts on contact",
+                    "correct": false
+                  }
+                ],
+                "correctKeys": [
+                  "B"
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_1_15_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_15_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Antiseptics need their full contact time to work, so the site must be allowed to air-dry completely. Wiping or re-palpating recontaminates a site that has already been cleaned.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_15_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "Antiseptics need their full contact time to work, so the site must be allowed to air-dry completely. Wiping or re-palpating recontaminates a site that has already been cleaned.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_16",
+          "sourceSlideId": "1.16",
+          "order": 16,
+          "layout": "comparison",
+          "title": "Order of draw depends on your device",
+          "breadcrumb": "Blood Culture Sampling / Order of draw",
+          "sourceSlides": [
+            16
+          ],
+          "objectiveRefs": [
+            5
+          ],
+          "designRationale": "Two methods, opposite orders, and the reason is a single physical fact about air in the tubing. A comparison puts them side by side so the learner encodes the contrast rather than memorising one list and forgetting which it was.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_15",
+            "next": "slide_1_17",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q2",
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_16_heading",
+              "type": "heading",
+              "props": {
+                "text": "Order of draw depends on your device",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_16_comparison",
+              "type": "comparison",
+              "props": {
+                "columns": [
+                  {
+                    "title": "Using a butterfly set",
+                    "body": "1. Aerobic bottle first\n2. Anaerobic bottle second\n\nAir in the tubing enters the first bottle - so it goes to the one that tolerates air"
+                  },
+                  {
+                    "title": "Using a syringe",
+                    "body": "1. Anaerobic bottle first\n2. Aerobic bottle second\n\nNo air in the line - so the anaerobic bottle is protected by filling first"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_1_16_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "tip",
+                "text": "Remember it by the air: with tubing, the air has somewhere to go first - aerobic. With a syringe there is none, so protect the anaerobic bottle first.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_17",
+          "sourceSlideId": "1.17",
+          "order": 17,
+          "layout": "knowledge-check",
+          "title": "Check your understanding!",
+          "breadcrumb": "Blood Culture Sampling / Question",
+          "sourceSlides": [
+            15
+          ],
+          "objectiveRefs": [
+            3
+          ],
+          "designRationale": "Placed after sets, volume and order of draw, where the learner has met all three reasons multiple sets exist and can discriminate the real one from three plausible but wrong purposes.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_16",
+            "next": "slide_1_18",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_17_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_17_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Select the correct answer and click Submit."
+              }
+            },
+            {
+              "id": "slide_1_17_question",
+              "type": "multipleChoice",
+              "props": {
+                "questionType": "Multiple Choice Question - Text",
+                "stem": "Which of the following is the primary purpose of collecting multiple blood culture sets?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "To reduce laboratory workload",
+                    "correct": false
+                  },
+                  {
+                    "key": "B",
+                    "text": "To increase blood volume only",
+                    "correct": false
+                  },
+                  {
+                    "key": "C",
+                    "text": "To improve pathogen detection and differentiate contamination from true infection",
+                    "correct": true
+                  },
+                  {
+                    "key": "D",
+                    "text": "To reduce patient discomfort",
+                    "correct": false
+                  }
+                ],
+                "correctKeys": [
+                  "C"
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_1_17_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_17_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Multiple sets increase diagnostic sensitivity and help distinguish true bacteraemia from contaminated samples.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_17_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "Multiple sets increase diagnostic sensitivity and help distinguish true bacteraemia from contaminated samples.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_18",
+          "sourceSlideId": "1.18",
+          "order": 18,
+          "layout": "sequence",
+          "title": "Check your understanding!",
+          "breadcrumb": "Blood Culture Sampling / Question",
+          "sourceSlides": [
+            14,
+            16
+          ],
+          "objectiveRefs": [
+            5
+          ],
+          "designRationale": "Added. The learner's real task is performing a sequence under time pressure, so the check asks them to sequence it. A multiple-choice version would test which list they memorised rather than whether they can run it.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_17",
+            "next": "slide_1_19",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q2",
+            "Q5",
+            "Q6"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_18_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_18_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "You are drawing with a butterfly set. Drag the steps into the order you perform them, then click Submit."
+              }
+            },
+            {
+              "id": "slide_1_18_question",
+              "type": "sequence",
+              "props": {
+                "questionType": "Sequence by dragging",
+                "stem": null,
+                "items": [
+                  {
+                    "id": "item_1",
+                    "label": "Clean the skin and let the antiseptic dry completely",
+                    "correctPosition": 1
+                  },
+                  {
+                    "id": "item_2",
+                    "label": "Perform the venipuncture",
+                    "correctPosition": 2
+                  },
+                  {
+                    "id": "item_3",
+                    "label": "Fill the aerobic bottle",
+                    "correctPosition": 3
+                  },
+                  {
+                    "id": "item_4",
+                    "label": "Fill the anaerobic bottle",
+                    "correctPosition": 4
+                  },
+                  {
+                    "id": "item_5",
+                    "label": "Invert both bottles gently to mix",
+                    "correctPosition": 5
+                  }
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_1_18_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_18_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "With a butterfly set the aerobic bottle is filled first, because air in the tubing enters the first bottle. With a syringe the order reverses. Mixing comes last, once both bottles are filled.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_18_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "With a butterfly set the aerobic bottle is filled first, because air in the tubing enters the first bottle. With a syringe the order reverses. Mixing comes last, once both bottles are filled.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_19",
+          "sourceSlideId": "1.19",
+          "order": 19,
+          "layout": "chip-detail",
+          "title": "Common bloodstream pathogens",
+          "breadcrumb": "Blood Culture Sampling / Pathogens",
+          "sourceSlides": [
+            31
+          ],
+          "objectiveRefs": [
+            6
+          ],
+          "designRationale": "Three named groups, each with its own organisms - chips with bodies, because the group is what the learner should retain and the organisms support it. Grouping by Gram stain and fungi is also how the laboratory will report back.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_18",
+            "next": "slide_1_20",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q3"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_19_heading",
+              "type": "heading",
+              "props": {
+                "text": "Common bloodstream pathogens",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_19_cards",
+              "type": "cardGrid",
+              "props": {
+                "cards": [
+                  {
+                    "title": "Gram-positive",
+                    "body": "Staphylococcus aureus  ·  Coagulase-negative staphylococci  ·  Streptococci  ·  Enterococci"
+                  },
+                  {
+                    "title": "Gram-negative",
+                    "body": "Escherichia coli  ·  Klebsiella  ·  Pseudomonas  ·  Acinetobacter"
+                  },
+                  {
+                    "title": "Fungi",
+                    "body": "Candida species - candidaemia"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_1_19_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "note",
+                "text": "Coagulase-negative staphylococci appear in both lists in this module - as a true pathogen here, and as the commonest contaminant in Section 2. The difference is how many bottles grew it.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_20",
+          "sourceSlideId": "1.20",
+          "order": 20,
+          "layout": "results",
+          "title": "End of Section 1",
+          "breadcrumb": "Blood Culture Sampling",
+          "sourceSlides": [
+            16
+          ],
+          "objectiveRefs": [],
+          "designRationale": "The authoring tool's results slide. The key learning points for the whole module sit at the end of Section 2.",
+          "devNotes": "Build as the Storyline Results slide. Completion for this package is tracked by slides viewed, not by the quiz score.",
+          "navigation": {
+            "prev": "slide_1_19",
+            "next": null,
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q2",
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_20_heading",
+              "type": "heading",
+              "props": {
+                "text": "End of Section 1",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_20_results",
+              "type": "results",
+              "props": {
+                "lines": [
+                  "End of Section 1.",
+                  "You can either review the section or close this window."
+                ],
+                "actions": [
+                  "review",
+                  "close"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

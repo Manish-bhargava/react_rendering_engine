@@ -1,0 +1,20 @@
+{
+  "name": "lesson-player",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "sync": "node -e \"const fs=require('fs');fs.mkdirSync('public/lesson',{recursive:true});for(const f of ['components','layout','voiceover'])fs.copyFileSync('../output/'+f+'.json','public/lesson/'+f+'.json');fs.rmSync('public/assets',{recursive:true,force:true});if(fs.existsSync('../output/assets'))fs.cpSync('../output/assets','public/assets',{recursive:true})\"",
+    "build": "npm run sync && esbuild src/main.jsx --bundle --minify --jsx=automatic --loader:.js=jsx --outfile=public/app.js && npm run sections",
+    "sections": "node ../scripts/package-sections.mjs",
+    "dev": "node ../scripts/dev-server.mjs",
+    "dev:old": "npm run sync && esbuild src/main.jsx --bundle --jsx=automatic --loader:.js=jsx --outfile=public/app.js --servedir=public --serve=5173"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

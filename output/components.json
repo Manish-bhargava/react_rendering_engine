@@ -1,0 +1,4209 @@
+{
+  "specVersion": "v1",
+  "course": {
+    "title": "Sitz Bath",
+    "producer": "Bodhi Learning Labs",
+    "sourceFile": "Sitz_bath_1.pptx",
+    "sourceSlideCount": 26,
+    "splitRationale": "The source runs about 3,400 words of narration - roughly 26 minutes. Its two section dividers (slides 2 and 12) name two sections, but its own menu names three topic groups, and those three are three different jobs for the learner: knowing when and why to use a sitz bath, performing it, and keeping it safe while teaching the patient. We followed the menu. Section 1 runs about 12 minutes, Section 2 about 11, and Section 3 about 7 - the shortest, but a complete and coherent unit rather than a tail bolted onto the procedure, which would have pushed Section 2 past 20 slides. Each package carries its own welcome, objectives, summary and results slide as this studio ships.",
+    "learningTimeTotalMin": 38,
+    "learningTimeNote": "Indicative seat time to work through the module once, attentively: narration at 140 words per minute, plus 6s per panel the learner opens, plus per-question time for each knowledge check, plus a 10% allowance for pauses, replays and navigation. On-screen text is not counted separately because it is revealed in step with the narration that explains it.",
+    "authoringTool": "Articulate Storyline 360",
+    "interactionsSpecVersion": "1.0",
+    "interactionsReference": "references/scorm-and-interactions.md",
+    "buildChecklist": [
+      "Import the authored deck, or rebuild the slides on the client master.",
+      "Set the player per `player` — sidebar off, HOME and EXIT top right, bottom bar on.",
+      "Add the on-slide slide counter bound to the player variables.",
+      "Build each interaction as slide layers on its own slide, not as separate slides.",
+      "Give every layer its own audio and pause the base track when a layer opens.",
+      "Sync each base-layer reveal cue to the narration line beside it.",
+      "Build knowledge checks with three feedback layers over two attempts.",
+      "Source the images listed in `media` and replace the placeholder frames.",
+      "Record the voiceover from `audio_manifest`.",
+      "Set reporting and completion per `scorm`, then publish."
+    ]
+  },
+  "review": {
+    "smeQueries": [
+      {
+        "id": "Q1",
+        "source_slides": [
+          8,
+          11
+        ],
+        "issue": "Slide 11 states the recommended water temperature as 40-45°C, the duration as 15-20 minutes and the frequency as 2-3 times a day, with no qualification. Slide 8 teaches a cold sitz bath ('cool or cold water ... for a short duration') and a medicated sitz bath, neither with any figure. As written the course tells the nurse the recommended temperature is 40-45°C and also that she will sometimes use cold water. The storyboard labels 40-45°C as the warm-bath figure. Please confirm that, and give the water temperature and duration for a cold sitz bath, and the solution, dilution and duration for a medicated one. A nurse asked to give a cold sitz bath currently has no parameters at all.",
+        "blocking": true
+      },
+      {
+        "id": "Q2",
+        "source_slides": [
+          7
+        ],
+        "issue": "Slide 7 lists six items under one heading, 'Contraindications / Precautions', but they are not the same kind of thing: 'unconscious or uncooperative patient' is an absolute contraindication, 'impaired sensation' is a precaution, and 'very hot water' is a procedural hazard rather than a patient characteristic. The storyboard presents them in one table with a 'what the nurse does' column that distinguishes avoid from proceed-with-care. Please confirm which items are absolute contraindications in your practice.",
+        "blocking": false
+      },
+      {
+        "id": "Q3",
+        "source_slides": [
+          13,
+          15
+        ],
+        "issue": "Slide 13 is titled 'Preparation of Article' and its on-screen text lists the articles, but its speaker notes are the full procedure narration from slide 15, word for word. We have written the articles slide's voiceover from its own on-screen list, and carried the procedure narration on the procedure slides. Please review and confirm.",
+        "blocking": false
+      },
+      {
+        "id": "Q4",
+        "source_slides": [
+          11,
+          14
+        ],
+        "issue": "Slide 11 specifies 40-45°C; slide 14 says to check the temperature 'for tolerance by putting water on the back of the hand'. The back-of-hand test cannot distinguish 45°C from 50°C, which matters most for exactly the neuropathic patients slide 7 and slide 10 single out. Does policy require a bath thermometer, and if so where is it kept? The storyboard currently teaches both - measure where a thermometer is available, test on the back of the hand as a final check.",
+        "blocking": false
+      },
+      {
+        "id": "Q5",
+        "source_slides": [
+          7,
+          8,
+          11,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          25
+        ],
+        "issue": "Two pieces of text appear to be leftovers from the deck this one was cloned from. 'Myocardial infarction' appears inside the slide 7 and slide 8 titles and in the slide 25 breadcrumb. A text box reading 'Abnormal muscle function' appears on slides 11, 13, 14, 15, 17, 18, 19, 20 and 21. Both have been excluded. Please confirm neither is intended content.",
+        "blocking": false
+      },
+      {
+        "id": "Q6",
+        "source_slides": [
+          2,
+          4,
+          12
+        ],
+        "issue": "The deck's section dividers name two sections, while its menu names three topic groups - understanding the procedure, procedure and nursing care, and benefits and safety considerations. We have built three packages following the menu, because the third group is a different job for the learner. Please confirm the three-way split, or tell us if the two-section structure is the one the client expects.",
+        "blocking": false
+      },
+      {
+        "id": "Q7",
+        "source_slides": [
+          13,
+          20
+        ],
+        "issue": "Slide 20 names cross contamination as a complication and the aftercare slide says to clean the used equipment, but the course never states whether the sitz bath basin is single-patient-use or disinfected and reused, nor with what. Please state the local practice, including the disinfectant and contact time if the basin is reused.",
+        "blocking": false
+      },
+      {
+        "id": "Q8",
+        "source_slides": [
+          6,
+          22
+        ],
+        "issue": "The course teaches sitz baths after episiotomy and rectal surgery but never says how soon after delivery or surgery the first bath may be given, or for how many days it is typically continued. Patients going home are told to 'follow the prescribed frequency' without a default. Please supply the usual timing if there is one.",
+        "blocking": false
+      }
+    ],
+    "sourceConflicts": [
+      {
+        "slide": "2.04",
+        "field": "navigation",
+        "source": {
+          "next": "2.05",
+          "prev": "2.03",
+          "home": "2.01"
+        },
+        "used": {
+          "prev": "2.03",
+          "next": "2.06",
+          "home": "2.01"
+        },
+        "resolution": "rebuilt from player order; source pointed at an embedded or missing slide"
+      },
+      {
+        "slide": "2.06",
+        "field": "navigation",
+        "source": {
+          "next": "2.07",
+          "prev": "2.05",
+          "home": "2.01"
+        },
+        "used": {
+          "prev": "2.04",
+          "next": "2.07",
+          "home": "2.01"
+        },
+        "resolution": "rebuilt from player order; source pointed at an embedded or missing slide"
+      },
+      {
+        "slide": "2.07",
+        "field": "navigation",
+        "source": {
+          "next": "2.08",
+          "prev": "2.06",
+          "home": "2.01"
+        },
+        "used": {
+          "prev": "2.06",
+          "next": "2.09",
+          "home": "2.01"
+        },
+        "resolution": "rebuilt from player order; source pointed at an embedded or missing slide"
+      },
+      {
+        "slide": "2.09",
+        "field": "navigation",
+        "source": {
+          "next": "2.10",
+          "prev": "2.08",
+          "home": "2.01"
+        },
+        "used": {
+          "prev": "2.07",
+          "next": "2.10",
+          "home": "2.01"
+        },
+        "resolution": "rebuilt from player order; source pointed at an embedded or missing slide"
+      },
+      {
+        "slide": "1.03",
+        "field": "reveal item 1",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "1.03",
+        "field": "reveal item 2",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "1.03",
+        "field": "reveal item 3",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "1.10",
+        "field": "reveal item 1",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "1.10",
+        "field": "reveal item 2",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "1.10",
+        "field": "reveal item 3",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.03",
+        "field": "reveal item 1",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.03",
+        "field": "reveal item 2",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.03",
+        "field": "reveal item 3",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.03",
+        "field": "reveal item 4",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.03",
+        "field": "reveal item 5",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.11",
+        "field": "reveal item 1",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.11",
+        "field": "reveal item 2",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.11",
+        "field": "reveal item 3",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.12",
+        "field": "reveal item 1",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.12",
+        "field": "reveal item 2",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.12",
+        "field": "reveal item 3",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.12",
+        "field": "reveal item 4",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.12",
+        "field": "reveal item 5",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "2.12",
+        "field": "reveal item 6",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "3.06",
+        "field": "reveal item 1",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "3.06",
+        "field": "reveal item 2",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "3.06",
+        "field": "reveal item 3",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "3.06",
+        "field": "reveal item 4",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      },
+      {
+        "slide": "3.06",
+        "field": "reveal item 5",
+        "problem": "reveal text does not match a component item; source text kept on cue"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "moduleId": "module_01",
+      "number": 1,
+      "title": "Section 1: Understanding the Procedure",
+      "scopingSentence": null,
+      "objectives": [
+        {
+          "id": 1,
+          "text": "Define a sitz bath and explain its purpose",
+          "level": "understand"
+        },
+        {
+          "id": 2,
+          "text": "Identify the conditions for which a sitz bath is indicated",
+          "level": "remember"
+        },
+        {
+          "id": 3,
+          "text": "Recognise the contraindications and precautions, and the patients most at risk",
+          "level": "understand"
+        },
+        {
+          "id": 4,
+          "text": "Select the type of sitz bath that suits the patient's condition",
+          "level": "apply"
+        },
+        {
+          "id": 5,
+          "text": "State the water temperature, duration and frequency of treatment",
+          "level": "remember"
+        }
+      ],
+      "learningTime": {
+        "narration": 9.1,
+        "interaction": 0.7,
+        "assessment": 2.7,
+        "silent": 0.2,
+        "pacing_allowance_min": 1.3,
+        "total_min": 14,
+        "narration_words": 1279,
+        "interaction_panels": 7,
+        "indicative": "12–17 minutes"
+      },
+      "scorm": {
+        "standard": "SCORM 1.2",
+        "lms_title": "Sitz Bath — Section 1: Understanding the Procedure",
+        "completion_tracked_by": "slides_viewed",
+        "view_threshold": 15,
+        "slides_viewed_mode": "project",
+        "pass_percent": 80,
+        "pass_status": "pass",
+        "fail_status": "incomplete",
+        "submit_unanswered": "all",
+        "note": "Completion comes from viewing every slide, not from the quiz score. A learner who answers everything correctly but skips a slide is incomplete."
+      },
+      "player": {
+        "sidebar_enabled": false,
+        "menu_panel": null,
+        "top_right_links": [
+          {
+            "label": "HOME",
+            "action": "jump_to_slide",
+            "target": "first_slide",
+            "ignore_slide_lock": true
+          },
+          {
+            "label": "EXIT",
+            "action": "close_player",
+            "ignore_slide_lock": true
+          }
+        ],
+        "bottom_bar": {
+          "enabled": true,
+          "play_pause": true,
+          "seekbar": true,
+          "seekbar_readonly": false,
+          "replay": true,
+          "volume": true,
+          "fullscreen": true
+        },
+        "closed_captions": false,
+        "search": false,
+        "settings": false,
+        "playback_speed": false,
+        "slide_lock": false,
+        "theme_accent": "#4FBDF4",
+        "note": "Sidebar is off, so there is no player menu. Any menu in this course is built on-slide from hotspots."
+      },
+      "slideFurniture": {
+        "counter": "%_playerVars.menuSlideNumber%  of  %_playerVars.menuTotalSlides%",
+        "counter_note": "Bind the player variables rather than typing numbers — they go stale the moment a slide is inserted.",
+        "breadcrumb": "Course name | Section or topic, top left in the header band",
+        "logo": "Client logo, top right in the header band"
+      },
+      "playerSlideCount": 15,
+      "embeddedSourceSlides": [],
+      "slides": [
+        {
+          "slideId": "slide_1_01",
+          "sourceSlideId": "1.01",
+          "order": 1,
+          "layout": "title",
+          "title": "Sitz Bath",
+          "breadcrumb": null,
+          "sourceSlides": [
+            1,
+            2
+          ],
+          "objectiveRefs": [],
+          "designRationale": "Cover. One photograph of a sitz bath basin in use on a toilet or a bedside setup, so the learner can picture the equipment before any theory starts.",
+          "devNotes": null,
+          "navigation": {
+            "prev": null,
+            "next": "slide_1_02",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q6"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_01_heading",
+              "type": "heading",
+              "props": {
+                "text": "Sitz Bath",
+                "level": 1,
+                "sourceField": "course.title"
+              }
+            },
+            {
+              "id": "slide_1_01_subtitle",
+              "type": "paragraph",
+              "props": {
+                "text": "Module 1: Section 1: Understanding the Procedure",
+                "role": "subtitle",
+                "sourceField": "module.number + module.title"
+              }
+            },
+            {
+              "id": "slide_1_01_byline",
+              "type": "paragraph",
+              "props": {
+                "text": "Prepared by Bodhi Learning Labs",
+                "role": "byline",
+                "sourceField": "course.producer"
+              }
+            },
+            {
+              "id": "slide_1_01_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Portable sitz bath basin fitted over a toilet seat in a clinical setting",
+                "searchTerms": "sitz bath basin portable perineal",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=sitz%20bath%20basin%20portable%20perineal&type=photo",
+                    "note": "Sitz bath equipment - prefer a clean clinical shot over a domestic one"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=sitz%20bath%20basin%20portable%20perineal&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "left",
+                "sizeIn": [
+                  5.4,
+                  4.4
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_02",
+          "sourceSlideId": "1.02",
+          "order": 2,
+          "layout": "objectives",
+          "title": "Learning objectives",
+          "breadcrumb": "Sitz bath | Objectives",
+          "sourceSlides": [
+            3
+          ],
+          "objectiveRefs": [],
+          "designRationale": "Objectives revealed one per narration line, scoped to this section. The procedure itself, nursing responsibilities and patient education are taught in Sections 2 and 3.",
+          "devNotes": "Objectives in later sections: perform the procedure for ambulatory and bedridden patients and document it (Section 2); nursing responsibilities, complications and patient education (Section 3).",
+          "navigation": {
+            "prev": "slide_1_01",
+            "next": "slide_1_03",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_02_heading",
+              "type": "heading",
+              "props": {
+                "text": "Learning objectives",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_02_objectives",
+              "type": "objectivesList",
+              "props": {
+                "intro": null,
+                "items": [
+                  {
+                    "id": 1,
+                    "text": "Define a sitz bath and explain its purpose",
+                    "level": "understand"
+                  },
+                  {
+                    "id": 2,
+                    "text": "Identify the conditions for which a sitz bath is indicated",
+                    "level": "remember"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Recognise the contraindications and precautions, and the patients most at risk",
+                    "level": "understand"
+                  },
+                  {
+                    "id": 4,
+                    "text": "Select the type of sitz bath that suits the patient's condition",
+                    "level": "apply"
+                  },
+                  {
+                    "id": 5,
+                    "text": "State the water temperature, duration and frequency of treatment",
+                    "level": "remember"
+                  }
+                ],
+                "sourceField": "module.objectives"
+              }
+            },
+            {
+              "id": "slide_1_02_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Simple line-art target or goal icon, single colour",
+                "searchTerms": "target goal icon line art",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=target%20goal%20icon%20line%20art&type=photo",
+                    "note": "Icon library - pick a single-colour outline target"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=target%20goal%20icon%20line%20art&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  2.6,
+                  2.6
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_03",
+          "sourceSlideId": "1.03",
+          "order": 3,
+          "layout": "icon-row",
+          "title": "What this course covers",
+          "breadcrumb": "Sitz bath | Menu",
+          "sourceSlides": [
+            4
+          ],
+          "objectiveRefs": [
+            1
+          ],
+          "designRationale": "The source menu lists nineteen sub-topics on one screen, which is an index rather than a choice. Collapsed to the three groups the menu itself names, each chip carrying its own sub-topic list so the learner sees what is behind each door.",
+          "devNotes": "Menu - each chip jumps to that section's package.",
+          "navigation": {
+            "prev": "slide_1_02",
+            "next": "slide_1_04",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q6"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_03_heading",
+              "type": "heading",
+              "props": {
+                "text": "What this course covers",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_03_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Click a topic to begin."
+              }
+            },
+            {
+              "id": "slide_1_03_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "Understanding the procedure",
+                    "icon": {
+                      "name": "search",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Procedure and nursing care",
+                    "icon": {
+                      "name": "checklist",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Benefits and safety",
+                    "icon": {
+                      "name": "shield",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_04",
+          "sourceSlideId": "1.04",
+          "order": 4,
+          "layout": "definition",
+          "title": "What is a sitz bath?",
+          "breadcrumb": "Sitz bath / Definition",
+          "sourceSlides": [
+            5
+          ],
+          "objectiveRefs": [
+            1
+          ],
+          "designRationale": "One idea stated precisely, with the mechanism beside it. A definition slide rather than bullets, because everything later in the course - why it is indicated, why hot water is dangerous - follows from the learner knowing what the warm water actually does.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_03",
+            "next": "slide_1_05",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_04_heading",
+              "type": "heading",
+              "props": {
+                "text": "What is a sitz bath?",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_04_definition",
+              "type": "definition",
+              "props": {
+                "terms": [
+                  {
+                    "term": "Sitz bath",
+                    "description": "A warm water bath the patient sits in to relieve discomfort in the perineal region"
+                  },
+                  {
+                    "term": "How it works",
+                    "description": "Warm water relaxes the anal sphincter and increases blood flow through the anal and perineal tissues"
+                  },
+                  {
+                    "term": "Purpose",
+                    "description": "To enhance healing and relieve pain, while promoting comfort and relaxation"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_1_04_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Patient seated on a portable sitz bath basin, clinical, dignity preserved",
+                "searchTerms": "sitz bath patient seated perineal care",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=sitz%20bath%20patient%20seated%20perineal%20care&type=photo",
+                    "note": "Procedure photos - avoid anything exposing the patient"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=sitz%20bath%20patient%20seated%20perineal%20care&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  3.6,
+                  2.8
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            },
+            {
+              "id": "slide_1_04_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "note",
+                "text": "Increased blood flow is the whole mechanism. It is what promotes healing and reduces the pain, itching and irritation the patient feels.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_05",
+          "sourceSlideId": "1.05",
+          "order": 5,
+          "layout": "icon-row",
+          "title": "When a sitz bath is indicated",
+          "breadcrumb": "Sitz bath / Indications",
+          "sourceSlides": [
+            6
+          ],
+          "objectiveRefs": [
+            2
+          ],
+          "designRationale": "Seven conditions the learner must recognise on sight of a chart. Icons so they read as one scannable set, with the reasoning kept for the two slides that follow rather than crammed in here.",
+          "devNotes": "All seven reveal as one group on the second narration line - this slide is the overview; each condition is narrated in detail on the two that follow.",
+          "navigation": {
+            "prev": "slide_1_04",
+            "next": "slide_1_06",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q8"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_05_heading",
+              "type": "heading",
+              "props": {
+                "text": "When a sitz bath is indicated",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_05_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "Hemorrhoids",
+                    "icon": {
+                      "name": "swollen vein",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Episiotomy wound",
+                    "icon": {
+                      "name": "pregnant abdomen",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Postpartum perineal pain",
+                    "icon": {
+                      "name": "parent and child",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Anal fissure",
+                    "icon": {
+                      "name": "tissue",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Rectal surgery",
+                    "icon": {
+                      "name": "scalpel",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Perianal abscess",
+                    "icon": {
+                      "name": "skin rash",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Post-catheterisation discomfort",
+                    "icon": {
+                      "name": "catheter",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_06",
+          "sourceSlideId": "1.06",
+          "order": 6,
+          "layout": "chip-detail",
+          "title": "Anorectal conditions",
+          "breadcrumb": "Sitz bath / Indications",
+          "sourceSlides": [
+            6
+          ],
+          "objectiveRefs": [
+            2
+          ],
+          "designRationale": "Four conditions, each with a different mechanism of relief - that is teaching content, not a list. A chip per condition with the reason behind it, so the learner can answer why rather than only when.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_05",
+            "next": "slide_1_07",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q8"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_06_heading",
+              "type": "heading",
+              "props": {
+                "text": "Anorectal conditions",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_06_cards",
+              "type": "cardGrid",
+              "props": {
+                "cards": [
+                  {
+                    "title": "Hemorrhoids",
+                    "body": "Swollen veins around the rectum.\nWarm water relaxes the muscles, improves circulation and reduces inflammation."
+                  },
+                  {
+                    "title": "Anal fissure",
+                    "body": "A small tear in the anal lining.\nThe bath relaxes the sphincter, reduces spasm and speeds healing."
+                  },
+                  {
+                    "title": "Rectal surgery",
+                    "body": "Pain, swelling and irritation after the procedure.\nThe bath keeps the area hygienic and supports wound healing."
+                  },
+                  {
+                    "title": "Perianal abscess",
+                    "body": "Pus collecting near the anus.\nThe bath improves drainage and reduces inflammation."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_07",
+          "sourceSlideId": "1.07",
+          "order": 7,
+          "layout": "chip-detail",
+          "title": "Postpartum and post-procedure",
+          "breadcrumb": "Sitz bath / Indications",
+          "sourceSlides": [
+            6
+          ],
+          "objectiveRefs": [
+            2
+          ],
+          "designRationale": "The obstetric and post-catheterisation indications grouped together, because the nursing context is the same - a comfort measure offered routinely rather than prescribed for a lesion.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_06",
+            "next": "slide_1_08",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q8"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_07_heading",
+              "type": "heading",
+              "props": {
+                "text": "Postpartum and post-procedure",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_07_cards",
+              "type": "cardGrid",
+              "props": {
+                "cards": [
+                  {
+                    "title": "Episiotomy wound",
+                    "body": "A surgical incision in the perineum during delivery.\nThe bath keeps the area clean, reduces swelling and promotes healing."
+                  },
+                  {
+                    "title": "Postpartum perineal pain",
+                    "body": "Soreness and bruising after vaginal delivery.\nWarm water relaxes the tissues and makes sitting and moving easier."
+                  },
+                  {
+                    "title": "Post-catheterisation discomfort",
+                    "body": "Irritation or soreness after urinary catheterisation.\nThe bath soothes the area and maintains local hygiene."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_08",
+          "sourceSlideId": "1.08",
+          "order": 8,
+          "layout": "table",
+          "title": "Contraindications and precautions",
+          "breadcrumb": "Sitz bath / Contraindications",
+          "sourceSlides": [
+            7
+          ],
+          "objectiveRefs": [
+            3
+          ],
+          "designRationale": "Each item is only useful if the learner knows what could go wrong and what to do instead - genuinely two-dimensional, so a table. Written as prose in the source, which leaves the nurse to infer the risk from the name of the condition.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_07",
+            "next": "slide_1_09",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q2",
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_08_heading",
+              "type": "heading",
+              "props": {
+                "text": "Contraindications and precautions",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_08_table",
+              "type": "table",
+              "props": {
+                "headers": [
+                  "Contraindication / precaution",
+                  "Why it matters",
+                  "What the nurse does"
+                ],
+                "rows": [
+                  [
+                    "Active bleeding",
+                    "Warm water increases circulation and can worsen bleeding from the perineal or rectal area",
+                    "Avoid, or proceed only on medical advice"
+                  ],
+                  [
+                    "Severe infection or deep wounds",
+                    "Improper technique can spread infection or damage tissue",
+                    "Seek medical evaluation before the procedure"
+                  ],
+                  [
+                    "Unconscious or uncooperative patient",
+                    "The patient cannot report discomfort - risk of falls, burns and injury",
+                    "Do not perform; the procedure needs cooperation"
+                  ],
+                  [
+                    "Allergy to medicated solution",
+                    "Antiseptic or medicated additives can cause irritation, redness or an allergic reaction",
+                    "Check allergies before adding any solution"
+                  ],
+                  [
+                    "Impaired sensation or neuropathy",
+                    "A diabetic or neuropathic patient may not feel excessive heat",
+                    "Assess temperature yourself; do not rely on the patient"
+                  ],
+                  [
+                    "Very hot water",
+                    "Causes burns and tissue injury",
+                    "Check the temperature every time, before the patient sits"
+                  ]
+                ],
+                "colWidthsIn": [
+                  3.0,
+                  5.2,
+                  4.2
+                ],
+                "revealItems": "index 0 = header row, 1..n = body rows"
+              }
+            },
+            {
+              "id": "slide_1_08_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "warning",
+                "text": "A patient who cannot feel heat or cannot tell you about it is the one most likely to be burned. Assess the water yourself, every time.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_09",
+          "sourceSlideId": "1.09",
+          "order": 9,
+          "layout": "table",
+          "title": "Three types of sitz bath",
+          "breadcrumb": "Sitz bath / Types",
+          "sourceSlides": [
+            8
+          ],
+          "objectiveRefs": [
+            4
+          ],
+          "designRationale": "Type against effect against clinical use - the source gave type and description only, which does not tell the nurse when to choose each one. The third column is what makes the table decidable.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_08",
+            "next": "slide_1_10",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q1",
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_09_heading",
+              "type": "heading",
+              "props": {
+                "text": "Three types of sitz bath",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_09_table",
+              "type": "table",
+              "props": {
+                "headers": [
+                  "Type",
+                  "What it does",
+                  "Typically used for"
+                ],
+                "rows": [
+                  [
+                    "Warm sitz bath",
+                    "Improves circulation, relaxes muscles, reduces pain and swelling, promotes healing",
+                    "Hemorrhoids, episiotomy wounds, anal fissure, postpartum discomfort. The most commonly used type"
+                  ],
+                  [
+                    "Cold sitz bath",
+                    "Causes vasoconstriction, reducing inflammation, swelling and local edema",
+                    "Immediately after injury or surgery, for a short duration. Use carefully - excessive cold is uncomfortable"
+                  ],
+                  [
+                    "Medicated sitz bath",
+                    "Prescribed antiseptic or medicated solution reduces infection and cleanses the wound area",
+                    "After rectal surgery or infection, and wounds needing special care. Only on medical advice"
+                  ]
+                ],
+                "colWidthsIn": [
+                  2.6,
+                  4.9,
+                  4.9
+                ],
+                "revealItems": "index 0 = header row, 1..n = body rows"
+              }
+            },
+            {
+              "id": "slide_1_09_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "note",
+                "text": "The type follows the goal. Warm to heal and relieve, cold to reduce swelling, medicated to control infection.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_10",
+          "sourceSlideId": "1.10",
+          "order": 10,
+          "layout": "icon-row",
+          "title": "Temperature, duration and frequency",
+          "breadcrumb": "Sitz bath / Temperature and duration",
+          "sourceSlides": [
+            11
+          ],
+          "objectiveRefs": [
+            5
+          ],
+          "designRationale": "Three numbers the nurse has to carry to the bedside. Given their own slide and their own icons rather than buried in a procedure list, because getting any of the three wrong is what causes the harm.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_09",
+            "next": "slide_1_11",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q1",
+            "Q4",
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_10_heading",
+              "type": "heading",
+              "props": {
+                "text": "Temperature, duration and frequency",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_10_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "40°C – 45°C",
+                    "icon": {
+                      "name": "thermometer",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "15 – 20 minutes",
+                    "icon": {
+                      "name": "stopwatch",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "2 – 3 times a day",
+                    "icon": {
+                      "name": "calendar",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_1_10_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Bath thermometer reading the temperature of water in a basin",
+                "searchTerms": "bath thermometer water temperature basin",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=bath%20thermometer%20water%20temperature%20basin&type=photo",
+                    "note": "Thermometer-in-water shots - prefer one where the scale is legible"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=bath%20thermometer%20water%20temperature%20basin&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  3.4,
+                  2.6
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            },
+            {
+              "id": "slide_1_10_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "warning",
+                "text": "Too hot burns. Too cold does nothing. Check the temperature before every single bath, not just the first one of the day.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_11",
+          "sourceSlideId": "1.11",
+          "order": 11,
+          "layout": "knowledge-check",
+          "title": "Check your understanding!",
+          "breadcrumb": "Sitz bath / Question",
+          "sourceSlides": [
+            9
+          ],
+          "objectiveRefs": [
+            1,
+            2
+          ],
+          "designRationale": "The source's own scenario question, kept as written. It sits after the indications because recognising the benefit in a real patient is the point of that teaching.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_10",
+            "next": "slide_1_12",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_11_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_11_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Select the correct answer and click Submit."
+              }
+            },
+            {
+              "id": "slide_1_11_question",
+              "type": "multipleChoice",
+              "props": {
+                "questionType": "Multiple Choice Question - Text",
+                "stem": "A postpartum mother complains of perineal pain after a normal vaginal delivery. The nurse recommends a warm sitz bath. What is the primary benefit of the sitz bath in this situation?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Decrease blood circulation to the area",
+                    "correct": false
+                  },
+                  {
+                    "key": "B",
+                    "text": "Promote healing and relieve pain",
+                    "correct": true
+                  },
+                  {
+                    "key": "C",
+                    "text": "Increase tissue edema",
+                    "correct": false
+                  },
+                  {
+                    "key": "D",
+                    "text": "Prevent urinary output",
+                    "correct": false
+                  }
+                ],
+                "correctKeys": [
+                  "B"
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_1_11_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_11_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Warm sitz baths improve local blood circulation, reduce discomfort and promote healing of perineal tissues after childbirth.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_11_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "Warm sitz baths improve local blood circulation, reduce discomfort and promote healing of perineal tissues after childbirth.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_12",
+          "sourceSlideId": "1.12",
+          "order": 12,
+          "layout": "knowledge-check",
+          "title": "Check your understanding!",
+          "breadcrumb": "Sitz bath / Question",
+          "sourceSlides": [
+            10
+          ],
+          "objectiveRefs": [
+            3,
+            5
+          ],
+          "designRationale": "The source's own question, placed straight after the temperature slide. It is the one scenario where the general rule - check the water - becomes a specific duty the patient cannot share.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_11",
+            "next": "slide_1_13",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_12_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_12_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Select the correct answer and click Submit."
+              }
+            },
+            {
+              "id": "slide_1_12_question",
+              "type": "multipleChoice",
+              "props": {
+                "questionType": "Multiple Choice Question - Text",
+                "stem": "A diabetic patient with peripheral neuropathy is prescribed a sitz bath. Which nursing action is most important before the procedure?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Add antiseptic solution routinely",
+                    "correct": false
+                  },
+                  {
+                    "key": "B",
+                    "text": "Encourage longer soaking time",
+                    "correct": false
+                  },
+                  {
+                    "key": "C",
+                    "text": "Carefully assess water temperature",
+                    "correct": true
+                  },
+                  {
+                    "key": "D",
+                    "text": "Use cold water instead of warm water",
+                    "correct": false
+                  }
+                ],
+                "correctKeys": [
+                  "C"
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_1_12_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_12_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Patients with impaired sensation may not detect excessive heat, increasing the risk of burns. Water temperature must be checked carefully before the procedure.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_12_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "Patients with impaired sensation may not detect excessive heat, increasing the risk of burns. Water temperature must be checked carefully before the procedure.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_13",
+          "sourceSlideId": "1.13",
+          "order": 13,
+          "layout": "match",
+          "title": "Check your understanding!",
+          "breadcrumb": "Sitz bath / Question",
+          "sourceSlides": [
+            8
+          ],
+          "objectiveRefs": [
+            4
+          ],
+          "designRationale": "Added. Knowing the three types matters only because the nurse has to pick one, so the check pairs a situation with a type rather than asking for a definition.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_12",
+            "next": "slide_1_14",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q1",
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_13_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_13_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Drag each clinical situation onto the type of sitz bath it calls for, then click Submit."
+              }
+            },
+            {
+              "id": "slide_1_13_question",
+              "type": "matching",
+              "props": {
+                "questionType": "Match the following by dragging",
+                "stem": null,
+                "items": [
+                  {
+                    "id": "item_1",
+                    "label": "Hemorrhoids with pain and spasm",
+                    "matchText": "Warm sitz bath"
+                  },
+                  {
+                    "id": "item_2",
+                    "label": "Swelling immediately after perineal surgery",
+                    "matchText": "Cold sitz bath"
+                  },
+                  {
+                    "id": "item_3",
+                    "label": "Infected wound after rectal surgery",
+                    "matchText": "Medicated sitz bath"
+                  }
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_1_13_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_13_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Warm relieves pain and promotes healing. Cold reduces swelling by vasoconstriction, which is why it suits the period immediately after injury or surgery. Medicated controls infection, and is used only on medical advice.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_1_13_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "Warm relieves pain and promotes healing. Cold reduces swelling by vasoconstriction, which is why it suits the period immediately after injury or surgery. Medicated controls infection, and is used only on medical advice.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_14",
+          "sourceSlideId": "1.14",
+          "order": 14,
+          "layout": "summary",
+          "title": "Section 1 in brief",
+          "breadcrumb": "Sitz bath | Summary",
+          "sourceSlides": [
+            25
+          ],
+          "objectiveRefs": [],
+          "designRationale": "A short recap in the order taught, consolidating the clinical reasoning before the procedure itself begins.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_1_13",
+            "next": "slide_1_15",
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_14_heading",
+              "type": "heading",
+              "props": {
+                "text": "Section 1 in brief",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_14_summary",
+              "type": "summary",
+              "props": {
+                "points": [
+                  "A sitz bath is a warm water bath for the perineal region - it relaxes the sphincter and increases blood flow.",
+                  "That blood flow is what relieves pain, itching and irritation and promotes healing.",
+                  "Indicated for hemorrhoids, episiotomy, postpartum pain, anal fissure, rectal surgery, perianal abscess, post-catheterisation.",
+                  "Avoid or take care with active bleeding, severe infection, an uncooperative patient, allergy, and impaired sensation.",
+                  "Three types: warm to heal and relieve, cold to reduce swelling, medicated to control infection.",
+                  "Warm bath: 40– 45°C, 15–20 minutes, 2–3 times a day or as ordered."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_1_15",
+          "sourceSlideId": "1.15",
+          "order": 15,
+          "layout": "results",
+          "title": "End of Section 1",
+          "breadcrumb": "Sitz bath",
+          "sourceSlides": [
+            25
+          ],
+          "objectiveRefs": [],
+          "designRationale": "The authoring tool's results slide.",
+          "devNotes": "Build as the Storyline Results slide. Completion is tracked by slides viewed, not by the quiz score.",
+          "navigation": {
+            "prev": "slide_1_14",
+            "next": null,
+            "home": "slide_1_01"
+          },
+          "smeQueryRefs": [
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_1_15_heading",
+              "type": "heading",
+              "props": {
+                "text": "End of Section 1",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_1_15_results",
+              "type": "results",
+              "props": {
+                "lines": [
+                  "End of Section 1.",
+                  "You can either review the section or close this window."
+                ],
+                "actions": [
+                  "review",
+                  "close"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "module_02",
+      "number": 2,
+      "title": "Section 2: Procedure and Nursing Care",
+      "scopingSentence": null,
+      "objectives": [
+        {
+          "id": 1,
+          "text": "Assemble the articles required for a sitz bath",
+          "level": "remember"
+        },
+        {
+          "id": 2,
+          "text": "Prepare the patient, including identification, consent, privacy and hand hygiene",
+          "level": "apply"
+        },
+        {
+          "id": 3,
+          "text": "Perform the sitz bath correctly for an ambulatory patient",
+          "level": "apply"
+        },
+        {
+          "id": 4,
+          "text": "Adapt the procedure for a bedridden patient",
+          "level": "apply"
+        },
+        {
+          "id": 5,
+          "text": "Complete the aftercare and document the procedure accurately",
+          "level": "apply"
+        }
+      ],
+      "learningTime": {
+        "narration": 9.1,
+        "interaction": 1.5,
+        "assessment": 2.7,
+        "silent": 0.2,
+        "pacing_allowance_min": 1.3,
+        "total_min": 15,
+        "narration_words": 1271,
+        "interaction_panels": 15,
+        "indicative": "13–18 minutes"
+      },
+      "scorm": {
+        "standard": "SCORM 1.2",
+        "lms_title": "Sitz Bath — Section 2: Procedure and Nursing Care",
+        "completion_tracked_by": "slides_viewed",
+        "view_threshold": 14,
+        "slides_viewed_mode": "project",
+        "pass_percent": 80,
+        "pass_status": "pass",
+        "fail_status": "incomplete",
+        "submit_unanswered": "all",
+        "note": "Completion comes from viewing every slide, not from the quiz score. A learner who answers everything correctly but skips a slide is incomplete."
+      },
+      "player": {
+        "sidebar_enabled": false,
+        "menu_panel": null,
+        "top_right_links": [
+          {
+            "label": "HOME",
+            "action": "jump_to_slide",
+            "target": "first_slide",
+            "ignore_slide_lock": true
+          },
+          {
+            "label": "EXIT",
+            "action": "close_player",
+            "ignore_slide_lock": true
+          }
+        ],
+        "bottom_bar": {
+          "enabled": true,
+          "play_pause": true,
+          "seekbar": true,
+          "seekbar_readonly": false,
+          "replay": true,
+          "volume": true,
+          "fullscreen": true
+        },
+        "closed_captions": false,
+        "search": false,
+        "settings": false,
+        "playback_speed": false,
+        "slide_lock": false,
+        "theme_accent": "#4FBDF4",
+        "note": "Sidebar is off, so there is no player menu. Any menu in this course is built on-slide from hotspots."
+      },
+      "slideFurniture": {
+        "counter": "%_playerVars.menuSlideNumber%  of  %_playerVars.menuTotalSlides%",
+        "counter_note": "Bind the player variables rather than typing numbers — they go stale the moment a slide is inserted.",
+        "breadcrumb": "Course name | Section or topic, top left in the header band",
+        "logo": "Client logo, top right in the header band"
+      },
+      "playerSlideCount": 14,
+      "embeddedSourceSlides": [
+        "2.05",
+        "2.08"
+      ],
+      "slides": [
+        {
+          "slideId": "slide_2_01",
+          "sourceSlideId": "2.01",
+          "order": 1,
+          "layout": "title",
+          "title": "Procedure and Nursing Care",
+          "breadcrumb": null,
+          "sourceSlides": [
+            12
+          ],
+          "objectiveRefs": [],
+          "designRationale": "Section cover. A photograph of the articles assembled on a trolley, which is the first thing the nurse actually does and sets the register for the section.",
+          "devNotes": null,
+          "navigation": {
+            "prev": null,
+            "next": "slide_2_02",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q6"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_01_heading",
+              "type": "heading",
+              "props": {
+                "text": "Sitz Bath",
+                "level": 1,
+                "sourceField": "course.title"
+              }
+            },
+            {
+              "id": "slide_2_01_subtitle",
+              "type": "paragraph",
+              "props": {
+                "text": "Module 2: Section 2: Procedure and Nursing Care",
+                "role": "subtitle",
+                "sourceField": "module.number + module.title"
+              }
+            },
+            {
+              "id": "slide_2_01_byline",
+              "type": "paragraph",
+              "props": {
+                "text": "Prepared by Bodhi Learning Labs",
+                "role": "byline",
+                "sourceField": "course.producer"
+              }
+            },
+            {
+              "id": "slide_2_01_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Nursing trolley with basin, towel and solution prepared for a perineal procedure",
+                "searchTerms": "nursing trolley basin towel perineal care setup",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=nursing%20trolley%20basin%20towel%20perineal%20care%20setup&type=photo",
+                    "note": "Equipment trays and trolleys - prefer a clean, labelled setup"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=nursing%20trolley%20basin%20towel%20perineal%20care%20setup&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "left",
+                "sizeIn": [
+                  5.4,
+                  4.4
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_2_02",
+          "sourceSlideId": "2.02",
+          "order": 2,
+          "layout": "objectives",
+          "title": "Learning objectives",
+          "breadcrumb": "Sitz bath | Objectives",
+          "sourceSlides": [
+            3
+          ],
+          "objectiveRefs": [],
+          "designRationale": "Objectives for the procedural section, each naming an action the learner will be observed doing in practice.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_01",
+            "next": "slide_2_03",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_02_heading",
+              "type": "heading",
+              "props": {
+                "text": "Learning objectives",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_02_objectives",
+              "type": "objectivesList",
+              "props": {
+                "intro": null,
+                "items": [
+                  {
+                    "id": 1,
+                    "text": "Assemble the articles required for a sitz bath",
+                    "level": "remember"
+                  },
+                  {
+                    "id": 2,
+                    "text": "Prepare the patient, including identification, consent, privacy and hand hygiene",
+                    "level": "apply"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Perform the sitz bath correctly for an ambulatory patient",
+                    "level": "apply"
+                  },
+                  {
+                    "id": 4,
+                    "text": "Adapt the procedure for a bedridden patient",
+                    "level": "apply"
+                  },
+                  {
+                    "id": 5,
+                    "text": "Complete the aftercare and document the procedure accurately",
+                    "level": "apply"
+                  }
+                ],
+                "sourceField": "module.objectives"
+              }
+            },
+            {
+              "id": "slide_2_02_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Simple line-art target or goal icon, single colour",
+                "searchTerms": "target goal icon line art",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=target%20goal%20icon%20line%20art&type=photo",
+                    "note": "Icon library - pick a single-colour outline target"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=target%20goal%20icon%20line%20art&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  2.6,
+                  2.6
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_2_03",
+          "sourceSlideId": "2.03",
+          "order": 3,
+          "layout": "icon-row",
+          "title": "Articles required",
+          "breadcrumb": "Sitz bath / Articles",
+          "sourceSlides": [
+            13
+          ],
+          "objectiveRefs": [
+            1
+          ],
+          "designRationale": "Five items to collect before leaving the utility room. An icon set rather than a bullet list, because this is a visual checklist the nurse runs against a trolley.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_02",
+            "next": "slide_2_04",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q3",
+            "Q5",
+            "Q7"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_03_heading",
+              "type": "heading",
+              "props": {
+                "text": "Articles required",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_03_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "Doctor's order sheet",
+                    "icon": {
+                      "name": "doctor's order",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Sitz bath basin or tub",
+                    "icon": {
+                      "name": "sitz bath basin",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Plain water or medicated solution",
+                    "icon": {
+                      "name": "water drop",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Bath towel",
+                    "icon": {
+                      "name": "bath towel",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Bucket",
+                    "icon": {
+                      "name": "bucket",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_2_03_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Sitz bath basin, towel, solution bottle and bucket assembled on a tray",
+                "searchTerms": "sitz bath basin towel solution tray assembled",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=sitz%20bath%20basin%20towel%20solution%20tray%20assembled&type=photo",
+                    "note": "Equipment layouts - prefer one showing every article named"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=sitz%20bath%20basin%20towel%20solution%20tray%20assembled&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  3.6,
+                  2.8
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            },
+            {
+              "id": "slide_2_03_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "tip",
+                "text": "Check the doctor's order first. It tells you the type, the duration, the frequency and whether a solution is prescribed - everything the rest of the procedure depends on.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_2_04",
+          "sourceSlideId": "2.04",
+          "order": 4,
+          "layout": "process",
+          "title": "Preparing the patient",
+          "breadcrumb": "Sitz bath / Preparing the patient",
+          "sourceSlides": [
+            14
+          ],
+          "objectiveRefs": [
+            2
+          ],
+          "designRationale": "Eight steps in a fixed order, several of them safety checks that are only useful before the patient is in the water. A numbered track so the sequence is visible at a glance, with the detail behind it.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_03",
+            "next": "slide_2_06",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q4",
+            "Q5"
+          ],
+          "embeddedSourceSlides": [
+            "2.05"
+          ],
+          "components": [
+            {
+              "id": "slide_2_04_heading",
+              "type": "heading",
+              "props": {
+                "text": "Preparing the patient",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_04_process",
+              "type": "process",
+              "props": {
+                "steps": [
+                  {
+                    "label": "Introduce yourself"
+                  },
+                  {
+                    "label": "Identify the patient"
+                  },
+                  {
+                    "label": "Explain and reassure"
+                  },
+                  {
+                    "label": "Consent and privacy"
+                  },
+                  {
+                    "label": "Hand hygiene"
+                  },
+                  {
+                    "label": "Assess the area"
+                  },
+                  {
+                    "label": "Check the doctor's order"
+                  },
+                  {
+                    "label": "Prepare and test the water"
+                  }
+                ],
+                "numbered": true,
+                "interaction": {
+                  "type": "layers",
+                  "trigger": "click",
+                  "sourceType": "process",
+                  "instruction": null,
+                  "buildAs": "slide layers on this slide, not separate slides",
+                  "layers": [
+                    {
+                      "layerId": "slide_2_04_layer_1",
+                      "index": 1,
+                      "stepIndex": 0,
+                      "label": "Introduce yourself",
+                      "lines": [
+                        "Establish trust and a comfortable environment."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.05"
+                    },
+                    {
+                      "layerId": "slide_2_04_layer_2",
+                      "index": 2,
+                      "stepIndex": 1,
+                      "label": "Identify the patient",
+                      "lines": [
+                        "Confirm name and PRN number against hospital policy."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.05"
+                    },
+                    {
+                      "layerId": "slide_2_04_layer_3",
+                      "index": 3,
+                      "stepIndex": 2,
+                      "label": "Explain and reassure",
+                      "lines": [
+                        "Purpose, duration and benefits, in simple language."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.05"
+                    },
+                    {
+                      "layerId": "slide_2_04_layer_4",
+                      "index": 4,
+                      "stepIndex": 3,
+                      "label": "Consent and privacy",
+                      "lines": [
+                        "Obtain consent if applicable. Close curtains or the door."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.05"
+                    },
+                    {
+                      "layerId": "slide_2_04_layer_5",
+                      "index": 5,
+                      "stepIndex": 4,
+                      "label": "Hand hygiene",
+                      "lines": [
+                        "Before starting, to maintain aseptic practice."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.05"
+                    },
+                    {
+                      "layerId": "slide_2_04_layer_6",
+                      "index": 6,
+                      "stepIndex": 5,
+                      "label": "Assess the area",
+                      "lines": [
+                        "Check for circulatory impairment or skin problems where the bath will be applied."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.05"
+                    },
+                    {
+                      "layerId": "slide_2_04_layer_7",
+                      "index": 7,
+                      "stepIndex": 6,
+                      "label": "Check the doctor's order",
+                      "lines": [
+                        "Type, duration, frequency and any prescribed solution."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.05"
+                    },
+                    {
+                      "layerId": "slide_2_04_layer_8",
+                      "index": 8,
+                      "stepIndex": 7,
+                      "label": "Prepare and test the water",
+                      "lines": [
+                        "Mix hot and cold in the basin. Test on the back of your hand before the patient sits."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.05"
+                    }
+                  ]
+                },
+                "embeddedStates": [
+                  {
+                    "sourceSlideId": "2.05",
+                    "heading": "What each step requires",
+                    "layout": "stepper-detail",
+                    "designRationale": "The expanded state of the preparation track. Each panel carries only what the nurse does, with the reasoning moved into the narration so no panel becomes a paragraph.",
+                    "sourceSlides": [
+                      14
+                    ],
+                    "objectiveRefs": [
+                      2
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "sourceNavigation": {
+            "next": "2.05",
+            "prev": "2.03",
+            "home": "2.01"
+          }
+        },
+        {
+          "slideId": "slide_2_06",
+          "sourceSlideId": "2.06",
+          "order": 5,
+          "layout": "knowledge-check",
+          "title": "Check your understanding!",
+          "breadcrumb": "Sitz bath / Question",
+          "sourceSlides": [
+            16
+          ],
+          "objectiveRefs": [
+            2
+          ],
+          "designRationale": "The source's own question, placed immediately after the preparation track, because what it tests is the order - and the order is exactly what the track has just taught.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_04",
+            "next": "slide_2_07",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_06_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_06_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Select the correct answer and click Submit."
+              }
+            },
+            {
+              "id": "slide_2_06_question",
+              "type": "multipleChoice",
+              "props": {
+                "questionType": "Multiple Choice Question - Text",
+                "stem": "A nurse is preparing a patient for a sitz bath. Which action should be performed first?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Assist the patient into the basin",
+                    "correct": false
+                  },
+                  {
+                    "key": "B",
+                    "text": "Explain the procedure and obtain cooperation",
+                    "correct": true
+                  },
+                  {
+                    "key": "C",
+                    "text": "Dry the perineal area",
+                    "correct": false
+                  },
+                  {
+                    "key": "D",
+                    "text": "Apply dressing",
+                    "correct": false
+                  }
+                ],
+                "correctKeys": [
+                  "B"
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_2_06_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_2_06_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Before any procedure the nurse should explain it, gain cooperation, reduce anxiety and obtain consent if required.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_2_06_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "Before any procedure the nurse should explain it, gain cooperation, reduce anxiety and obtain consent if required.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ],
+          "sourceNavigation": {
+            "next": "2.07",
+            "prev": "2.05",
+            "home": "2.01"
+          }
+        },
+        {
+          "slideId": "slide_2_07",
+          "sourceSlideId": "2.07",
+          "order": 6,
+          "layout": "process",
+          "title": "Performing the sitz bath",
+          "breadcrumb": "Sitz bath / Procedure",
+          "sourceSlides": [
+            13,
+            15
+          ],
+          "objectiveRefs": [
+            3
+          ],
+          "designRationale": "The core procedure, as a numbered track. The order is the content - privacy before exposure, water tested before the patient sits - and a track keeps that order visible while the detail is explored.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_06",
+            "next": "slide_2_09",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q3",
+            "Q5",
+            "Q7"
+          ],
+          "embeddedSourceSlides": [
+            "2.08"
+          ],
+          "components": [
+            {
+              "id": "slide_2_07_heading",
+              "type": "heading",
+              "props": {
+                "text": "Performing the sitz bath",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_07_process",
+              "type": "process",
+              "props": {
+                "steps": [
+                  {
+                    "label": "Assess and take equipment to the bathroom or bedside"
+                  },
+                  {
+                    "label": "Fill the basin one-third full with warm water"
+                  },
+                  {
+                    "label": "Close the door or draw the curtains"
+                  },
+                  {
+                    "label": "Instruct the patient to expose the buttocks"
+                  },
+                  {
+                    "label": "Assist the patient to sit in the basin"
+                  },
+                  {
+                    "label": "Ask about comfort and water temperature"
+                  },
+                  {
+                    "label": "Remain with the patient or check frequently"
+                  }
+                ],
+                "numbered": true,
+                "interaction": {
+                  "type": "layers",
+                  "trigger": "click",
+                  "sourceType": "process",
+                  "instruction": null,
+                  "buildAs": "slide layers on this slide, not separate slides",
+                  "layers": [
+                    {
+                      "layerId": "slide_2_07_layer_1",
+                      "index": 1,
+                      "stepIndex": 0,
+                      "label": "Assess and gather",
+                      "lines": [
+                        "Take the equipment to the bathroom or the bedside, depending on the patient's mobility."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.08"
+                    },
+                    {
+                      "layerId": "slide_2_07_layer_2",
+                      "index": 2,
+                      "stepIndex": 1,
+                      "label": "Fill the basin",
+                      "lines": [
+                        "One-third full, warm water at the recommended temperature."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.08"
+                    },
+                    {
+                      "layerId": "slide_2_07_layer_3",
+                      "index": 3,
+                      "stepIndex": 2,
+                      "label": "Provide privacy",
+                      "lines": [
+                        "Close the door or draw the curtains around the patient."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.08"
+                    },
+                    {
+                      "layerId": "slide_2_07_layer_4",
+                      "index": 4,
+                      "stepIndex": 3,
+                      "label": "Expose the area",
+                      "lines": [
+                        "Instruct the patient to expose the buttocks."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.08"
+                    },
+                    {
+                      "layerId": "slide_2_07_layer_5",
+                      "index": 5,
+                      "stepIndex": 4,
+                      "label": "Assist into the basin",
+                      "lines": [
+                        "Support the patient into a sitting position; prevent falls."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.08"
+                    },
+                    {
+                      "layerId": "slide_2_07_layer_6",
+                      "index": 6,
+                      "stepIndex": 5,
+                      "label": "Confirm comfort",
+                      "lines": [
+                        "Ask about comfort and whether the water temperature feels right."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.08"
+                    },
+                    {
+                      "layerId": "slide_2_07_layer_7",
+                      "index": 7,
+                      "stepIndex": 6,
+                      "label": "Stay or check often",
+                      "lines": [
+                        "Watch for dizziness, irritation or any untoward reaction."
+                      ],
+                      "responsible": [],
+                      "fromSlide": "2.08"
+                    }
+                  ]
+                },
+                "embeddedStates": [
+                  {
+                    "sourceSlideId": "2.08",
+                    "heading": "What each step requires",
+                    "layout": "stepper-detail",
+                    "designRationale": "The expanded state of the procedure track, carrying the figures the nurse has to get right - one-third full, warm, supported - without turning the track itself into prose.",
+                    "sourceSlides": [
+                      13,
+                      15
+                    ],
+                    "objectiveRefs": [
+                      3
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_2_07_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Sitz bath basin fitted on a toilet seat, filled about one-third with water",
+                "searchTerms": "sitz bath basin toilet seat filled water",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=sitz%20bath%20basin%20toilet%20seat%20filled%20water&type=photo",
+                    "note": "Basin-in-place shots showing the water level"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=sitz%20bath%20basin%20toilet%20seat%20filled%20water&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  3.4,
+                  2.6
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            }
+          ],
+          "sourceNavigation": {
+            "next": "2.08",
+            "prev": "2.06",
+            "home": "2.01"
+          }
+        },
+        {
+          "slideId": "slide_2_09",
+          "sourceSlideId": "2.09",
+          "order": 7,
+          "layout": "image-focus",
+          "title": "If the patient is bedridden",
+          "breadcrumb": "Sitz bath / Bedridden patient",
+          "sourceSlides": [
+            15
+          ],
+          "objectiveRefs": [
+            4
+          ],
+          "designRationale": "A different technique for a different patient, not a footnote to the main procedure. Its own slide, because a nurse looking up how to treat a bedridden patient must not have to find it inside a step about something else.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_07",
+            "next": "slide_2_10",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q3",
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_09_heading",
+              "type": "heading",
+              "props": {
+                "text": "If the patient is bedridden",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_09_points",
+              "type": "bulletList",
+              "props": {
+                "items": [
+                  "Take an adequate amount of cotton roll or gauze",
+                  "Soak it in warm water at the same recommended temperature",
+                  "Place the wet cotton gently on the anal or perineal area",
+                  "Replace and repeat as needed to maintain the warmth"
+                ],
+                "style": "checklist"
+              }
+            },
+            {
+              "id": "slide_2_09_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Sterile cotton roll and gauze with a bowl of warm water on a tray",
+                "searchTerms": "cotton roll gauze bowl warm water tray",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=cotton%20roll%20gauze%20bowl%20warm%20water%20tray&type=photo",
+                    "note": "Dressing trays - prefer one showing cotton and a bowl"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=cotton%20roll%20gauze%20bowl%20warm%20water%20tray&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  4.6,
+                  3.4
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            },
+            {
+              "id": "slide_2_09_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "note",
+                "text": "The therapeutic effect comes from sustained warmth. A cooling compress left in place does nothing - replace it.",
+                "placement": "below"
+              }
+            }
+          ],
+          "sourceNavigation": {
+            "next": "2.10",
+            "prev": "2.08",
+            "home": "2.01"
+          }
+        },
+        {
+          "slideId": "slide_2_10",
+          "sourceSlideId": "2.10",
+          "order": 8,
+          "layout": "process",
+          "title": "Completing the procedure",
+          "breadcrumb": "Sitz bath / Completion",
+          "sourceSlides": [
+            17
+          ],
+          "objectiveRefs": [
+            3,
+            5
+          ],
+          "designRationale": "The end of the treatment is where dizziness and falls happen, so the closing steps get their own track rather than being tacked onto the procedure slide.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_09",
+            "next": "slide_2_11",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_10_heading",
+              "type": "heading",
+              "props": {
+                "text": "Completing the procedure",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_10_process",
+              "type": "process",
+              "props": {
+                "steps": [
+                  {
+                    "label": "Continue the treatment for 20 minutes, or as prescribed"
+                  },
+                  {
+                    "label": "Assess continuously for any untoward reaction"
+                  },
+                  {
+                    "label": "Assist the patient out of the basin"
+                  },
+                  {
+                    "label": "Dry the area and apply a dressing if there is a wound"
+                  },
+                  {
+                    "label": "Make the patient comfortable"
+                  }
+                ],
+                "numbered": true
+              }
+            },
+            {
+              "id": "slide_2_10_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "warning",
+                "text": "Patients can feel weak or dizzy standing up after a warm bath. Support them out of the basin and while they walk - do not leave them to manage it alone.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_2_11",
+          "sourceSlideId": "2.11",
+          "order": 9,
+          "layout": "icon-row",
+          "title": "Aftercare",
+          "breadcrumb": "Sitz bath / Aftercare",
+          "sourceSlides": [
+            18
+          ],
+          "objectiveRefs": [
+            5
+          ],
+          "designRationale": "Three tasks that happen after the patient is settled, and all three are infection control. Grouped on one slide so they read as a single closing routine rather than loose instructions.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_10",
+            "next": "slide_2_12",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_11_heading",
+              "type": "heading",
+              "props": {
+                "text": "Aftercare",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_11_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "Tidy the bed and position the patient",
+                    "icon": {
+                      "name": "supportive hand",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Discard soiled linen",
+                    "icon": {
+                      "name": "biohazard bin",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Clean the used equipment",
+                    "icon": {
+                      "name": "spray bottle",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_2_11_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "tip",
+                "text": "Assess the perineal area before you leave. If there is a wound or discharge, note its colour, amount and characteristics - you will need them for the record.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_2_12",
+          "sourceSlideId": "2.12",
+          "order": 10,
+          "layout": "icon-row",
+          "title": "What to document",
+          "breadcrumb": "Sitz bath / Documentation",
+          "sourceSlides": [
+            18
+          ],
+          "objectiveRefs": [
+            5
+          ],
+          "designRationale": "Six specific fields, and the knowledge check that follows turns on knowing them. Treated as a named set rather than a sentence, because a nurse writing the note is checking off items.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_11",
+            "next": "slide_2_13",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_12_heading",
+              "type": "heading",
+              "props": {
+                "text": "What to document",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_12_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "Treatment given",
+                    "icon": {
+                      "name": "document",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Duration",
+                    "icon": {
+                      "name": "stopwatch",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Solution used",
+                    "icon": {
+                      "name": "water drop",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Patient's tolerance",
+                    "icon": {
+                      "name": "eye",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Wound findings",
+                    "icon": {
+                      "name": "blood drop",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Date, time and signature",
+                    "icon": {
+                      "name": "signature",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_2_12_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "warning",
+                "text": "Report any abnormal finding - redness, swelling, pain, bleeding or discharge - to the senior staff or physician immediately. The note is not the report.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_2_13",
+          "sourceSlideId": "2.13",
+          "order": 11,
+          "layout": "knowledge-check",
+          "title": "Check your understanding!",
+          "breadcrumb": "Sitz bath / Question",
+          "sourceSlides": [
+            23
+          ],
+          "objectiveRefs": [
+            5
+          ],
+          "designRationale": "The source's own question, and the right one to close the section - it tests whether the learner can tell a complete record from a technically true but useless one.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_12",
+            "next": "slide_2_14",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_13_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_13_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Select the correct answer and click Submit."
+              }
+            },
+            {
+              "id": "slide_2_13_question",
+              "type": "multipleChoice",
+              "props": {
+                "questionType": "Multiple Choice Question - Text",
+                "stem": "After completing a sitz bath for a patient with an episiotomy wound, which documentation is most appropriate?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "\"Patient tolerated procedure well.\"",
+                    "correct": false
+                  },
+                  {
+                    "key": "B",
+                    "text": "\"Sitz bath completed.\"",
+                    "correct": false
+                  },
+                  {
+                    "key": "C",
+                    "text": "\"Warm sitz bath given for 20 minutes; patient tolerated well; wound clean with minimal serous discharge.\"",
+                    "correct": true
+                  },
+                  {
+                    "key": "D",
+                    "text": "\"Procedure done as ordered.\"",
+                    "correct": false
+                  }
+                ],
+                "correctKeys": [
+                  "C"
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_2_13_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_2_13_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Documentation should include duration, type of solution used, patient tolerance, wound assessment findings and any abnormal observations, to ensure continuity of care.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_2_13_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "Documentation should include duration, type of solution used, patient tolerance, wound assessment findings and any abnormal observations, to ensure continuity of care.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_2_14",
+          "sourceSlideId": "2.14",
+          "order": 12,
+          "layout": "sequence",
+          "title": "Check your understanding!",
+          "breadcrumb": "Sitz bath / Question",
+          "sourceSlides": [
+            14,
+            15
+          ],
+          "objectiveRefs": [
+            2,
+            3
+          ],
+          "designRationale": "Added. The procedure is taught as two tracks, and the risk is that the learner remembers the steps without the order. Testing the order directly is the only check that catches that.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_13",
+            "next": "slide_2_15",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q3",
+            "Q4",
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_14_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_14_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Drag the five actions into the order you perform them, then click Submit."
+              }
+            },
+            {
+              "id": "slide_2_14_question",
+              "type": "sequence",
+              "props": {
+                "questionType": "Sequence by dragging",
+                "stem": null,
+                "items": [
+                  {
+                    "id": "item_1",
+                    "label": "Check the doctor's order",
+                    "correctPosition": 1
+                  },
+                  {
+                    "id": "item_2",
+                    "label": "Explain the procedure and obtain consent",
+                    "correctPosition": 2
+                  },
+                  {
+                    "id": "item_3",
+                    "label": "Provide privacy",
+                    "correctPosition": 3
+                  },
+                  {
+                    "id": "item_4",
+                    "label": "Fill the basin and test the water",
+                    "correctPosition": 4
+                  },
+                  {
+                    "id": "item_5",
+                    "label": "Assist the patient into the basin",
+                    "correctPosition": 5
+                  }
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_2_14_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_2_14_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "The order is the safety. The doctor's order defines what you are doing; consent and privacy come before any exposure; and the water is tested before the patient ever sits in it.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_2_14_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "The order is the safety. The doctor's order defines what you are doing; consent and privacy come before any exposure; and the water is tested before the patient ever sits in it.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_2_15",
+          "sourceSlideId": "2.15",
+          "order": 13,
+          "layout": "summary",
+          "title": "Section 2 in brief",
+          "breadcrumb": "Sitz bath | Summary",
+          "sourceSlides": [
+            25
+          ],
+          "objectiveRefs": [],
+          "designRationale": "A recap of the procedure in the order performed, so the sequence is consolidated once more before the section closes.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_2_14",
+            "next": "slide_2_16",
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_15_heading",
+              "type": "heading",
+              "props": {
+                "text": "Section 2 in brief",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_15_summary",
+              "type": "summary",
+              "props": {
+                "points": [
+                  "Gather the order sheet, basin, water or solution, towel and bucket.",
+                  "Identify the patient, explain, obtain consent, and provide privacy.",
+                  "Perform hand hygiene and assess the area before any water.",
+                  "Fill the basin one-third full and test the temperature yourself.",
+                  "For a bedridden patient, apply warm soaked cotton and replace it as it cools.",
+                  "20 minutes, watching for any untoward reaction, then assist out and dry.",
+                  "Document treatment, duration, solution, tolerance and wound findings."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_2_16",
+          "sourceSlideId": "2.16",
+          "order": 14,
+          "layout": "results",
+          "title": "End of Section 2",
+          "breadcrumb": "Sitz bath",
+          "sourceSlides": [
+            25
+          ],
+          "objectiveRefs": [],
+          "designRationale": "The authoring tool's results slide.",
+          "devNotes": "Build as the Storyline Results slide. Completion is tracked by slides viewed, not by the quiz score.",
+          "navigation": {
+            "prev": "slide_2_15",
+            "next": null,
+            "home": "slide_2_01"
+          },
+          "smeQueryRefs": [
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_2_16_heading",
+              "type": "heading",
+              "props": {
+                "text": "End of Section 2",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_2_16_results",
+              "type": "results",
+              "props": {
+                "lines": [
+                  "End of Section 2.",
+                  "You can either review the section or close this window."
+                ],
+                "actions": [
+                  "review",
+                  "close"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "module_03",
+      "number": 3,
+      "title": "Section 3: Benefits and Safety Considerations",
+      "scopingSentence": null,
+      "objectives": [
+        {
+          "id": 1,
+          "text": "State the benefits of a sitz bath",
+          "level": "remember"
+        },
+        {
+          "id": 2,
+          "text": "Recognise the complications that can occur, and prevent each one",
+          "level": "apply"
+        },
+        {
+          "id": 3,
+          "text": "Demonstrate the nursing responsibilities that run through the procedure",
+          "level": "apply"
+        },
+        {
+          "id": 4,
+          "text": "Educate the patient on home care and safety measures",
+          "level": "apply"
+        }
+      ],
+      "learningTime": {
+        "narration": 6.0,
+        "interaction": 0.0,
+        "assessment": 1.8,
+        "silent": 0.2,
+        "pacing_allowance_min": 0.8,
+        "total_min": 9,
+        "narration_words": 842,
+        "interaction_panels": 0,
+        "indicative": "8–11 minutes"
+      },
+      "scorm": {
+        "standard": "SCORM 1.2",
+        "lms_title": "Sitz Bath — Section 3: Benefits and Safety Considerations",
+        "completion_tracked_by": "slides_viewed",
+        "view_threshold": 11,
+        "slides_viewed_mode": "project",
+        "pass_percent": 80,
+        "pass_status": "pass",
+        "fail_status": "incomplete",
+        "submit_unanswered": "all",
+        "note": "Completion comes from viewing every slide, not from the quiz score. A learner who answers everything correctly but skips a slide is incomplete."
+      },
+      "player": {
+        "sidebar_enabled": false,
+        "menu_panel": null,
+        "top_right_links": [
+          {
+            "label": "HOME",
+            "action": "jump_to_slide",
+            "target": "first_slide",
+            "ignore_slide_lock": true
+          },
+          {
+            "label": "EXIT",
+            "action": "close_player",
+            "ignore_slide_lock": true
+          }
+        ],
+        "bottom_bar": {
+          "enabled": true,
+          "play_pause": true,
+          "seekbar": true,
+          "seekbar_readonly": false,
+          "replay": true,
+          "volume": true,
+          "fullscreen": true
+        },
+        "closed_captions": false,
+        "search": false,
+        "settings": false,
+        "playback_speed": false,
+        "slide_lock": false,
+        "theme_accent": "#4FBDF4",
+        "note": "Sidebar is off, so there is no player menu. Any menu in this course is built on-slide from hotspots."
+      },
+      "slideFurniture": {
+        "counter": "%_playerVars.menuSlideNumber%  of  %_playerVars.menuTotalSlides%",
+        "counter_note": "Bind the player variables rather than typing numbers — they go stale the moment a slide is inserted.",
+        "breadcrumb": "Course name | Section or topic, top left in the header band",
+        "logo": "Client logo, top right in the header band"
+      },
+      "playerSlideCount": 11,
+      "embeddedSourceSlides": [],
+      "slides": [
+        {
+          "slideId": "slide_3_01",
+          "sourceSlideId": "3.01",
+          "order": 1,
+          "layout": "title",
+          "title": "Benefits and Safety Considerations",
+          "breadcrumb": null,
+          "sourceSlides": [
+            24
+          ],
+          "objectiveRefs": [],
+          "designRationale": "Section cover. A photograph of a nurse talking with a seated patient, which is the register of this section - monitoring, responsibility and teaching rather than technique.",
+          "devNotes": null,
+          "navigation": {
+            "prev": null,
+            "next": "slide_3_02",
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_01_heading",
+              "type": "heading",
+              "props": {
+                "text": "Sitz Bath",
+                "level": 1,
+                "sourceField": "course.title"
+              }
+            },
+            {
+              "id": "slide_3_01_subtitle",
+              "type": "paragraph",
+              "props": {
+                "text": "Module 3: Section 3: Benefits and Safety Considerations",
+                "role": "subtitle",
+                "sourceField": "module.number + module.title"
+              }
+            },
+            {
+              "id": "slide_3_01_byline",
+              "type": "paragraph",
+              "props": {
+                "text": "Prepared by Bodhi Learning Labs",
+                "role": "byline",
+                "sourceField": "course.producer"
+              }
+            },
+            {
+              "id": "slide_3_01_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Nurse explaining care instructions to a seated patient in a hospital room",
+                "searchTerms": "nurse explaining care patient bedside conversation",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=nurse%20explaining%20care%20patient%20bedside%20conversation&type=photo",
+                    "note": "Nurse-patient communication photos"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=nurse%20explaining%20care%20patient%20bedside%20conversation&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "left",
+                "sizeIn": [
+                  5.4,
+                  4.4
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_3_02",
+          "sourceSlideId": "3.02",
+          "order": 2,
+          "layout": "objectives",
+          "title": "Learning objectives",
+          "breadcrumb": "Sitz bath | Objectives",
+          "sourceSlides": [
+            3
+          ],
+          "objectiveRefs": [],
+          "designRationale": "Objectives for the closing section, pitched at recognising and preventing rather than reciting.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_3_01",
+            "next": "slide_3_03",
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_02_heading",
+              "type": "heading",
+              "props": {
+                "text": "Learning objectives",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_3_02_objectives",
+              "type": "objectivesList",
+              "props": {
+                "intro": null,
+                "items": [
+                  {
+                    "id": 1,
+                    "text": "State the benefits of a sitz bath",
+                    "level": "remember"
+                  },
+                  {
+                    "id": 2,
+                    "text": "Recognise the complications that can occur, and prevent each one",
+                    "level": "apply"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Demonstrate the nursing responsibilities that run through the procedure",
+                    "level": "apply"
+                  },
+                  {
+                    "id": 4,
+                    "text": "Educate the patient on home care and safety measures",
+                    "level": "apply"
+                  }
+                ],
+                "sourceField": "module.objectives"
+              }
+            },
+            {
+              "id": "slide_3_02_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Simple line-art target or goal icon, single colour",
+                "searchTerms": "target goal icon line art",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=target%20goal%20icon%20line%20art&type=photo",
+                    "note": "Icon library - pick a single-colour outline target"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=target%20goal%20icon%20line%20art&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  2.6,
+                  2.6
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_3_03",
+          "sourceSlideId": "3.03",
+          "order": 3,
+          "layout": "icon-row",
+          "title": "What a sitz bath achieves",
+          "breadcrumb": "Sitz bath / Benefits",
+          "sourceSlides": [
+            19
+          ],
+          "objectiveRefs": [
+            1
+          ],
+          "designRationale": "Six benefits, which is exactly the kind of list that becomes wallpaper as bullets. Icons give the eye six distinct things, and they are what the nurse repeats to a reluctant patient.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_3_02",
+            "next": "slide_3_04",
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_03_heading",
+              "type": "heading",
+              "props": {
+                "text": "What a sitz bath achieves",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_3_03_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "Improves blood circulation",
+                    "icon": {
+                      "name": "heart",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Reduces edema",
+                    "icon": {
+                      "name": "arrows apart",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Promotes relaxation",
+                    "icon": {
+                      "name": "supportive hand",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Maintains hygiene",
+                    "icon": {
+                      "name": "hand washing",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Reduces muscle spasm",
+                    "icon": {
+                      "name": "tissue",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Enhances wound healing",
+                    "icon": {
+                      "name": "shield",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_3_03_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "good-to-know",
+                "text": "These are the reasons to give a patient who is reluctant. A sitz bath is uncomfortable to contemplate and easy to refuse - knowing what it achieves is what gets cooperation.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_3_04",
+          "sourceSlideId": "3.04",
+          "order": 4,
+          "layout": "table",
+          "title": "Complications, and how to prevent them",
+          "breadcrumb": "Sitz bath / Complications",
+          "sourceSlides": [
+            20
+          ],
+          "objectiveRefs": [
+            2
+          ],
+          "designRationale": "Each complication has a cause and a specific preventive action, so the useful shape is three columns rather than a list of things that can go wrong. The prevention column is the one the nurse acts on.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_3_03",
+            "next": "slide_3_05",
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [
+            "Q5",
+            "Q7"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_04_heading",
+              "type": "heading",
+              "props": {
+                "text": "Complications, and how to prevent them",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_3_04_table",
+              "type": "table",
+              "props": {
+                "headers": [
+                  "Complication",
+                  "How it happens",
+                  "How you prevent it"
+                ],
+                "rows": [
+                  [
+                    "Burns",
+                    "Water temperature too high",
+                    "Check the temperature before every bath; never rely on the patient"
+                  ],
+                  [
+                    "Dizziness or fainting",
+                    "Warmth and position change, usually getting in or out",
+                    "Stay with the patient; assist in and out; support them while walking"
+                  ],
+                  [
+                    "Infection",
+                    "Poor hygiene or improperly cleaned equipment",
+                    "Hand hygiene, clean equipment, follow infection control practice"
+                  ],
+                  [
+                    "Skin irritation",
+                    "Excessive heat, prolonged soaking, or allergy to a solution",
+                    "Keep to the prescribed temperature and duration; check allergies"
+                  ],
+                  [
+                    "Cross contamination",
+                    "Equipment not cleaned between patients",
+                    "Disinfect the basin after every use; hand hygiene throughout"
+                  ]
+                ],
+                "colWidthsIn": [
+                  2.6,
+                  4.6,
+                  5.2
+                ],
+                "revealItems": "index 0 = header row, 1..n = body rows"
+              }
+            },
+            {
+              "id": "slide_3_04_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "warning",
+                "text": "Every complication in this table is preventable by something the nurse does. None of them is bad luck.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_3_05",
+          "sourceSlideId": "3.05",
+          "order": 5,
+          "layout": "icon-row",
+          "title": "What you are responsible for",
+          "breadcrumb": "Sitz bath / Nursing responsibilities",
+          "sourceSlides": [
+            21
+          ],
+          "objectiveRefs": [
+            3
+          ],
+          "designRationale": "Six responsibilities spanning the whole procedure. Icons so they read as a checklist the nurse can run against themselves, which is how they will be assessed in practice.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_3_04",
+            "next": "slide_3_06",
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_05_heading",
+              "type": "heading",
+              "props": {
+                "text": "What you are responsible for",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_3_05_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "Maintain privacy",
+                    "icon": {
+                      "name": "privacy curtain",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Check water temperature",
+                    "icon": {
+                      "name": "thermometer",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Monitor discomfort",
+                    "icon": {
+                      "name": "eye",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Prevent falls",
+                    "icon": {
+                      "name": "supportive hand",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Maintain infection control",
+                    "icon": {
+                      "name": "gloves and mask",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Educate the patient",
+                    "icon": {
+                      "name": "speech bubble",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_3_05_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "note",
+                "text": "Elderly and weak patients need assistance in and out of the basin every time, not only on the first treatment.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_3_06",
+          "sourceSlideId": "3.06",
+          "order": 6,
+          "layout": "icon-row",
+          "title": "What to teach the patient",
+          "breadcrumb": "Sitz bath / Patient education",
+          "sourceSlides": [
+            22
+          ],
+          "objectiveRefs": [
+            4
+          ],
+          "designRationale": "The patient continues this treatment unsupervised, often at home. These five points are what they take away, so they get their own slide rather than a line inside nursing responsibilities.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_3_05",
+            "next": "slide_3_07",
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [
+            "Q8"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_06_heading",
+              "type": "heading",
+              "props": {
+                "text": "What to teach the patient",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_3_06_icons",
+              "type": "iconGrid",
+              "props": {
+                "items": [
+                  {
+                    "label": "Do not use very hot water",
+                    "icon": {
+                      "name": "thermometer",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Dry the area properly afterwards",
+                    "icon": {
+                      "name": "bath towel",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Report bleeding or increased pain",
+                    "icon": {
+                      "name": "alert",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Maintain personal hygiene",
+                    "icon": {
+                      "name": "hand washing",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  },
+                  {
+                    "label": "Follow the prescribed frequency",
+                    "icon": {
+                      "name": "calendar",
+                      "assetStatus": "supplied in the authored deck"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "slide_3_06_image_1",
+              "type": "image",
+              "props": {
+                "src": null,
+                "status": "unresolved",
+                "alt": "Nurse explaining home care instructions to a patient before discharge",
+                "searchTerms": "nurse patient education discharge instructions",
+                "candidates": [
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=nurse%20patient%20education%20discharge%20instructions&type=photo",
+                    "note": "Teaching and discharge-counselling photos"
+                  },
+                  {
+                    "url": "https://www.magnific.com/search?format=search&query=nurse%20patient%20education%20discharge%20instructions&type=photo&type=vector",
+                    "note": "Same search, diagrams and vectors"
+                  }
+                ],
+                "placement": "right",
+                "sizeIn": [
+                  3.4,
+                  2.6
+                ],
+                "sourceStatus": "developer picks one candidate"
+              }
+            },
+            {
+              "id": "slide_3_06_callout_1",
+              "type": "callout",
+              "props": {
+                "kind": "tip",
+                "text": "Teach this before discharge, not at the door. A patient who understands why hot water is dangerous will not test it at home.",
+                "placement": "below"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_3_07",
+          "sourceSlideId": "3.07",
+          "order": 7,
+          "layout": "multi-select",
+          "title": "Check your understanding!",
+          "breadcrumb": "Sitz bath / Question",
+          "sourceSlides": [
+            20
+          ],
+          "objectiveRefs": [
+            2
+          ],
+          "designRationale": "Added. Complications are prevented by several habits at once, so a multi-select asks the learner to recognise a set rather than a single right answer - which is how prevention actually works.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_3_06",
+            "next": "slide_3_08",
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [
+            "Q5",
+            "Q7"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_07_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_3_07_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Select all that apply and click Submit."
+              }
+            },
+            {
+              "id": "slide_3_07_question",
+              "type": "multiSelect",
+              "props": {
+                "questionType": "Multiple Response",
+                "stem": "Which nursing actions reduce the risk of complications during a sitz bath? Select all that apply.",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Checking the water temperature before every bath",
+                    "correct": true
+                  },
+                  {
+                    "key": "B",
+                    "text": "Assisting the patient in and out of the basin",
+                    "correct": true
+                  },
+                  {
+                    "key": "C",
+                    "text": "Extending the soak beyond the prescribed time if the patient finds it soothing",
+                    "correct": false
+                  },
+                  {
+                    "key": "D",
+                    "text": "Disinfecting the basin between patients",
+                    "correct": true
+                  }
+                ],
+                "correctKeys": [
+                  "A",
+                  "B",
+                  "D"
+                ],
+                "rationale": "A, B and D. Temperature checks prevent burns, assistance prevents falls from dizziness, and disinfection prevents cross contamination. Prolonged soaking causes skin irritation, so C increases risk rather than reducing it.",
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_3_07_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_3_07_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "A, B and D. Temperature checks prevent burns, assistance prevents falls from dizziness, and disinfection prevents cross contamination. Prolonged soaking causes skin irritation, so C increases risk rather than reducing it.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_3_07_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "A, B and D. Temperature checks prevent burns, assistance prevents falls from dizziness, and disinfection prevents cross contamination. Prolonged soaking causes skin irritation, so C increases risk rather than reducing it.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_3_08",
+          "sourceSlideId": "3.08",
+          "order": 8,
+          "layout": "knowledge-check",
+          "title": "Check your understanding!",
+          "breadcrumb": "Sitz bath / Question",
+          "sourceSlides": [
+            22
+          ],
+          "objectiveRefs": [
+            4
+          ],
+          "designRationale": "Added. Patient education is tested as a scenario at discharge, because that is the moment it is either done properly or reduced to a leaflet.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_3_07",
+            "next": "slide_3_09",
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [
+            "Q8"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_08_heading",
+              "type": "heading",
+              "props": {
+                "text": "Check your understanding!",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_3_08_instruction",
+              "type": "instruction",
+              "props": {
+                "text": "Select the correct answer and click Submit."
+              }
+            },
+            {
+              "id": "slide_3_08_question",
+              "type": "multipleChoice",
+              "props": {
+                "questionType": "Multiple Choice Question - Text",
+                "stem": "A patient is being discharged after an episiotomy and will continue sitz baths at home. Which instruction is most important to emphasise?",
+                "options": [
+                  {
+                    "key": "A",
+                    "text": "Use the hottest water she can tolerate, for a stronger effect",
+                    "correct": false
+                  },
+                  {
+                    "key": "B",
+                    "text": "Use warm water only, dry the area properly, and report bleeding or increased pain",
+                    "correct": true
+                  },
+                  {
+                    "key": "C",
+                    "text": "Stop the baths as soon as the pain settles",
+                    "correct": false
+                  },
+                  {
+                    "key": "D",
+                    "text": "Add any available antiseptic to the water",
+                    "correct": false
+                  }
+                ],
+                "correctKeys": [
+                  "B"
+                ],
+                "attempts": 2,
+                "scored": true,
+                "feedback": [
+                  {
+                    "layerId": "slide_3_08_feedback_try_again",
+                    "kind": "try_again",
+                    "shownWhen": "first wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Please try again.",
+                    "button": "Try again",
+                    "onClick": [
+                      "hide_layer"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_3_08_feedback_incorrect",
+                    "kind": "incorrect",
+                    "shownWhen": "second wrong answer",
+                    "heading": "That's incorrect!",
+                    "body": "Hot water burns, and a patient at home has no one checking the temperature. Drying prevents infection and irritation, reporting bleeding or increased pain catches complications early, and the prescribed frequency should be completed. Antiseptics are added only when prescribed.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  },
+                  {
+                    "layerId": "slide_3_08_feedback_correct",
+                    "kind": "correct",
+                    "shownWhen": "correct answer",
+                    "heading": "That's correct!",
+                    "body": "Hot water burns, and a patient at home has no one checking the temperature. Drying prevents infection and irritation, reporting bleeding or increased pain catches complications early, and the prescribed frequency should be completed. Antiseptics are added only when prescribed.",
+                    "button": "Continue",
+                    "onClick": [
+                      "hide_layer",
+                      "jump_to_next_slide"
+                    ]
+                  }
+                ],
+                "onSubmitWithNoSelection": "show InvalidPrompt — do not fail silently"
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_3_09",
+          "sourceSlideId": "3.09",
+          "order": 9,
+          "layout": "summary",
+          "title": "Key points",
+          "breadcrumb": "Sitz bath | Summary",
+          "sourceSlides": [
+            25
+          ],
+          "objectiveRefs": [],
+          "designRationale": "The closing recap for the whole course, covering all three sections rather than this one alone, because this is where the learner finishes.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_3_08",
+            "next": "slide_3_10",
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [
+            "Q5"
+          ],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_09_heading",
+              "type": "heading",
+              "props": {
+                "text": "Key points",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_3_09_summary",
+              "type": "summary",
+              "props": {
+                "points": [
+                  "A sitz bath is a warm water bath for the perineal region that relieves pain and promotes healing.",
+                  "Indicated for hemorrhoids, episiotomy, postpartum pain, anal fissure, rectal surgery and perianal abscess.",
+                  "Assess for active bleeding, severe infection, impaired sensation and allergy before you start.",
+                  "Warm, cold and medicated types - warm at 40–45°C for 15–20 minutes, 2–3 times a day.",
+                  "Privacy, hand hygiene, correct technique and continuous monitoring are what make it safe.",
+                  "Benefits: circulation, reduced edema, relaxation, pain relief, hygiene, wound healing.",
+                  "Watch for burns, dizziness, infection, skin irritation and cross contamination.",
+                  "Document accurately, and teach the patient before they continue at home."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_3_10",
+          "sourceSlideId": "3.10",
+          "order": 10,
+          "layout": "references",
+          "title": "References",
+          "breadcrumb": "Sitz bath | References",
+          "sourceSlides": [
+            26
+          ],
+          "objectiveRefs": [],
+          "designRationale": "The source's reference list, carried across unchanged.",
+          "devNotes": null,
+          "navigation": {
+            "prev": "slide_3_09",
+            "next": "slide_3_11",
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_10_heading",
+              "type": "heading",
+              "props": {
+                "text": "References",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_3_10_references",
+              "type": "references",
+              "props": {
+                "style": "Vancouver",
+                "items": [
+                  "Potter PA, Perry AG, Stockert PA, Hall AM. Fundamentals of Nursing. 11th ed. St. Louis: Elsevier; 2023.",
+                  "Berman A, Snyder SJ, Frandsen G. Kozier & Erb's Fundamentals of Nursing: Concepts, Process and Practice. 11th ed. Noida: Pearson India; 2021.",
+                  "Hinkle JL, Cheever KH. Brunner & Suddarth's Textbook of Medical-Surgical Nursing. 15th ed. Philadelphia: Wolters Kluwer; 2022.",
+                  "Perry AG, Potter PA, Ostendorf WR. Clinical Nursing Skills and Techniques. 10th ed. St. Louis: Elsevier; 2021.",
+                  "World Health Organization. WHO recommendations on maternal and newborn care [Internet]. Geneva: WHO; 2022."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slideId": "slide_3_11",
+          "sourceSlideId": "3.11",
+          "order": 11,
+          "layout": "results",
+          "title": "End of Section 3",
+          "breadcrumb": "Sitz bath",
+          "sourceSlides": [
+            26
+          ],
+          "objectiveRefs": [],
+          "designRationale": "The authoring tool's results slide.",
+          "devNotes": "Build as the Storyline Results slide. Completion is tracked by slides viewed, not by the quiz score.",
+          "navigation": {
+            "prev": "slide_3_10",
+            "next": null,
+            "home": "slide_3_01"
+          },
+          "smeQueryRefs": [],
+          "embeddedSourceSlides": [],
+          "components": [
+            {
+              "id": "slide_3_11_heading",
+              "type": "heading",
+              "props": {
+                "text": "End of Section 3",
+                "level": 1
+              }
+            },
+            {
+              "id": "slide_3_11_results",
+              "type": "results",
+              "props": {
+                "lines": [
+                  "End of Section 3.",
+                  "You can either review the section or close this window."
+                ],
+                "actions": [
+                  "review",
+                  "close"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

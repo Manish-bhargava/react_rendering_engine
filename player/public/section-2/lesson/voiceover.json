@@ -1,0 +1,1242 @@
+{
+  "specVersion": "v1",
+  "course": "Blood Culture Sampling",
+  "audio": {
+    "basePath": "audio/",
+    "format": "mp3",
+    "filesSupplied": true,
+    "note": "Filenames come from the source audio_manifest. All 44 narration MP3s are supplied in audio/, each with a WebVTT caption file of the same name beside it (m1_1_01_base.mp3 + m1_1_01_base.vtt). approxSeconds is still the source's 140 wpm estimate; the player takes the real length from each MP3."
+  },
+  "playerRules": {
+    "revealWithoutAudio": "show all items immediately",
+    "revealTiming": "line start = audio duration x (words before the line / total words); an item with lineIndex null takes the previous item's cue, or shows at start",
+    "missingAudio": "do not block navigation; show the narration text instead"
+  },
+  "manifestEntries": 25,
+  "modules": [
+    {
+      "moduleId": "module_02",
+      "title": "Section 2: Blood Culture Collection and Nursing Care",
+      "slides": [
+        {
+          "slideId": "slide_2_01",
+          "sourceSlideId": "2.01",
+          "base": {
+            "audioFile": "m2_2_01_base.mp3",
+            "words": 74,
+            "approxSeconds": 32,
+            "lines": [
+              "Welcome to Section 2 of the module on Blood Culture Sampling.",
+              "In Section 1 you learned what a bloodstream infection is, when to collect, how many sets, how much blood, where to draw from and in what order.",
+              "This section is the procedure itself: the nineteen steps from verifying the order to sending the bottles, how contamination happens and how to prevent it, how results are interpreted, and what the nurse is accountable for."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_02",
+          "sourceSlideId": "2.02",
+          "base": {
+            "audioFile": "m2_2_02_base.mp3",
+            "words": 37,
+            "approxSeconds": 16,
+            "lines": [
+              "By the end of this section, you will be able to:",
+              "Perform blood culture collection using aseptic technique.",
+              "Prevent contamination and maintain specimen quality.",
+              "Interpret blood culture results.",
+              "And describe the nursing responsibilities in blood culture sampling."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_03",
+          "sourceSlideId": "2.03",
+          "base": {
+            "audioFile": "m2_2_03_base.mp3",
+            "words": 65,
+            "approxSeconds": 28,
+            "lines": [
+              "The full collection procedure runs to nineteen steps, which group into five stages.",
+              "Before you start - the order, the patient, the explanation.",
+              "Prepare - hand hygiene, equipment, bottle tops, site.",
+              "Antisepsis and access - tourniquet, skin prep, sterile gloves.",
+              "Draw and inoculate - venipuncture, volume, bottles, mixing.",
+              "And finish - labelling, dressing, sharps, documentation, transport.",
+              "Click each stage to see the steps it contains."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_03_process",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_03_process",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_03_process",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_03_process",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_03_process",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                }
+              ]
+            }
+          },
+          "layers": [
+            {
+              "layerId": "slide_2_03_layer_1",
+              "componentId": "slide_2_03_process",
+              "index": 1,
+              "audioFile": "m2_2_03_L1.mp3",
+              "words": 65,
+              "approxSeconds": 28,
+              "lines": [
+                "Stage one. Verify the physician's order, confirming the number of blood culture sets required, the collection sites, and the timing in relation to antibiotic administration. Identify the patient using at least two identifiers, such as name and hospital identification number or date of birth. Then explain the procedure - the purpose of the test, the possibility of brief discomfort, and the importance of remaining still."
+              ]
+            },
+            {
+              "layerId": "slide_2_03_layer_2",
+              "componentId": "slide_2_03_process",
+              "index": 2,
+              "audioFile": "m2_2_03_L2.mp3",
+              "words": 73,
+              "approxSeconds": 31,
+              "lines": [
+                "Stage two. Perform hand hygiene by washing thoroughly or using an alcohol-based hand rub. Prepare the equipment: check the expiry date of the bottles, ensure the seals are intact, and verify that labels and the laboratory request form are ready. Disinfect the bottle tops by cleaning the rubber septa with 70 percent alcohol and allowing them to dry. Then select the venipuncture site, preferring a peripheral vein such as the median cubital vein."
+              ]
+            },
+            {
+              "layerId": "slide_2_03_layer_3",
+              "componentId": "slide_2_03_process",
+              "index": 3,
+              "audioFile": "m2_2_03_L3.mp3",
+              "words": 62,
+              "approxSeconds": 27,
+              "lines": [
+                "Stage three. Apply the tourniquet and palpate the vein to identify a suitable site, releasing the tourniquet temporarily if needed. Disinfect the skin with chlorhexidine using a back-and-forth or circular motion and allow it to dry completely - and do not touch the site afterward. Put on sterile gloves to maintain aseptic technique. Then re-apply the tourniquet without contaminating the cleaned site."
+              ]
+            },
+            {
+              "layerId": "slide_2_03_layer_4",
+              "componentId": "slide_2_03_process",
+              "index": 4,
+              "audioFile": "m2_2_03_L4.mp3",
+              "words": 51,
+              "approxSeconds": 22,
+              "lines": [
+                "Stage four. Perform the venipuncture and collect the recommended blood volume. Inoculate the blood culture bottles in the correct order for your device - aerobic first with a butterfly set, anaerobic first with a syringe. Then mix gently, inverting the bottles several times so the blood combines with the culture medium."
+              ]
+            },
+            {
+              "layerId": "slide_2_03_layer_5",
+              "componentId": "slide_2_03_process",
+              "index": 5,
+              "audioFile": "m2_2_03_L5.mp3",
+              "words": 59,
+              "approxSeconds": 25,
+              "lines": [
+                "Stage five. Label at the bedside with the patient identifiers, date and time, collection site and your initials. Remove the needle, apply pressure with sterile gauze until bleeding stops, and cover the site with a clean dressing. Discard the needle immediately into a puncture-resistant sharps container, without recapping. Complete the documentation. And send the bottles to the laboratory immediately."
+              ]
+            }
+          ],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base",
+              "on_open:slide_2_03_layer_1",
+              "on_open:slide_2_03_layer_2",
+              "on_open:slide_2_03_layer_3",
+              "on_open:slide_2_03_layer_4",
+              "on_open:slide_2_03_layer_5"
+            ],
+            "pauseBaseOnLayerOpen": true,
+            "resumeBaseOnLayerClose": true,
+            "stopLayerAudioOnLayerSwitch": true
+          }
+        },
+        {
+          "slideId": "slide_2_05",
+          "sourceSlideId": "2.05",
+          "base": {
+            "audioFile": "m2_2_05_base.mp3",
+            "words": 65,
+            "approxSeconds": 28,
+            "lines": [
+              "Four checks happen before the needle goes anywhere near the patient.",
+              "The expiry date on every bottle.",
+              "The integrity of the seals - no leaks and no cracks.",
+              "That the labels and the laboratory request form are ready.",
+              "And that the rubber septa have been cleaned with 70 percent alcohol and allowed to dry.",
+              "Each of these, missed, is a specimen the laboratory will reject."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_05_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_05_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_05_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_05_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_06",
+          "sourceSlideId": "2.06",
+          "base": {
+            "audioFile": "m2_2_06_base.mp3",
+            "words": 41,
+            "approxSeconds": 18,
+            "lines": [
+              "Now, let us answer a question to check our understanding.",
+              "While preparing for blood culture collection, the nurse notices that the blood culture bottle has an expired date. What is the most appropriate action?",
+              "Select the correct answer and click Submit."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "onSubmit": "pause the question narration and seek to 0"
+          }
+        },
+        {
+          "slideId": "slide_2_07",
+          "sourceSlideId": "2.07",
+          "base": {
+            "audioFile": "m2_2_07_base.mp3",
+            "words": 60,
+            "approxSeconds": 26,
+            "lines": [
+              "Accurate labelling of blood culture bottles is essential to ensure correct identification and reliable results.",
+              "Each bottle is labelled at the bedside immediately after collection.",
+              "The label must include the patient's name and identification number.",
+              "The date and time of collection.",
+              "The collection site.",
+              "And the collector's initials.",
+              "Proper labelling prevents specimen errors and ensures traceability throughout the testing process."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_07_points",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_07_points",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_07_points",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_07_points",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_08",
+          "sourceSlideId": "2.08",
+          "base": {
+            "audioFile": "m2_2_08_base.mp3",
+            "words": 64,
+            "approxSeconds": 27,
+            "lines": [
+              "After collection, blood culture bottles should be sent to the microbiology laboratory immediately for prompt processing.",
+              "The bottles must not be refrigerated, as low temperatures may inhibit the growth of microorganisms.",
+              "If there is an unavoidable delay, the samples should be kept at room temperature until they are transported.",
+              "Proper transport and storage are essential to maintain specimen integrity and ensure accurate culture results."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_08_cards",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_08_cards",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_08_cards",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_09",
+          "sourceSlideId": "2.09",
+          "base": {
+            "audioFile": "m2_2_09_base.mp3",
+            "words": 82,
+            "approxSeconds": 35,
+            "lines": [
+              "Interpreting blood culture results is important to distinguish true infection from contamination.",
+              "A true pathogen is usually indicated when the same microorganism grows in multiple blood culture bottles and the findings are consistent with the patient's clinical condition.",
+              "Possible contamination is suspected when a common skin organism grows in only one bottle, especially if the patient is clinically stable and shows no signs of systemic infection.",
+              "Clinical correlation is essential to determine whether the result represents a true bloodstream infection or contamination."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_09_comparison",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_09_comparison",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_10",
+          "sourceSlideId": "2.10",
+          "base": {
+            "audioFile": "m2_2_10_base.mp3",
+            "words": 55,
+            "approxSeconds": 24,
+            "lines": [
+              "Blood culture contamination usually occurs when microorganisms from the skin or environment enter the sample during collection.",
+              "Inadequate skin disinfection.",
+              "Touching the puncture site after cleaning it.",
+              "Collecting blood through an existing intravenous line.",
+              "Insufficient drying time for the antiseptic.",
+              "And failure to maintain sterile technique throughout.",
+              "Every one of these is within your control."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_10_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_10_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_10_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_10_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_10_icons",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_11",
+          "sourceSlideId": "2.11",
+          "base": {
+            "audioFile": "m2_2_11_base.mp3",
+            "words": 49,
+            "approxSeconds": 21,
+            "lines": [
+              "The most common contaminant organisms are coagulase-negative staphylococci, which account for the majority.",
+              "Corynebacterium species.",
+              "Bacillus species, with the important exception of Bacillus anthracis, which is never dismissed as a contaminant.",
+              "And Cutibacterium, formerly known as Propionibacterium.",
+              "Proper aseptic technique is what keeps these organisms out of the bottle."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_11_cards",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_11_cards",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_11_cards",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_11_cards",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_12",
+          "sourceSlideId": "2.12",
+          "base": {
+            "audioFile": "m2_2_12_base.mp3",
+            "words": 57,
+            "approxSeconds": 24,
+            "lines": [
+              "The target blood culture contamination rate should be less than 3 percent.",
+              "A high contamination rate can lead to false-positive results, which may be mistaken for true bloodstream infections.",
+              "This results in unnecessary antibiotic use, increased hospital costs, and prolonged hospital stay.",
+              "Maintaining strict aseptic technique during collection is what keeps contamination rates low and results accurate."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_12_definition",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_12_definition",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_13",
+          "sourceSlideId": "2.13",
+          "base": {
+            "audioFile": "m2_2_13_base.mp3",
+            "words": 82,
+            "approxSeconds": 35,
+            "lines": [
+              "Several common errors affect the accuracy of blood culture results, and each has a specific prevention.",
+              "Low blood volume is the most frequent problem, prevented by using the volume markings on the culture bottles rather than estimating.",
+              "Contamination is minimised by strict aseptic technique, including proper skin disinfection and allowing full drying time.",
+              "Delayed transport is avoided by sending specimens to the laboratory immediately after collection.",
+              "And mislabelling is prevented by labelling each bottle at the patient's bedside, immediately after the procedure."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_13_table",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_13_table",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_13_table",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_13_table",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_13_table",
+                  "itemIndex": 4,
+                  "lineIndex": 4
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_14",
+          "sourceSlideId": "2.14",
+          "base": {
+            "audioFile": "m2_2_14_base.mp3",
+            "words": 62,
+            "approxSeconds": 27,
+            "lines": [
+              "Blood culture specimens may be rejected by the laboratory if they do not meet quality requirements.",
+              "An unlabelled or improperly labelled specimen.",
+              "A leaking culture bottle.",
+              "Inadequate blood volume.",
+              "A broken bottle.",
+              "Or use of an incorrect container.",
+              "To avoid rejection, always ensure proper labelling, collect the recommended volume, and check that the bottles are intact before sending them to the laboratory."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_14_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_14_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_14_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_14_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_14_icons",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_15",
+          "sourceSlideId": "2.15",
+          "base": {
+            "audioFile": "m2_2_15_base.mp3",
+            "words": 56,
+            "approxSeconds": 24,
+            "lines": [
+              "Although blood culture collection is generally safe, some complications may occur.",
+              "Haematoma formation at the puncture site.",
+              "Bleeding.",
+              "Pain.",
+              "Vasovagal syncope, which may cause dizziness or fainting - stay with the patient.",
+              "And needlestick injury to the healthcare worker, if sharps are not handled properly.",
+              "Careful technique and adherence to safety precautions minimise all of these."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_15_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_15_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_15_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_15_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_15_icons",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_16",
+          "sourceSlideId": "2.16",
+          "base": {
+            "audioFile": "m2_2_16_base.mp3",
+            "words": 60,
+            "approxSeconds": 26,
+            "lines": [
+              "Nurses play a vital role in ensuring accurate blood culture collection.",
+              "Verifying the patient's identity.",
+              "Explaining the procedure.",
+              "Maintaining strict aseptic technique throughout the collection process.",
+              "Collecting the correct blood volume.",
+              "Labelling the specimens accurately.",
+              "Monitoring the patient for any complications such as bleeding or dizziness.",
+              "And documenting all relevant details appropriately, to ensure proper communication and continuity of care."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_16_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_16_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_16_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_16_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_16_icons",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_2_16_icons",
+                  "itemIndex": 5,
+                  "lineIndex": 6
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_2_16_icons",
+                  "itemIndex": 6,
+                  "lineIndex": 7
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_17",
+          "sourceSlideId": "2.17",
+          "base": {
+            "audioFile": "m2_2_17_base.mp3",
+            "words": 105,
+            "approxSeconds": 45,
+            "lines": [
+              "Accurate documentation is an essential part of blood culture collection, and every field earns its place.",
+              "The date and time of collection, which fixes the sample against the fever curve and the antibiotic timeline.",
+              "The site from which the sample was obtained, which lets a positive catheter set be compared against a peripheral one.",
+              "The number of sets collected, which tells the laboratory and the clinician how to read a single positive bottle.",
+              "The volume obtained, which is the main determinant of yield.",
+              "The patient's response to the procedure.",
+              "And whether antibiotics were given before collection, which determines whether a negative result can be trusted."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_17_table",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_17_table",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_17_table",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_17_table",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_17_table",
+                  "itemIndex": 4,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_2_17_table",
+                  "itemIndex": 5,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_2_17_table",
+                  "itemIndex": 6,
+                  "lineIndex": 6
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_18",
+          "sourceSlideId": "2.18",
+          "base": {
+            "audioFile": "m2_2_18_base.mp3",
+            "words": 76,
+            "approxSeconds": 33,
+            "lines": [
+              "Quality indicators are used to monitor the accuracy and effectiveness of blood culture collection.",
+              "The contamination rate, which should be below 3 percent.",
+              "Adequate blood volume - 8 to 10 millilitres per bottle in adults.",
+              "Correct timing, meaning collection before the first dose of antibiotics.",
+              "Timely transport, immediately and at room temperature.",
+              "And proper labelling, at the bedside, with all four fields complete.",
+              "Monitoring these indicators improves diagnostic accuracy, reduces errors and ensures high-quality patient care."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_18_table",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_18_table",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_18_table",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_18_table",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_18_table",
+                  "itemIndex": 4,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_2_18_table",
+                  "itemIndex": 5,
+                  "lineIndex": 5
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_19",
+          "sourceSlideId": "2.19",
+          "base": {
+            "audioFile": "m2_2_19_base.mp3",
+            "words": 80,
+            "approxSeconds": 34,
+            "lines": [
+              "A blood culture collection audit assesses whether each step of the procedure is performed correctly and consistently.",
+              "Hand hygiene.",
+              "Appropriate use of personal protective equipment.",
+              "Correct skin antisepsis.",
+              "Allowing the antiseptic to dry completely before venipuncture.",
+              "Whether the recommended blood volume was collected.",
+              "Whether the specimen was labelled accurately at the bedside.",
+              "And whether the bottles were transported promptly to the laboratory.",
+              "Regular auditing identifies gaps in practice, reduces contamination rates, and improves the overall quality of blood culture collection."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_19_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_19_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_19_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_19_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_19_icons",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_2_19_icons",
+                  "itemIndex": 5,
+                  "lineIndex": 6
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_2_19_icons",
+                  "itemIndex": 6,
+                  "lineIndex": 7
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_20",
+          "sourceSlideId": "2.20",
+          "base": {
+            "audioFile": "m2_2_20_base.mp3",
+            "words": 31,
+            "approxSeconds": 13,
+            "lines": [
+              "Now, let us answer a question to check our understanding.",
+              "During a quality audit, which practice best demonstrates compliance with blood culture collection standards?",
+              "Select the correct answer and click Submit."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "onSubmit": "pause the question narration and seek to 0"
+          }
+        },
+        {
+          "slideId": "slide_2_21",
+          "sourceSlideId": "2.21",
+          "base": {
+            "audioFile": "m2_2_21_base.mp3",
+            "words": 148,
+            "approxSeconds": 63,
+            "lines": [
+              "Let us summarise the key points of this module.",
+              "Blood culture is an essential test for detecting bloodstream infections and guiding appropriate antimicrobial therapy.",
+              "Samples should always be collected before starting antibiotics where possible - but in suspected sepsis, collection and treatment happen together and neither waits.",
+              "Two sets are routine, three for suspected endocarditis, and adults need 8 to 10 millilitres in each bottle.",
+              "Peripheral venipuncture is preferred, and the order of draw follows your device: aerobic first with a butterfly set, anaerobic first with a syringe.",
+              "The antiseptic must dry completely, and the site is never touched again afterwards.",
+              "Label at the bedside, send to the laboratory immediately, and never refrigerate.",
+              "A single bottle growing common skin flora in a clinically stable patient is probably contamination, not infection.",
+              "And nurses safeguard the quality of every one of these steps through technique, volume, labelling, documentation and audit."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_21_summary",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_21_summary",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_21_summary",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_21_summary",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_21_summary",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_2_21_summary",
+                  "itemIndex": 5,
+                  "lineIndex": 6
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_2_21_summary",
+                  "itemIndex": 6,
+                  "lineIndex": 7
+                },
+                {
+                  "order": 8,
+                  "componentId": "slide_2_21_summary",
+                  "itemIndex": 7,
+                  "lineIndex": 8
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_22",
+          "sourceSlideId": "2.22",
+          "base": null,
+          "layers": [],
+          "playback": {
+            "autoplayBase": false,
+            "sequence": [],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "note": "No narration on this slide in the source."
+          }
+        },
+        {
+          "slideId": "slide_2_23",
+          "sourceSlideId": "2.23",
+          "base": null,
+          "layers": [],
+          "playback": {
+            "autoplayBase": false,
+            "sequence": [],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "note": "No narration on this slide in the source."
+          }
+        }
+      ]
+    }
+  ]
+}

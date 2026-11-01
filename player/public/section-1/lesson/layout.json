@@ -1,0 +1,5588 @@
+{
+  "specVersion": "v1",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "unit": "px",
+    "origin": "top-left",
+    "xAxis": "right",
+    "yAxis": "down"
+  },
+  "positionSource": "Measured from the authored decks wherever a component matched a deck shape (each item carries `source`). Anything else is inferred from the storyboard layout type, image placement and size_in at 96 px per inch.",
+  "tokens": {
+    "colors": {
+      "primary": "#62C7DD",
+      "primaryDark": "#1F9BD8",
+      "primaryTint": "#EBFFFF",
+      "secondary": "#6EA536",
+      "accent": "#92D050",
+      "learner": "#FF6600",
+      "background": "#FFFFFF",
+      "surface": "#F2F7EB",
+      "border": "#C8E0AE",
+      "text": "#000000",
+      "textMuted": "#7F7F7F",
+      "textOnPrimary": "#FFFFFF",
+      "warning": "#C00000",
+      "warningBg": "#FFFFFF",
+      "note": "#7F7F7F",
+      "noteBg": "#FFFFFF",
+      "tip": "#6EA536",
+      "tipBg": "#FFFFFF",
+      "correct": "#6EA536",
+      "incorrect": "#C00000"
+    },
+    "font": {
+      "family": "Montserrat, Calibri, Carlito, 'Segoe UI', Arial, sans-serif",
+      "sizes": {
+        "display": 37,
+        "h1": 28,
+        "h2": 19,
+        "body": 16,
+        "small": 14,
+        "caption": 11
+      },
+      "weights": {
+        "regular": 400,
+        "semibold": 600,
+        "bold": 700
+      },
+      "lineHeight": 1.2
+    },
+    "spacing": {
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "xxl": 48
+    },
+    "radius": {
+      "sm": 6,
+      "md": 10,
+      "lg": 16,
+      "pill": 999
+    },
+    "shadows": {
+      "card": "none",
+      "raised": "0 6px 18px rgba(0, 0, 0, 0.14)"
+    }
+  },
+  "componentStyles": {
+    "heading": {
+      "fontSize": "h1",
+      "fontWeight": "bold",
+      "color": "secondary"
+    },
+    "paragraph": {
+      "fontSize": "body",
+      "color": "text"
+    },
+    "instruction": {
+      "fontSize": "small",
+      "fontWeight": "semibold",
+      "color": "primaryDark"
+    },
+    "image": {
+      "radius": "md",
+      "objectFit": "cover",
+      "placeholderBackground": "surface",
+      "border": "border"
+    },
+    "callout": {
+      "padding": "md",
+      "radius": "md",
+      "fontSize": "body",
+      "borderLeftWidth": 6,
+      "kinds": {
+        "warning": [
+          "warning",
+          "warningBg"
+        ],
+        "note": [
+          "note",
+          "noteBg"
+        ],
+        "tip": [
+          "tip",
+          "tipBg"
+        ]
+      }
+    },
+    "bulletList": {
+      "fontSize": "body",
+      "marker": "check",
+      "markerColor": "primary",
+      "itemGap": "md"
+    },
+    "objectivesList": {
+      "fontSize": "body",
+      "marker": "number",
+      "markerColor": "primary",
+      "itemGap": "md"
+    },
+    "iconGrid": {
+      "itemBackground": "background",
+      "itemBorder": "border",
+      "radius": "md",
+      "shadow": "card",
+      "iconSize": 40,
+      "iconColor": "primaryDark",
+      "fontSize": "body",
+      "padding": "md"
+    },
+    "cardGrid": {
+      "cardBackground": "background",
+      "cardBorder": "border",
+      "accentTop": "primary",
+      "radius": "md",
+      "shadow": "card",
+      "padding": "lg",
+      "titleSize": "h2",
+      "bodySize": "body"
+    },
+    "definition": {
+      "termSize": "h2",
+      "termColor": "primaryDark",
+      "bodySize": "body",
+      "divider": "border"
+    },
+    "process": {
+      "badgeColor": "primary",
+      "badgeText": "textOnPrimary",
+      "connector": "arrow",
+      "stepBackground": "surface",
+      "radius": "md"
+    },
+    "comparison": {
+      "columnBackground": "surface",
+      "headerBackground": "primaryDark",
+      "headerText": "textOnPrimary",
+      "radius": "md",
+      "divider": "vs"
+    },
+    "table": {
+      "headerBackground": "primaryDark",
+      "headerText": "textOnPrimary",
+      "stripe": "surface",
+      "border": "border",
+      "fontSize": "body",
+      "cellPadding": "md",
+      "radius": "md"
+    },
+    "multipleChoice": {
+      "optionBackground": "background",
+      "optionBorder": "border",
+      "selectedBorder": "primary",
+      "radius": "md",
+      "fontSize": "body",
+      "stemSize": "h2"
+    },
+    "sequence": {
+      "itemBackground": "background",
+      "itemBorder": "border",
+      "radius": "md",
+      "fontSize": "body"
+    },
+    "summary": {
+      "marker": "check",
+      "markerColor": "primary",
+      "fontSize": "body",
+      "cardBackground": "surface"
+    },
+    "references": {
+      "fontSize": "small",
+      "color": "text",
+      "itemGap": "md",
+      "hangingIndent": 24
+    },
+    "results": {
+      "fontSize": "h2",
+      "align": "center"
+    }
+  },
+  "furniture": {
+    "headerBand": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 68
+      },
+      "shape": {
+        "geometry": "rectangle",
+        "fill": "#62C7DD",
+        "border": null
+      }
+    },
+    "breadcrumb": {
+      "frame": {
+        "x": 17,
+        "y": 10,
+        "w": 922,
+        "h": 48
+      },
+      "anchor": "middle",
+      "padding": [
+        4.8,
+        9.6,
+        4.8,
+        9.6
+      ],
+      "style": {
+        "fontSize": 18.7,
+        "bold": true,
+        "color": "#FFFFFF",
+        "fontFamily": "Montserrat",
+        "align": "left"
+      }
+    },
+    "topLinks": {
+      "frame": {
+        "x": 955,
+        "y": 10,
+        "w": 144,
+        "h": 48
+      },
+      "anchor": "middle",
+      "padding": [
+        4.8,
+        9.6,
+        4.8,
+        9.6
+      ],
+      "style": {
+        "fontSize": 14,
+        "bold": false,
+        "color": "#FFFFFF",
+        "fontFamily": "Montserrat",
+        "align": "left"
+      },
+      "value": "Menu  |  Exit"
+    },
+    "logo": {
+      "frame": {
+        "x": 1125,
+        "y": 6,
+        "w": 120,
+        "h": 55
+      },
+      "src": "assets/brand/logo.png"
+    },
+    "logoPlate": {
+      "frame": {
+        "x": 1117,
+        "y": 0,
+        "w": 135,
+        "h": 68
+      },
+      "shape": {
+        "geometry": "rounded_rectangle",
+        "fill": "#FFFFFF",
+        "border": null,
+        "radius": 11.1
+      }
+    },
+    "playerBar": {
+      "frame": {
+        "x": 0,
+        "y": 670,
+        "w": 1280,
+        "h": 50
+      },
+      "shape": {
+        "geometry": "rectangle",
+        "fill": "#EBFFFF",
+        "border": null
+      }
+    },
+    "playButton": {
+      "frame": {
+        "x": 17,
+        "y": 682,
+        "w": 27,
+        "h": 27
+      },
+      "shape": {
+        "geometry": "rounded_rectangle",
+        "fill": "#1F9BD8",
+        "border": null,
+        "radius": 4.5
+      }
+    },
+    "progressTrack": {
+      "frame": {
+        "x": 60,
+        "y": 693,
+        "w": 211,
+        "h": 4
+      },
+      "shape": {
+        "geometry": "rectangle",
+        "fill": "#C9E6EE",
+        "border": null
+      }
+    },
+    "progressFill": {
+      "frame": {
+        "x": 60,
+        "y": 693,
+        "w": 53,
+        "h": 4
+      },
+      "shape": {
+        "geometry": "rectangle",
+        "fill": "#1F9BD8",
+        "border": null
+      }
+    },
+    "prevButton": {
+      "frame": {
+        "x": 1032,
+        "y": 680,
+        "w": 101,
+        "h": 30
+      },
+      "shape": {
+        "geometry": "rounded_rectangle",
+        "fill": "#1F9BD8",
+        "border": null,
+        "radius": 5
+      },
+      "text": {
+        "anchor": "middle",
+        "padding": [
+          6,
+          14,
+          6,
+          14
+        ],
+        "style": {
+          "fontSize": 11.3,
+          "bold": true,
+          "color": "#FFFFFF",
+          "fontFamily": "Montserrat",
+          "align": "center"
+        }
+      },
+      "value": "‹ PREV"
+    },
+    "nextButton": {
+      "frame": {
+        "x": 1142,
+        "y": 680,
+        "w": 101,
+        "h": 30
+      },
+      "shape": {
+        "geometry": "rounded_rectangle",
+        "fill": "#1F9BD8",
+        "border": null,
+        "radius": 5
+      },
+      "text": {
+        "anchor": "middle",
+        "padding": [
+          6,
+          14,
+          6,
+          14
+        ],
+        "style": {
+          "fontSize": 11.3,
+          "bold": true,
+          "color": "#FFFFFF",
+          "fontFamily": "Montserrat",
+          "align": "center"
+        }
+      },
+      "value": "NEXT ›"
+    }
+  },
+  "assets": [
+    "assets/brand/logo.png",
+    "assets/icons/alert.png",
+    "assets/icons/ambulance.png",
+    "assets/icons/arrows-apart.png",
+    "assets/icons/biohazard-bin.png",
+    "assets/icons/blood-drop.png",
+    "assets/icons/calendar.png",
+    "assets/icons/checklist.png",
+    "assets/icons/clock.png",
+    "assets/icons/consent.png",
+    "assets/icons/document.png",
+    "assets/icons/fainting.png",
+    "assets/icons/gloves-and-mask.png",
+    "assets/icons/half-tube.png",
+    "assets/icons/hand-washing.png",
+    "assets/icons/heart.png",
+    "assets/icons/infusion-pump.png",
+    "assets/icons/injection-site-swelling.png",
+    "assets/icons/patient-monitor.png",
+    "assets/icons/pill-bottle.png",
+    "assets/icons/search.png",
+    "assets/icons/sharps.png",
+    "assets/icons/shield.png",
+    "assets/icons/snowflake.png",
+    "assets/icons/speech-bubble.png",
+    "assets/icons/spray-bottle.png",
+    "assets/icons/supportive-hand.png",
+    "assets/icons/thermometer.png",
+    "assets/icons/water-drop.png"
+  ],
+  "responsive": {
+    "mode": "scale-to-fit",
+    "description": "Above the breakpoint the 1280x720 stage is scaled uniformly to fit the space left under the toolbar, between minScale and maxScale.",
+    "stackBelowPx": 900,
+    "minScale": 0.5,
+    "maxScale": 1.6,
+    "stackedBehaviour": "Frames are ignored; components flow in a single column in `order`, full width."
+  },
+  "slides": [
+    {
+      "slideId": "slide_1_01",
+      "moduleId": "module_01",
+      "template": "title",
+      "background": {
+        "color": "#62C7DD"
+      },
+      "showHeaderBand": false,
+      "positionSource": "section_1.pptx slide 1",
+      "items": [
+        {
+          "componentId": "slide_1_01_heading",
+          "order": 1,
+          "frame": {
+            "x": 629,
+            "y": 144,
+            "w": 595,
+            "h": 163
+          },
+          "text": {
+            "frame": {
+              "x": 629,
+              "y": 144,
+              "w": 595,
+              "h": 163
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 37.3,
+              "bold": true,
+              "color": "#FFFFFF",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 1"
+        },
+        {
+          "componentId": "slide_1_01_byline",
+          "order": 3,
+          "frame": {
+            "x": 629,
+            "y": 398,
+            "w": 595,
+            "h": 48
+          },
+          "text": {
+            "frame": {
+              "x": 629,
+              "y": 398,
+              "w": 595,
+              "h": 48
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 15.3,
+              "bold": false,
+              "color": "#FFFFFF",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 1"
+        },
+        {
+          "componentId": "slide_1_01_image_1",
+          "order": 4,
+          "frame": {
+            "x": 53,
+            "y": 130,
+            "w": 490,
+            "h": 382
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": "#F2F7EB",
+            "border": {
+              "color": "#C8E0AE",
+              "width": 1.3
+            },
+            "radius": 63.8
+          },
+          "parts": {
+            "label": {
+              "frame": {
+                "x": 67,
+                "y": 144,
+                "w": 461,
+                "h": 353
+              },
+              "anchor": "middle",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 14.7,
+                "bold": true,
+                "color": "#6EA536",
+                "fontFamily": "Montserrat",
+                "align": "center"
+              }
+            },
+            "caption": {
+              "frame": {
+                "x": 53,
+                "y": 516,
+                "w": 490,
+                "h": 50
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 10.7,
+                "bold": false,
+                "color": "#7F7F7F",
+                "fontFamily": "Calibri",
+                "align": "center"
+              }
+            }
+          },
+          "source": "authored deck section_1.pptx slide 1"
+        }
+      ],
+      "cover": {
+        "background": "#62C7DD",
+        "disc": {
+          "frame": {
+            "x": -144,
+            "y": -86,
+            "w": 730,
+            "h": 893
+          },
+          "shape": {
+            "geometry": "oval",
+            "fill": "#FFFFFF",
+            "border": null,
+            "radius": "50%"
+          }
+        },
+        "logo": {
+          "frame": {
+            "x": 1104,
+            "y": 586,
+            "w": 144,
+            "h": 66
+          },
+          "src": "assets/brand/logo.png"
+        },
+        "logoPlate": {
+          "frame": {
+            "x": 1096,
+            "y": 580,
+            "w": 159,
+            "h": 78
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": "#FFFFFF",
+            "border": null,
+            "radius": 13
+          }
+        }
+      }
+    },
+    {
+      "slideId": "slide_1_02",
+      "moduleId": "module_01",
+      "template": "objectives",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 2",
+      "items": [
+        {
+          "componentId": "slide_1_02_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 2"
+        },
+        {
+          "componentId": "slide_1_02_objectives",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 906,
+            "h": 415
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 149,
+              "w": 906,
+              "h": 415
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 20,
+              "bold": false,
+              "color": "#000000",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "marker": "number",
+          "source": "authored deck section_1.pptx slide 2"
+        },
+        {
+          "componentId": "slide_1_02_image_1",
+          "order": 3,
+          "frame": {
+            "x": 982,
+            "y": 149,
+            "w": 250,
+            "h": 248
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": "#F2F7EB",
+            "border": {
+              "color": "#C8E0AE",
+              "width": 1.3
+            },
+            "radius": 41.4
+          },
+          "parts": {
+            "label": {
+              "frame": {
+                "x": 997,
+                "y": 163,
+                "w": 221,
+                "h": 219
+              },
+              "anchor": "middle",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 14.7,
+                "bold": true,
+                "color": "#6EA536",
+                "fontFamily": "Montserrat",
+                "align": "center"
+              }
+            },
+            "caption": {
+              "frame": {
+                "x": 982,
+                "y": 401,
+                "w": 250,
+                "h": 50
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 10.7,
+                "bold": false,
+                "color": "#7F7F7F",
+                "fontFamily": "Calibri",
+                "align": "center"
+              }
+            }
+          },
+          "source": "authored deck section_1.pptx slide 2"
+        },
+        {
+          "componentId": "slide_1_02_decktext_1",
+          "order": 4,
+          "frame": {
+            "x": 48,
+            "y": 583,
+            "w": 906,
+            "h": 72
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 583,
+              "w": 906,
+              "h": 72
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 16,
+              "bold": false,
+              "color": "#FF6600",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 2"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_03",
+      "moduleId": "module_01",
+      "template": "icon-row",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 3",
+      "items": [
+        {
+          "componentId": "slide_1_03_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 3"
+        },
+        {
+          "componentId": "slide_1_03_instruction",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 129,
+            "w": 1159,
+            "h": 38
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 129,
+              "w": 1190,
+              "h": 38
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 17.3,
+              "bold": true,
+              "color": "#FF6600",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 3"
+        },
+        {
+          "componentId": "slide_1_03_icons",
+          "order": 3,
+          "frame": {
+            "x": 48,
+            "y": 187,
+            "w": 1184,
+            "h": 465
+          },
+          "items": [
+            {
+              "label": {
+                "frame": {
+                  "x": 48,
+                  "y": 309,
+                  "w": 274,
+                  "h": 97
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 130,
+                  "y": 187,
+                  "w": 110,
+                  "h": 110
+                },
+                "src": "assets/icons/blood-drop.png",
+                "source": "drawn shapes in deck, cropped from a render"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 351,
+                  "y": 309,
+                  "w": 274,
+                  "h": 97
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 433,
+                  "y": 187,
+                  "w": 110,
+                  "h": 110
+                },
+                "src": "assets/icons/alert.png",
+                "source": "drawn shapes in deck, cropped from a render"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 654,
+                  "y": 309,
+                  "w": 274,
+                  "h": 97
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 736,
+                  "y": 187,
+                  "w": 110,
+                  "h": 110
+                },
+                "src": "assets/icons/clock.png",
+                "source": "drawn shapes in deck, cropped from a render"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 958,
+                  "y": 309,
+                  "w": 274,
+                  "h": 97
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 1040,
+                  "y": 187,
+                  "w": 110,
+                  "h": 110
+                },
+                "src": "assets/icons/half-tube.png",
+                "source": "embedded picture in deck"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 48,
+                  "y": 555,
+                  "w": 274,
+                  "h": 97
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 130,
+                  "y": 402,
+                  "w": 110,
+                  "h": 110
+                },
+                "src": "assets/icons/injection-site-swelling.png",
+                "source": "embedded picture in deck"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 351,
+                  "y": 555,
+                  "w": 274,
+                  "h": 97
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 433,
+                  "y": 402,
+                  "w": 110,
+                  "h": 110
+                },
+                "src": "assets/icons/spray-bottle.png",
+                "source": "embedded picture in deck"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 654,
+                  "y": 555,
+                  "w": 274,
+                  "h": 97
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 736,
+                  "y": 402,
+                  "w": 110,
+                  "h": 110
+                },
+                "src": "assets/icons/arrows-apart.png",
+                "source": "drawn shapes in deck, cropped from a render"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 958,
+                  "y": 555,
+                  "w": 274,
+                  "h": 97
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 1040,
+                  "y": 402,
+                  "w": 110,
+                  "h": 110
+                },
+                "src": "assets/icons/search.png",
+                "source": "drawn shapes in deck, cropped from a render"
+              }
+            }
+          ],
+          "source": "authored deck section_1.pptx slide 3"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_04",
+      "moduleId": "module_01",
+      "template": "definition",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 4",
+      "items": [
+        {
+          "componentId": "slide_1_04_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 4"
+        },
+        {
+          "componentId": "slide_1_04_definition",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 189,
+            "w": 810,
+            "h": 278
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 189,
+              "w": 810,
+              "h": 278
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 26.7,
+              "bold": true,
+              "color": "#000000",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            },
+            "paragraphStyles": [
+              {
+                "fontSize": 26.7,
+                "bold": true,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              {
+                "fontSize": 17.3,
+                "bold": false,
+                "color": "#7F7F7F",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              {
+                "fontSize": 26.7,
+                "bold": true,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              {
+                "fontSize": 17.3,
+                "bold": false,
+                "color": "#7F7F7F",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            ]
+          },
+          "marker": null,
+          "source": "authored deck section_1.pptx slide 4"
+        },
+        {
+          "componentId": "slide_1_04_image_1",
+          "order": 3,
+          "frame": {
+            "x": 886,
+            "y": 149,
+            "w": 346,
+            "h": 267
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": "#F2F7EB",
+            "border": {
+              "color": "#C8E0AE",
+              "width": 1.3
+            },
+            "radius": 44.6
+          },
+          "parts": {
+            "label": {
+              "frame": {
+                "x": 901,
+                "y": 163,
+                "w": 317,
+                "h": 238
+              },
+              "anchor": "middle",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 14.7,
+                "bold": true,
+                "color": "#6EA536",
+                "fontFamily": "Montserrat",
+                "align": "center"
+              }
+            },
+            "caption": {
+              "frame": {
+                "x": 886,
+                "y": 420,
+                "w": 346,
+                "h": 50
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 10.7,
+                "bold": false,
+                "color": "#7F7F7F",
+                "fontFamily": "Calibri",
+                "align": "center"
+              }
+            }
+          },
+          "source": "authored deck section_1.pptx slide 4"
+        },
+        {
+          "componentId": "slide_1_04_callout_1",
+          "order": 4,
+          "frame": {
+            "x": 48,
+            "y": 568,
+            "w": 810,
+            "h": 86
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": null,
+            "border": {
+              "color": "#C00000",
+              "width": 1.3
+            },
+            "radius": 14.4
+          },
+          "parts": {
+            "body": {
+              "frame": {
+                "x": 65,
+                "y": 601,
+                "w": 775,
+                "h": 46
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 16,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "tag": {
+              "frame": {
+                "x": 65,
+                "y": 574,
+                "w": 154,
+                "h": 27
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 13.3,
+                "bold": true,
+                "color": "#C00000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              "value": "!"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 4"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_05",
+      "moduleId": "module_01",
+      "template": "definition",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 5",
+      "items": [
+        {
+          "componentId": "slide_1_05_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 5"
+        },
+        {
+          "componentId": "slide_1_05_definition",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 225,
+            "w": 810,
+            "h": 278
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 225,
+              "w": 810,
+              "h": 278
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 26.7,
+              "bold": true,
+              "color": "#000000",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            },
+            "paragraphStyles": [
+              {
+                "fontSize": 26.7,
+                "bold": true,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              {
+                "fontSize": 17.3,
+                "bold": false,
+                "color": "#7F7F7F",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              {
+                "fontSize": 26.7,
+                "bold": true,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              {
+                "fontSize": 17.3,
+                "bold": false,
+                "color": "#7F7F7F",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            ]
+          },
+          "marker": null,
+          "source": "authored deck section_1.pptx slide 5"
+        },
+        {
+          "componentId": "slide_1_05_image_1",
+          "order": 3,
+          "frame": {
+            "x": 886,
+            "y": 149,
+            "w": 346,
+            "h": 267
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": "#F2F7EB",
+            "border": {
+              "color": "#C8E0AE",
+              "width": 1.3
+            },
+            "radius": 44.6
+          },
+          "parts": {
+            "label": {
+              "frame": {
+                "x": 901,
+                "y": 163,
+                "w": 317,
+                "h": 238
+              },
+              "anchor": "middle",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 14.7,
+                "bold": true,
+                "color": "#6EA536",
+                "fontFamily": "Montserrat",
+                "align": "center"
+              }
+            },
+            "caption": {
+              "frame": {
+                "x": 886,
+                "y": 420,
+                "w": 346,
+                "h": 50
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 10.7,
+                "bold": false,
+                "color": "#7F7F7F",
+                "fontFamily": "Calibri",
+                "align": "center"
+              }
+            }
+          },
+          "source": "authored deck section_1.pptx slide 5"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_06",
+      "moduleId": "module_01",
+      "template": "process",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 6",
+      "items": [
+        {
+          "componentId": "slide_1_06_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 6"
+        },
+        {
+          "componentId": "slide_1_06_process",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 202,
+            "w": 1184,
+            "h": 445
+          },
+          "items": [
+            {
+              "label": {
+                "frame": {
+                  "x": 48,
+                  "y": 261,
+                  "w": 278,
+                  "h": 386
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 17.3,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "badge": {
+                "frame": {
+                  "x": 166,
+                  "y": 202,
+                  "w": 42,
+                  "h": 42
+                },
+                "shape": {
+                  "geometry": "oval",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": "50%"
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    4.8,
+                    9.6,
+                    4.8,
+                    9.6
+                  ],
+                  "style": {
+                    "fontSize": 18.7,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 350,
+                  "y": 261,
+                  "w": 278,
+                  "h": 386
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 17.3,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "badge": {
+                "frame": {
+                  "x": 468,
+                  "y": 202,
+                  "w": 42,
+                  "h": 42
+                },
+                "shape": {
+                  "geometry": "oval",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": "50%"
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    4.8,
+                    9.6,
+                    4.8,
+                    9.6
+                  ],
+                  "style": {
+                    "fontSize": 18.7,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 652,
+                  "y": 261,
+                  "w": 278,
+                  "h": 386
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 17.3,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "badge": {
+                "frame": {
+                  "x": 770,
+                  "y": 202,
+                  "w": 42,
+                  "h": 42
+                },
+                "shape": {
+                  "geometry": "oval",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": "50%"
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    4.8,
+                    9.6,
+                    4.8,
+                    9.6
+                  ],
+                  "style": {
+                    "fontSize": 18.7,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 954,
+                  "y": 261,
+                  "w": 278,
+                  "h": 386
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 17.3,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "badge": {
+                "frame": {
+                  "x": 1072,
+                  "y": 202,
+                  "w": 42,
+                  "h": 42
+                },
+                "shape": {
+                  "geometry": "oval",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": "50%"
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    4.8,
+                    9.6,
+                    4.8,
+                    9.6
+                  ],
+                  "style": {
+                    "fontSize": 18.7,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              }
+            }
+          ],
+          "parts": {
+            "rail": {
+              "frame": {
+                "x": 187,
+                "y": 220,
+                "w": 906,
+                "h": 4
+              },
+              "shape": {
+                "geometry": "rectangle",
+                "fill": "#92D050",
+                "border": null
+              }
+            }
+          },
+          "source": "authored deck section_1.pptx slide 6"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_07",
+      "moduleId": "module_01",
+      "template": "icon-row",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 7",
+      "items": [
+        {
+          "componentId": "slide_1_07_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 7"
+        },
+        {
+          "componentId": "slide_1_07_icons",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 1184,
+            "h": 503
+          },
+          "items": [
+            {
+              "label": {
+                "frame": {
+                  "x": 48,
+                  "y": 240,
+                  "w": 274,
+                  "h": 59
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 146,
+                  "y": 149,
+                  "w": 79,
+                  "h": 79
+                },
+                "src": "assets/icons/thermometer.png",
+                "source": "embedded picture in deck"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 351,
+                  "y": 240,
+                  "w": 274,
+                  "h": 59
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 448,
+                  "y": 149,
+                  "w": 79,
+                  "h": 79
+                },
+                "src": "assets/icons/snowflake.png",
+                "source": "embedded picture in deck"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 654,
+                  "y": 240,
+                  "w": 274,
+                  "h": 59
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 752,
+                  "y": 149,
+                  "w": 79,
+                  "h": 79
+                },
+                "src": "assets/icons/fainting.png",
+                "source": "embedded picture in deck"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 958,
+                  "y": 240,
+                  "w": 274,
+                  "h": 59
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 1056,
+                  "y": 149,
+                  "w": 79,
+                  "h": 79
+                },
+                "src": "assets/icons/alert.png",
+                "source": "drawn shapes in deck, cropped from a render"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 48,
+                  "y": 416,
+                  "w": 274,
+                  "h": 59
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 146,
+                  "y": 325,
+                  "w": 79,
+                  "h": 79
+                },
+                "src": "assets/icons/heart.png",
+                "source": "drawn shapes in deck, cropped from a render"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 351,
+                  "y": 416,
+                  "w": 274,
+                  "h": 59
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 448,
+                  "y": 325,
+                  "w": 79,
+                  "h": 79
+                },
+                "src": "assets/icons/infusion-pump.png",
+                "source": "embedded picture in deck"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 654,
+                  "y": 416,
+                  "w": 274,
+                  "h": 59
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 752,
+                  "y": 325,
+                  "w": 79,
+                  "h": 79
+                },
+                "src": "assets/icons/shield.png",
+                "source": "embedded picture in deck"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 958,
+                  "y": 416,
+                  "w": 274,
+                  "h": 59
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 1056,
+                  "y": 325,
+                  "w": 79,
+                  "h": 79
+                },
+                "src": "assets/icons/patient-monitor.png",
+                "source": "embedded picture in deck"
+              }
+            },
+            {
+              "label": {
+                "frame": {
+                  "x": 492,
+                  "y": 593,
+                  "w": 274,
+                  "h": 59
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 18.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              },
+              "icon": {
+                "frame": {
+                  "x": 590,
+                  "y": 502,
+                  "w": 79,
+                  "h": 79
+                },
+                "src": "assets/icons/pill-bottle.png",
+                "source": "embedded picture in deck"
+              }
+            }
+          ],
+          "source": "authored deck section_1.pptx slide 7"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_08",
+      "moduleId": "module_01",
+      "template": "chip-detail",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 8",
+      "items": [
+        {
+          "componentId": "slide_1_08_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 8"
+        },
+        {
+          "componentId": "slide_1_08_cards",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 1184,
+            "h": 397
+          },
+          "items": [
+            {
+              "header": {
+                "frame": {
+                  "x": 48,
+                  "y": 149,
+                  "w": 575,
+                  "h": 48
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 8
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 17.3,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 48,
+                  "y": 208,
+                  "w": 575,
+                  "h": 126
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            },
+            {
+              "header": {
+                "frame": {
+                  "x": 657,
+                  "y": 149,
+                  "w": 575,
+                  "h": 48
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 8
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 17.3,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 657,
+                  "y": 208,
+                  "w": 575,
+                  "h": 126
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            },
+            {
+              "header": {
+                "frame": {
+                  "x": 48,
+                  "y": 361,
+                  "w": 575,
+                  "h": 48
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 8
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 17.3,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 48,
+                  "y": 420,
+                  "w": 575,
+                  "h": 126
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            },
+            {
+              "header": {
+                "frame": {
+                  "x": 657,
+                  "y": 361,
+                  "w": 575,
+                  "h": 48
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 8
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 17.3,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 657,
+                  "y": 420,
+                  "w": 575,
+                  "h": 126
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            }
+          ],
+          "source": "authored deck section_1.pptx slide 8"
+        },
+        {
+          "componentId": "slide_1_08_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 48,
+            "y": 568,
+            "w": 1184,
+            "h": 86
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": null,
+            "border": {
+              "color": "#C00000",
+              "width": 1.3
+            },
+            "radius": 14.4
+          },
+          "parts": {
+            "body": {
+              "frame": {
+                "x": 65,
+                "y": 601,
+                "w": 1149,
+                "h": 46
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 16,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "tag": {
+              "frame": {
+                "x": 65,
+                "y": 574,
+                "w": 154,
+                "h": 27
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 13.3,
+                "bold": true,
+                "color": "#C00000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              "value": "!"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 8"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_09",
+      "moduleId": "module_01",
+      "template": "knowledge-check",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 9",
+      "items": [
+        {
+          "componentId": "slide_1_09_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 9"
+        },
+        {
+          "componentId": "slide_1_09_instruction",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 245,
+            "w": 1184,
+            "h": 29
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 245,
+              "w": 1184,
+              "h": 29
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 16,
+              "bold": true,
+              "color": "#FF6600",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 9"
+        },
+        {
+          "componentId": "slide_1_09_question",
+          "order": 3,
+          "parts": {
+            "stem": {
+              "frame": {
+                "x": 48,
+                "y": 144,
+                "w": 1184,
+                "h": 96
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 18.7,
+                "bold": true,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "options": {
+              "frame": {
+                "x": 48,
+                "y": 283,
+                "w": 1184,
+                "h": 250
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 17.3,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "typeBadge": {
+              "frame": {
+                "x": 864,
+                "y": 75,
+                "w": 394,
+                "h": 53
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#C00000",
+                  "width": 1.3
+                },
+                "radius": 8.8
+              },
+              "text": {
+                "anchor": "middle",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#C00000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              }
+            },
+            "verdictCorrect": {
+              "frame": {
+                "x": 48,
+                "y": 514,
+                "w": 538,
+                "h": 48
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#92D050",
+                  "width": 1.3
+                },
+                "radius": 8
+              },
+              "text": {
+                "frame": {
+                  "x": 62,
+                  "y": 521,
+                  "w": 509,
+                  "h": 33
+                },
+                "anchor": "top",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#6EA536",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              "deckText": "That's correct!"
+            },
+            "verdictIncorrect": {
+              "frame": {
+                "x": 48,
+                "y": 571,
+                "w": 538,
+                "h": 48
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#C00000",
+                  "width": 1.3
+                },
+                "radius": 8
+              },
+              "text": {
+                "frame": {
+                  "x": 62,
+                  "y": 579,
+                  "w": 509,
+                  "h": 33
+                },
+                "anchor": "top",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#C00000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              "deckText": "That's incorrect! The correct answer is B."
+            },
+            "rationale": {
+              "frame": {
+                "x": 614,
+                "y": 514,
+                "w": 614,
+                "h": 106
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": "#F2F7EB",
+                "border": {
+                  "color": "#C8E0AE",
+                  "width": 1.3
+                },
+                "radius": 17.6
+              },
+              "text": {
+                "frame": {
+                  "x": 629,
+                  "y": 523,
+                  "w": 586,
+                  "h": 86
+                },
+                "anchor": "top",
+                "padding": [
+                  14,
+                  20,
+                  14,
+                  20
+                ],
+                "style": {
+                  "fontSize": 13.3,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            }
+          },
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 1210,
+            "h": 545
+          },
+          "source": "authored deck section_1.pptx slide 9"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_10",
+      "moduleId": "module_01",
+      "template": "table",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 10",
+      "items": [
+        {
+          "componentId": "slide_1_10_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 10"
+        },
+        {
+          "componentId": "slide_1_10_table",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 1184,
+            "h": 161
+          },
+          "table": {
+            "colWidths": [
+              401,
+              267.3,
+              515.6
+            ],
+            "rowHeights": [
+              40.3,
+              40.3,
+              40.3,
+              40.3
+            ],
+            "header": {
+              "fill": "#92D050",
+              "style": {
+                "fontSize": 17.3,
+                "bold": true,
+                "color": "#FFFFFF",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "rows": [
+              {
+                "fill": "#FFFFFF",
+                "firstColStyle": {
+                  "fontSize": 16,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                },
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              {
+                "fill": "#F2F7EB",
+                "firstColStyle": {
+                  "fontSize": 16,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                },
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              {
+                "fill": "#FFFFFF",
+                "firstColStyle": {
+                  "fontSize": 16,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                },
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            ],
+            "cellPadding": [
+              8,
+              16,
+              8,
+              16
+            ]
+          },
+          "source": "authored deck section_1.pptx slide 10"
+        },
+        {
+          "componentId": "slide_1_10_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 48,
+            "y": 342,
+            "w": 1184,
+            "h": 86
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": null,
+            "border": {
+              "color": "#7F7F7F",
+              "width": 1.3
+            },
+            "radius": 14.4
+          },
+          "parts": {
+            "body": {
+              "frame": {
+                "x": 65,
+                "y": 374,
+                "w": 1149,
+                "h": 46
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 16,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "tag": {
+              "frame": {
+                "x": 65,
+                "y": 348,
+                "w": 154,
+                "h": 27
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 13.3,
+                "bold": true,
+                "color": "#7F7F7F",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              "value": "Note"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 10"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_11",
+      "moduleId": "module_01",
+      "template": "table",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 11",
+      "items": [
+        {
+          "componentId": "slide_1_11_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 11"
+        },
+        {
+          "componentId": "slide_1_11_table",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 1184,
+            "h": 161
+          },
+          "table": {
+            "colWidths": [
+              592,
+              592
+            ],
+            "rowHeights": [
+              40.3,
+              40.3,
+              40.3,
+              40.3
+            ],
+            "header": {
+              "fill": "#92D050",
+              "style": {
+                "fontSize": 17.3,
+                "bold": true,
+                "color": "#FFFFFF",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "rows": [
+              {
+                "fill": "#FFFFFF",
+                "firstColStyle": {
+                  "fontSize": 16,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                },
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              {
+                "fill": "#F2F7EB",
+                "firstColStyle": {
+                  "fontSize": 16,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                },
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              {
+                "fill": "#FFFFFF",
+                "firstColStyle": {
+                  "fontSize": 16,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                },
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            ],
+            "cellPadding": [
+              8,
+              16,
+              8,
+              16
+            ]
+          },
+          "source": "authored deck section_1.pptx slide 11"
+        },
+        {
+          "componentId": "slide_1_11_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 48,
+            "y": 342,
+            "w": 1184,
+            "h": 86
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": null,
+            "border": {
+              "color": "#C00000",
+              "width": 1.3
+            },
+            "radius": 14.4
+          },
+          "parts": {
+            "body": {
+              "frame": {
+                "x": 65,
+                "y": 374,
+                "w": 1149,
+                "h": 46
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 16,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "tag": {
+              "frame": {
+                "x": 65,
+                "y": 348,
+                "w": 154,
+                "h": 27
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 13.3,
+                "bold": true,
+                "color": "#C00000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              "value": "!"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 11"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_12",
+      "moduleId": "module_01",
+      "template": "image-focus",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 12",
+      "items": [
+        {
+          "componentId": "slide_1_12_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 12"
+        },
+        {
+          "componentId": "slide_1_12_points",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 694,
+            "h": 86
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 149,
+              "w": 694,
+              "h": 86
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 15.9,
+              "bold": true,
+              "color": "#000000",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "marker": null,
+          "source": "authored deck section_1.pptx slide 12"
+        },
+        {
+          "componentId": "slide_1_12_image_1",
+          "order": 3,
+          "frame": {
+            "x": 771,
+            "y": 149,
+            "w": 461,
+            "h": 344
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": "#F2F7EB",
+            "border": {
+              "color": "#C8E0AE",
+              "width": 1.3
+            },
+            "radius": 57.4
+          },
+          "parts": {
+            "label": {
+              "frame": {
+                "x": 786,
+                "y": 163,
+                "w": 432,
+                "h": 315
+              },
+              "anchor": "middle",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 14.7,
+                "bold": true,
+                "color": "#6EA536",
+                "fontFamily": "Montserrat",
+                "align": "center"
+              }
+            },
+            "caption": {
+              "frame": {
+                "x": 771,
+                "y": 497,
+                "w": 461,
+                "h": 50
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 10.7,
+                "bold": false,
+                "color": "#7F7F7F",
+                "fontFamily": "Calibri",
+                "align": "center"
+              }
+            }
+          },
+          "source": "authored deck section_1.pptx slide 12"
+        },
+        {
+          "componentId": "slide_1_12_callout_1",
+          "order": 4,
+          "frame": {
+            "x": 48,
+            "y": 568,
+            "w": 694,
+            "h": 86
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": null,
+            "border": {
+              "color": "#C00000",
+              "width": 1.3
+            },
+            "radius": 14.4
+          },
+          "parts": {
+            "body": {
+              "frame": {
+                "x": 65,
+                "y": 601,
+                "w": 660,
+                "h": 46
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 16,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "tag": {
+              "frame": {
+                "x": 65,
+                "y": 574,
+                "w": 154,
+                "h": 27
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 13.3,
+                "bold": true,
+                "color": "#C00000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              "value": "!"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 12"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_13",
+      "moduleId": "module_01",
+      "template": "chip-detail",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 13",
+      "items": [
+        {
+          "componentId": "slide_1_13_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 13"
+        },
+        {
+          "componentId": "slide_1_13_cards",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 1184,
+            "h": 397
+          },
+          "items": [
+            {
+              "header": {
+                "frame": {
+                  "x": 48,
+                  "y": 149,
+                  "w": 407,
+                  "h": 38
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 6.3
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 17.3,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 48,
+                  "y": 198,
+                  "w": 1184,
+                  "h": 66
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            },
+            {
+              "header": {
+                "frame": {
+                  "x": 48,
+                  "y": 290,
+                  "w": 407,
+                  "h": 38
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 6.3
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 17.3,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 48,
+                  "y": 339,
+                  "w": 1184,
+                  "h": 66
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            },
+            {
+              "header": {
+                "frame": {
+                  "x": 48,
+                  "y": 432,
+                  "w": 407,
+                  "h": 38
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 6.3
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 17.3,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 48,
+                  "y": 481,
+                  "w": 1184,
+                  "h": 66
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            }
+          ],
+          "source": "authored deck section_1.pptx slide 13"
+        },
+        {
+          "componentId": "slide_1_13_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 48,
+            "y": 568,
+            "w": 1184,
+            "h": 86
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": null,
+            "border": {
+              "color": "#6EA536",
+              "width": 1.3
+            },
+            "radius": 14.4
+          },
+          "parts": {
+            "body": {
+              "frame": {
+                "x": 65,
+                "y": 601,
+                "w": 1149,
+                "h": 46
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 16,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "tag": {
+              "frame": {
+                "x": 65,
+                "y": 574,
+                "w": 154,
+                "h": 27
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 13.3,
+                "bold": true,
+                "color": "#6EA536",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              "value": "Tip"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 13"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_14",
+      "moduleId": "module_01",
+      "template": "image-focus",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 14",
+      "items": [
+        {
+          "componentId": "slide_1_14_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 14"
+        },
+        {
+          "componentId": "slide_1_14_points",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 694,
+            "h": 86
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 149,
+              "w": 694,
+              "h": 86
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 15.9,
+              "bold": true,
+              "color": "#000000",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "marker": null,
+          "source": "authored deck section_1.pptx slide 14"
+        },
+        {
+          "componentId": "slide_1_14_image_1",
+          "order": 3,
+          "frame": {
+            "x": 771,
+            "y": 149,
+            "w": 461,
+            "h": 344
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": "#F2F7EB",
+            "border": {
+              "color": "#C8E0AE",
+              "width": 1.3
+            },
+            "radius": 57.4
+          },
+          "parts": {
+            "label": {
+              "frame": {
+                "x": 786,
+                "y": 163,
+                "w": 432,
+                "h": 315
+              },
+              "anchor": "middle",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 14.7,
+                "bold": true,
+                "color": "#6EA536",
+                "fontFamily": "Montserrat",
+                "align": "center"
+              }
+            },
+            "caption": {
+              "frame": {
+                "x": 771,
+                "y": 497,
+                "w": 461,
+                "h": 50
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 10.7,
+                "bold": false,
+                "color": "#7F7F7F",
+                "fontFamily": "Calibri",
+                "align": "center"
+              }
+            }
+          },
+          "source": "authored deck section_1.pptx slide 14"
+        },
+        {
+          "componentId": "slide_1_14_callout_1",
+          "order": 4,
+          "frame": {
+            "x": 48,
+            "y": 568,
+            "w": 694,
+            "h": 86
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": null,
+            "border": {
+              "color": "#C00000",
+              "width": 1.3
+            },
+            "radius": 14.4
+          },
+          "parts": {
+            "body": {
+              "frame": {
+                "x": 65,
+                "y": 601,
+                "w": 660,
+                "h": 46
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 16,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "tag": {
+              "frame": {
+                "x": 65,
+                "y": 574,
+                "w": 154,
+                "h": 27
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 13.3,
+                "bold": true,
+                "color": "#C00000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              "value": "!"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 14"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_15",
+      "moduleId": "module_01",
+      "template": "knowledge-check",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 15",
+      "items": [
+        {
+          "componentId": "slide_1_15_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 15"
+        },
+        {
+          "componentId": "slide_1_15_instruction",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 245,
+            "w": 1184,
+            "h": 29
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 245,
+              "w": 1184,
+              "h": 29
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 16,
+              "bold": true,
+              "color": "#FF6600",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 15"
+        },
+        {
+          "componentId": "slide_1_15_question",
+          "order": 3,
+          "parts": {
+            "stem": {
+              "frame": {
+                "x": 48,
+                "y": 144,
+                "w": 1184,
+                "h": 96
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 18.7,
+                "bold": true,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "options": {
+              "frame": {
+                "x": 48,
+                "y": 283,
+                "w": 1184,
+                "h": 250
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 17.3,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "typeBadge": {
+              "frame": {
+                "x": 864,
+                "y": 75,
+                "w": 394,
+                "h": 53
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#C00000",
+                  "width": 1.3
+                },
+                "radius": 8.8
+              },
+              "text": {
+                "anchor": "middle",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#C00000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              }
+            },
+            "verdictCorrect": {
+              "frame": {
+                "x": 48,
+                "y": 514,
+                "w": 538,
+                "h": 48
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#92D050",
+                  "width": 1.3
+                },
+                "radius": 8
+              },
+              "text": {
+                "frame": {
+                  "x": 62,
+                  "y": 521,
+                  "w": 509,
+                  "h": 33
+                },
+                "anchor": "top",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#6EA536",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              "deckText": "That's correct!"
+            },
+            "verdictIncorrect": {
+              "frame": {
+                "x": 48,
+                "y": 571,
+                "w": 538,
+                "h": 48
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#C00000",
+                  "width": 1.3
+                },
+                "radius": 8
+              },
+              "text": {
+                "frame": {
+                  "x": 62,
+                  "y": 579,
+                  "w": 509,
+                  "h": 33
+                },
+                "anchor": "top",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#C00000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              "deckText": "That's incorrect! The correct answer is B."
+            },
+            "rationale": {
+              "frame": {
+                "x": 614,
+                "y": 514,
+                "w": 614,
+                "h": 106
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": "#F2F7EB",
+                "border": {
+                  "color": "#C8E0AE",
+                  "width": 1.3
+                },
+                "radius": 17.6
+              },
+              "text": {
+                "frame": {
+                  "x": 629,
+                  "y": 523,
+                  "w": 586,
+                  "h": 86
+                },
+                "anchor": "top",
+                "padding": [
+                  14,
+                  20,
+                  14,
+                  20
+                ],
+                "style": {
+                  "fontSize": 13.3,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            }
+          },
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 1210,
+            "h": 545
+          },
+          "source": "authored deck section_1.pptx slide 15"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_16",
+      "moduleId": "module_01",
+      "template": "comparison",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 16",
+      "items": [
+        {
+          "componentId": "slide_1_16_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 16"
+        },
+        {
+          "componentId": "slide_1_16_comparison",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 1184,
+            "h": 397
+          },
+          "items": [
+            {
+              "header": {
+                "frame": {
+                  "x": 48,
+                  "y": 149,
+                  "w": 578,
+                  "h": 53
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 8.8
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 18.7,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "panel": {
+                "frame": {
+                  "x": 48,
+                  "y": 213,
+                  "w": 578,
+                  "h": 333
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": null,
+                  "border": {
+                    "color": "#C8E0AE",
+                    "width": 1.3
+                  },
+                  "radius": 55.6
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 62,
+                  "y": 225,
+                  "w": 549,
+                  "h": 310
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            },
+            {
+              "header": {
+                "frame": {
+                  "x": 654,
+                  "y": 149,
+                  "w": 578,
+                  "h": 53
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 8.8
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 18.7,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "panel": {
+                "frame": {
+                  "x": 654,
+                  "y": 213,
+                  "w": 578,
+                  "h": 333
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": null,
+                  "border": {
+                    "color": "#C8E0AE",
+                    "width": 1.3
+                  },
+                  "radius": 55.6
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 669,
+                  "y": 225,
+                  "w": 549,
+                  "h": 310
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            }
+          ],
+          "source": "authored deck section_1.pptx slide 16"
+        },
+        {
+          "componentId": "slide_1_16_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 48,
+            "y": 568,
+            "w": 1184,
+            "h": 86
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": null,
+            "border": {
+              "color": "#6EA536",
+              "width": 1.3
+            },
+            "radius": 14.4
+          },
+          "parts": {
+            "body": {
+              "frame": {
+                "x": 65,
+                "y": 601,
+                "w": 1149,
+                "h": 46
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 16,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "tag": {
+              "frame": {
+                "x": 65,
+                "y": 574,
+                "w": 154,
+                "h": 27
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 13.3,
+                "bold": true,
+                "color": "#6EA536",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              "value": "Tip"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 16"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_17",
+      "moduleId": "module_01",
+      "template": "knowledge-check",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 17",
+      "items": [
+        {
+          "componentId": "slide_1_17_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 17"
+        },
+        {
+          "componentId": "slide_1_17_instruction",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 245,
+            "w": 1184,
+            "h": 29
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 245,
+              "w": 1184,
+              "h": 29
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 16,
+              "bold": true,
+              "color": "#FF6600",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 17"
+        },
+        {
+          "componentId": "slide_1_17_question",
+          "order": 3,
+          "parts": {
+            "stem": {
+              "frame": {
+                "x": 48,
+                "y": 144,
+                "w": 1184,
+                "h": 96
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 18.7,
+                "bold": true,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "options": {
+              "frame": {
+                "x": 48,
+                "y": 283,
+                "w": 1184,
+                "h": 250
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 17.3,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "typeBadge": {
+              "frame": {
+                "x": 864,
+                "y": 75,
+                "w": 394,
+                "h": 53
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#C00000",
+                  "width": 1.3
+                },
+                "radius": 8.8
+              },
+              "text": {
+                "anchor": "middle",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#C00000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              }
+            },
+            "verdictCorrect": {
+              "frame": {
+                "x": 48,
+                "y": 514,
+                "w": 538,
+                "h": 48
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#92D050",
+                  "width": 1.3
+                },
+                "radius": 8
+              },
+              "text": {
+                "frame": {
+                  "x": 62,
+                  "y": 521,
+                  "w": 509,
+                  "h": 33
+                },
+                "anchor": "top",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#6EA536",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              "deckText": "That's correct!"
+            },
+            "verdictIncorrect": {
+              "frame": {
+                "x": 48,
+                "y": 571,
+                "w": 538,
+                "h": 48
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#C00000",
+                  "width": 1.3
+                },
+                "radius": 8
+              },
+              "text": {
+                "frame": {
+                  "x": 62,
+                  "y": 579,
+                  "w": 509,
+                  "h": 33
+                },
+                "anchor": "top",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#C00000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              "deckText": "That's incorrect! The correct answer is C."
+            },
+            "rationale": {
+              "frame": {
+                "x": 614,
+                "y": 514,
+                "w": 614,
+                "h": 106
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": "#F2F7EB",
+                "border": {
+                  "color": "#C8E0AE",
+                  "width": 1.3
+                },
+                "radius": 17.6
+              },
+              "text": {
+                "frame": {
+                  "x": 629,
+                  "y": 523,
+                  "w": 586,
+                  "h": 86
+                },
+                "anchor": "top",
+                "padding": [
+                  14,
+                  20,
+                  14,
+                  20
+                ],
+                "style": {
+                  "fontSize": 13.3,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            }
+          },
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 1210,
+            "h": 545
+          },
+          "source": "authored deck section_1.pptx slide 17"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_18",
+      "moduleId": "module_01",
+      "template": "sequence",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 18",
+      "items": [
+        {
+          "componentId": "slide_1_18_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 18"
+        },
+        {
+          "componentId": "slide_1_18_instruction",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 245,
+            "w": 1184,
+            "h": 29
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 245,
+              "w": 1184,
+              "h": 29
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 16,
+              "bold": true,
+              "color": "#FF6600",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 18"
+        },
+        {
+          "componentId": "slide_1_18_question",
+          "order": 3,
+          "parts": {
+            "typeBadge": {
+              "frame": {
+                "x": 864,
+                "y": 75,
+                "w": 394,
+                "h": 53
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#C00000",
+                  "width": 1.3
+                },
+                "radius": 8.8
+              },
+              "text": {
+                "anchor": "middle",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#C00000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              }
+            },
+            "verdictCorrect": {
+              "frame": {
+                "x": 48,
+                "y": 514,
+                "w": 538,
+                "h": 48
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#92D050",
+                  "width": 1.3
+                },
+                "radius": 8
+              },
+              "text": {
+                "frame": {
+                  "x": 62,
+                  "y": 521,
+                  "w": 509,
+                  "h": 33
+                },
+                "anchor": "top",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#6EA536",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              "deckText": "That's correct!"
+            },
+            "verdictIncorrect": {
+              "frame": {
+                "x": 48,
+                "y": 571,
+                "w": 538,
+                "h": 48
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": null,
+                "border": {
+                  "color": "#C00000",
+                  "width": 1.3
+                },
+                "radius": 8
+              },
+              "text": {
+                "frame": {
+                  "x": 62,
+                  "y": 579,
+                  "w": 509,
+                  "h": 33
+                },
+                "anchor": "top",
+                "padding": [
+                  10,
+                  18,
+                  10,
+                  18
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#C00000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              },
+              "deckText": "That's incorrect! The correct answer is displayed."
+            },
+            "rationale": {
+              "frame": {
+                "x": 614,
+                "y": 514,
+                "w": 614,
+                "h": 106
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": "#F2F7EB",
+                "border": {
+                  "color": "#C8E0AE",
+                  "width": 1.3
+                },
+                "radius": 17.6
+              },
+              "text": {
+                "frame": {
+                  "x": 629,
+                  "y": 523,
+                  "w": 586,
+                  "h": 86
+                },
+                "anchor": "top",
+                "padding": [
+                  14,
+                  20,
+                  14,
+                  20
+                ],
+                "style": {
+                  "fontSize": 13.3,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            }
+          },
+          "slots": [
+            {
+              "frame": {
+                "x": 48,
+                "y": 283,
+                "w": 376,
+                "h": 53
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": "#F2F7EB",
+                "border": null,
+                "radius": 8.8
+              },
+              "text": {
+                "anchor": "middle",
+                "padding": [
+                  12,
+                  24,
+                  12,
+                  24
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              }
+            },
+            {
+              "frame": {
+                "x": 452,
+                "y": 283,
+                "w": 376,
+                "h": 53
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": "#F2F7EB",
+                "border": null,
+                "radius": 8.8
+              },
+              "text": {
+                "anchor": "middle",
+                "padding": [
+                  12,
+                  24,
+                  12,
+                  24
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              }
+            },
+            {
+              "frame": {
+                "x": 856,
+                "y": 283,
+                "w": 376,
+                "h": 53
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": "#F2F7EB",
+                "border": null,
+                "radius": 8.8
+              },
+              "text": {
+                "anchor": "middle",
+                "padding": [
+                  12,
+                  24,
+                  12,
+                  24
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              }
+            },
+            {
+              "frame": {
+                "x": 245,
+                "y": 420,
+                "w": 376,
+                "h": 53
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": "#F2F7EB",
+                "border": null,
+                "radius": 8.8
+              },
+              "text": {
+                "anchor": "middle",
+                "padding": [
+                  12,
+                  24,
+                  12,
+                  24
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              }
+            },
+            {
+              "frame": {
+                "x": 650,
+                "y": 420,
+                "w": 376,
+                "h": 53
+              },
+              "shape": {
+                "geometry": "rounded_rectangle",
+                "fill": "#F2F7EB",
+                "border": null,
+                "radius": 8.8
+              },
+              "text": {
+                "anchor": "middle",
+                "padding": [
+                  12,
+                  24,
+                  12,
+                  24
+                ],
+                "style": {
+                  "fontSize": 14.7,
+                  "bold": true,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "center"
+                }
+              }
+            }
+          ],
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 1210,
+            "h": 545
+          },
+          "source": "authored deck section_1.pptx slide 18"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_19",
+      "moduleId": "module_01",
+      "template": "chip-detail",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 19",
+      "items": [
+        {
+          "componentId": "slide_1_19_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 19"
+        },
+        {
+          "componentId": "slide_1_19_cards",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 1184,
+            "h": 397
+          },
+          "items": [
+            {
+              "header": {
+                "frame": {
+                  "x": 48,
+                  "y": 149,
+                  "w": 326,
+                  "h": 38
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 6.3
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 17.3,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 48,
+                  "y": 198,
+                  "w": 1184,
+                  "h": 66
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            },
+            {
+              "header": {
+                "frame": {
+                  "x": 48,
+                  "y": 290,
+                  "w": 326,
+                  "h": 38
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 6.3
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 17.3,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 48,
+                  "y": 339,
+                  "w": 1184,
+                  "h": 66
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            },
+            {
+              "header": {
+                "frame": {
+                  "x": 48,
+                  "y": 432,
+                  "w": 326,
+                  "h": 38
+                },
+                "shape": {
+                  "geometry": "rounded_rectangle",
+                  "fill": "#92D050",
+                  "border": null,
+                  "radius": 6.3
+                },
+                "text": {
+                  "anchor": "middle",
+                  "padding": [
+                    8,
+                    16,
+                    8,
+                    16
+                  ],
+                  "style": {
+                    "fontSize": 17.3,
+                    "bold": true,
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat",
+                    "align": "center"
+                  }
+                }
+              },
+              "body": {
+                "frame": {
+                  "x": 48,
+                  "y": 481,
+                  "w": 1184,
+                  "h": 66
+                },
+                "anchor": "top",
+                "padding": [
+                  4.8,
+                  9.6,
+                  4.8,
+                  9.6
+                ],
+                "style": {
+                  "fontSize": 16,
+                  "bold": false,
+                  "color": "#000000",
+                  "fontFamily": "Montserrat",
+                  "align": "left"
+                }
+              }
+            }
+          ],
+          "source": "authored deck section_1.pptx slide 19"
+        },
+        {
+          "componentId": "slide_1_19_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 48,
+            "y": 568,
+            "w": 1184,
+            "h": 86
+          },
+          "shape": {
+            "geometry": "rounded_rectangle",
+            "fill": null,
+            "border": {
+              "color": "#7F7F7F",
+              "width": 1.3
+            },
+            "radius": 14.4
+          },
+          "parts": {
+            "body": {
+              "frame": {
+                "x": 65,
+                "y": 601,
+                "w": 1149,
+                "h": 46
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 16,
+                "bold": false,
+                "color": "#000000",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              }
+            },
+            "tag": {
+              "frame": {
+                "x": 65,
+                "y": 574,
+                "w": 154,
+                "h": 27
+              },
+              "anchor": "top",
+              "padding": [
+                4.8,
+                9.6,
+                4.8,
+                9.6
+              ],
+              "style": {
+                "fontSize": 13.3,
+                "bold": true,
+                "color": "#7F7F7F",
+                "fontFamily": "Montserrat",
+                "align": "left"
+              },
+              "value": "Note"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 19"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_20",
+      "moduleId": "module_01",
+      "template": "results",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "section_1.pptx slide 20",
+      "items": [
+        {
+          "componentId": "slide_1_20_heading",
+          "order": 1,
+          "frame": {
+            "x": 48,
+            "y": 75,
+            "w": 967,
+            "h": 53
+          },
+          "text": {
+            "frame": {
+              "x": 17,
+              "y": 75,
+              "w": 998,
+              "h": 53
+            },
+            "anchor": "middle",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 28,
+              "bold": true,
+              "color": "#6EA536",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "source": "authored deck section_1.pptx slide 20"
+        },
+        {
+          "componentId": "slide_1_20_results",
+          "order": 2,
+          "frame": {
+            "x": 48,
+            "y": 149,
+            "w": 1184,
+            "h": 506
+          },
+          "text": {
+            "frame": {
+              "x": 48,
+              "y": 149,
+              "w": 1184,
+              "h": 506
+            },
+            "anchor": "top",
+            "padding": [
+              4.8,
+              9.6,
+              4.8,
+              9.6
+            ],
+            "style": {
+              "fontSize": 14.7,
+              "bold": false,
+              "color": "#000000",
+              "fontFamily": "Montserrat",
+              "align": "left"
+            }
+          },
+          "marker": null,
+          "source": "authored deck section_1.pptx slide 20"
+        }
+      ]
+    }
+  ]
+}

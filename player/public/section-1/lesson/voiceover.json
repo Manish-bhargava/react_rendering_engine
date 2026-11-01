@@ -1,0 +1,975 @@
+{
+  "specVersion": "v1",
+  "course": "Blood Culture Sampling",
+  "audio": {
+    "basePath": "audio/",
+    "format": "mp3",
+    "filesSupplied": true,
+    "note": "Filenames come from the source audio_manifest. All 44 narration MP3s are supplied in audio/, each with a WebVTT caption file of the same name beside it (m1_1_01_base.mp3 + m1_1_01_base.vtt). approxSeconds is still the source's 140 wpm estimate; the player takes the real length from each MP3."
+  },
+  "playerRules": {
+    "revealWithoutAudio": "show all items immediately",
+    "revealTiming": "line start = audio duration x (words before the line / total words); an item with lineIndex null takes the previous item's cue, or shows at start",
+    "missingAudio": "do not block navigation; show the narration text instead"
+  },
+  "manifestEntries": 19,
+  "modules": [
+    {
+      "moduleId": "module_01",
+      "title": "Section 1: Understanding Blood Culture Sampling",
+      "slides": [
+        {
+          "slideId": "slide_1_01",
+          "sourceSlideId": "1.01",
+          "base": {
+            "audioFile": "m1_1_01_base.mp3",
+            "words": 120,
+            "approxSeconds": 51,
+            "lines": [
+              "Welcome to the module on Blood Culture Sampling - one of the most critical procedures in diagnosing bloodstream infections and sepsis. This module has been prepared by Bodhi Learning Labs.",
+              "A single blood culture sample can reveal the exact microorganism causing infection and guide life-saving antimicrobial therapy. However, the accuracy of the result depends entirely on how well the sample is collected.",
+              "The right patient, the right timing, the right blood volume, and the right aseptic technique can make the difference between an accurate diagnosis and a misleading result.",
+              "In this module you will learn when to collect blood cultures, how to perform the procedure step by step, how to prevent contamination, and how to ensure high-quality specimens every time."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_02",
+          "sourceSlideId": "1.02",
+          "base": {
+            "audioFile": "m1_1_02_base.mp3",
+            "words": 56,
+            "approxSeconds": 24,
+            "lines": [
+              "By the end of this section, you will be able to:",
+              "Define bloodstream infection and blood culture.",
+              "List the indications for blood culture collection.",
+              "Explain the timing, number of sets, and recommended blood volume.",
+              "Select appropriate collection sites and antiseptic agents.",
+              "Describe the correct order of draw.",
+              "And identify the common causative organisms of bloodstream infection."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_03",
+          "sourceSlideId": "1.03",
+          "base": {
+            "audioFile": "m1_1_03_base.mp3",
+            "words": 48,
+            "approxSeconds": 21,
+            "lines": [
+              "The course menu is displayed.",
+              "Section 1 covers eight topics: bloodstream infection and blood culture, the indications for collection, the timing of collection, blood culture sets and blood volume, site selection, skin antisepsis, the order of draw, and the common bloodstream pathogens.",
+              "Click on a topic to proceed."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_03_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_03_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_03_icons",
+                  "itemIndex": 2,
+                  "lineIndex": null
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_03_icons",
+                  "itemIndex": 3,
+                  "lineIndex": null
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_1_03_icons",
+                  "itemIndex": 4,
+                  "lineIndex": null
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_1_03_icons",
+                  "itemIndex": 5,
+                  "lineIndex": null
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_1_03_icons",
+                  "itemIndex": 6,
+                  "lineIndex": null
+                },
+                {
+                  "order": 8,
+                  "componentId": "slide_1_03_icons",
+                  "itemIndex": 7,
+                  "lineIndex": null
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_04",
+          "sourceSlideId": "1.04",
+          "base": {
+            "audioFile": "m1_1_04_base.mp3",
+            "words": 131,
+            "approxSeconds": 56,
+            "lines": [
+              "Bloodstream infection, commonly referred to as BSI, occurs when microorganisms such as bacteria or fungi enter and multiply in the bloodstream. Under normal circumstances blood is sterile, meaning it should not contain any microorganisms.",
+              "Bloodstream infections may originate from infections elsewhere in the body - the lungs, urinary tract, abdomen or skin - or from contaminated intravenous catheters and other invasive devices.",
+              "The clinical importance lies in its potential to trigger sepsis, a life-threatening condition caused by an abnormal and overwhelming response of the body to infection. If not recognised and treated promptly, sepsis can progress to septic shock, with severe hypotension and poor tissue perfusion, leading to multi-organ failure and death.",
+              "Early identification through blood culture testing is therefore critical. It detects the causative organism and guides targeted antimicrobial therapy."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_04_definition",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_04_definition",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_05",
+          "sourceSlideId": "1.05",
+          "base": {
+            "audioFile": "m1_1_05_base.mp3",
+            "words": 67,
+            "approxSeconds": 29,
+            "lines": [
+              "A blood culture is a laboratory test used to detect bacteria or fungi in the blood. Since blood is normally sterile, the presence of microorganisms indicates a bloodstream infection.",
+              "A positive blood culture helps identify the causative organism and determines which antibiotics will be most effective, through sensitivity testing.",
+              "Blood cultures are essential for the early diagnosis and treatment of serious infections such as bacteraemia and sepsis."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_05_definition",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_05_definition",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_06",
+          "sourceSlideId": "1.06",
+          "base": {
+            "audioFile": "m1_1_06_base.mp3",
+            "words": 67,
+            "approxSeconds": 29,
+            "lines": [
+              "The process of collecting blood for culture divides into four steps.",
+              "Explanation and consent, where the patient is told what the test is for and what to expect.",
+              "Preparation, covering equipment, hand hygiene and site selection.",
+              "The procedure itself, performed using aseptic technique.",
+              "And aftercare, covering the puncture site, labelling, documentation and transport.",
+              "Section 2 of this module expands these four steps into the full nineteen-step procedure."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_06_process",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_06_process",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_06_process",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_06_process",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_07",
+          "sourceSlideId": "1.07",
+          "base": {
+            "audioFile": "m1_1_07_base.mp3",
+            "words": 64,
+            "approxSeconds": 27,
+            "lines": [
+              "Blood cultures are collected when a bloodstream infection is suspected.",
+              "Common indications include fever above 38 degrees Celsius, hypothermia below 36 degrees Celsius, chills and rigors, and clinical suspicion of sepsis.",
+              "They are also indicated in patients with suspected infective endocarditis, central line-associated infection, neutropenic fever, and unexplained hypotension.",
+              "And ideally before starting antibiotic therapy, to improve the likelihood of identifying the causative organism."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_07_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_07_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_07_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_07_icons",
+                  "itemIndex": 3,
+                  "lineIndex": null
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_1_07_icons",
+                  "itemIndex": 4,
+                  "lineIndex": null
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_1_07_icons",
+                  "itemIndex": 5,
+                  "lineIndex": null
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_1_07_icons",
+                  "itemIndex": 6,
+                  "lineIndex": null
+                },
+                {
+                  "order": 8,
+                  "componentId": "slide_1_07_icons",
+                  "itemIndex": 7,
+                  "lineIndex": null
+                },
+                {
+                  "order": 9,
+                  "componentId": "slide_1_07_icons",
+                  "itemIndex": 8,
+                  "lineIndex": null
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_08",
+          "sourceSlideId": "1.08",
+          "base": {
+            "audioFile": "m1_1_08_base.mp3",
+            "words": 92,
+            "approxSeconds": 39,
+            "lines": [
+              "Blood cultures should be collected before the first dose of antibiotics whenever possible, as antibiotics can reduce the chance of detecting the causative organism.",
+              "Ideally samples are obtained at the onset of fever or chills, when microorganisms are most likely to be present in the bloodstream.",
+              "However, if sepsis is suspected, blood cultures should be collected immediately, and treatment should not be delayed while waiting for fever.",
+              "And at least two blood culture sets should be collected from separate venipuncture sites, to improve diagnostic accuracy and help distinguish true infection from contamination."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_08_cards",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_08_cards",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_08_cards",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_08_cards",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_09",
+          "sourceSlideId": "1.09",
+          "base": {
+            "audioFile": "m1_1_09_base.mp3",
+            "words": 42,
+            "approxSeconds": 18,
+            "lines": [
+              "Now, let us answer a question to check our understanding.",
+              "A patient with suspected bloodstream infection has already received one dose of antibiotics at another hospital. Which statement is most appropriate regarding blood culture collection?",
+              "Select the correct answer and click Submit."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "onSubmit": "pause the question narration and seek to 0"
+          }
+        },
+        {
+          "slideId": "slide_1_10",
+          "sourceSlideId": "1.10",
+          "base": {
+            "audioFile": "m1_1_10_base.mp3",
+            "words": 82,
+            "approxSeconds": 35,
+            "lines": [
+              "The number of blood culture sets collected depends on the clinical condition of the patient.",
+              "For routine evaluation of suspected sepsis, two blood culture sets are usually recommended.",
+              "In cases of suspected infective endocarditis, three separate sets are collected to improve detection of the causative organism.",
+              "For persistent bacteraemia or ongoing bloodstream infection, two to four sets may be required for accurate diagnosis and monitoring.",
+              "Collecting multiple sets from separate venipuncture sites increases culture sensitivity and helps differentiate true infection from contamination."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_10_table",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_10_table",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_10_table",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_10_table",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_11",
+          "sourceSlideId": "1.11",
+          "base": {
+            "audioFile": "m1_1_11_base.mp3",
+            "words": 82,
+            "approxSeconds": 35,
+            "lines": [
+              "The amount of blood collected is one of the most important factors influencing the accuracy of blood culture results.",
+              "For adults, the recommended volume is 8 to 10 millilitres in each blood culture bottle.",
+              "For children, 1 to 5 millilitres is usually sufficient, depending on the child's age and weight.",
+              "For neonates, only 0.5 to 2 millilitres is required.",
+              "The key point to remember is that adequate blood volume significantly increases the likelihood of detecting microorganisms and improves the overall culture yield."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_11_table",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_11_table",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_11_table",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_11_table",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_12",
+          "sourceSlideId": "1.12",
+          "base": {
+            "audioFile": "m1_1_12_base.mp3",
+            "words": 84,
+            "approxSeconds": 36,
+            "lines": [
+              "Before you draw, you should be able to recognise the set in front of you.",
+              "The aerobic bottle, usually blue-capped, cultures organisms that need oxygen.",
+              "The anaerobic bottle, usually purple or orange-capped, cultures organisms that do not.",
+              "Both carry volume markings on the label. Fill to the mark rather than estimating by eye - this is what protects the yield.",
+              "And check the expiry date and the integrity of the seal before you begin. An expired or damaged bottle will not support microbial growth."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_12_points",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_12_points",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_12_points",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_12_points",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_13",
+          "sourceSlideId": "1.13",
+          "base": {
+            "audioFile": "m1_1_13_base.mp3",
+            "words": 76,
+            "approxSeconds": 33,
+            "lines": [
+              "Peripheral venipuncture is the preferred method for collecting blood cultures, because it has a lower risk of contamination and provides more reliable results.",
+              "Blood cultures should generally not be drawn from intravenous lines, unless a catheter-related bloodstream infection is suspected.",
+              "When a central line infection is suspected, one blood culture set should be collected from the catheter and another set from a peripheral vein. This comparison helps determine whether the catheter is the source of infection."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_13_cards",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_13_cards",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_13_cards",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_14",
+          "sourceSlideId": "1.14",
+          "base": {
+            "audioFile": "m1_1_14_base.mp3",
+            "words": 67,
+            "approxSeconds": 29,
+            "lines": [
+              "Proper skin antisepsis is essential to prevent contamination of blood culture samples.",
+              "Common antiseptic agents include chlorhexidine, which is preferred in adults, povidone-iodine, and isopropyl alcohol.",
+              "The antiseptic is applied thoroughly to the venipuncture site using a back-and-forth or circular motion.",
+              "It must then be allowed to dry completely before inserting the needle. This ensures maximum antimicrobial action, and the site must not be touched again afterwards."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_14_points",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_14_points",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_14_points",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_14_points",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_15",
+          "sourceSlideId": "1.15",
+          "base": {
+            "audioFile": "m1_1_15_base.mp3",
+            "words": 40,
+            "approxSeconds": 17,
+            "lines": [
+              "Now, let us answer a question to check our understanding.",
+              "You have cleaned the venipuncture site with chlorhexidine. The patient is restless and you are short of time. What should you do next?",
+              "Select the correct answer and click Submit."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "onSubmit": "pause the question narration and seek to 0"
+          }
+        },
+        {
+          "slideId": "slide_1_16",
+          "sourceSlideId": "1.16",
+          "base": {
+            "audioFile": "m1_1_16_base.mp3",
+            "words": 81,
+            "approxSeconds": 35,
+            "lines": [
+              "The order in which blood culture bottles are filled depends on the collection method used.",
+              "When using a butterfly collection set, the aerobic bottle is filled first, followed by the anaerobic bottle. This is because air present in the tubing enters the first bottle.",
+              "When using a syringe, the anaerobic bottle is filled first, followed by the aerobic bottle.",
+              "Following the correct order of draw helps maintain the proper environment in each bottle and improves the accuracy of blood culture results."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_16_comparison",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_16_comparison",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_17",
+          "sourceSlideId": "1.17",
+          "base": {
+            "audioFile": "m1_1_17_base.mp3",
+            "words": 31,
+            "approxSeconds": 13,
+            "lines": [
+              "Now, let us answer a question to check our understanding.",
+              "Which of the following is the primary purpose of collecting multiple blood culture sets?",
+              "Select the correct answer and click Submit."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "onSubmit": "pause the question narration and seek to 0"
+          }
+        },
+        {
+          "slideId": "slide_1_18",
+          "sourceSlideId": "1.18",
+          "base": {
+            "audioFile": "m1_1_18_base.mp3",
+            "words": 29,
+            "approxSeconds": 12,
+            "lines": [
+              "Now, let us answer a question to check our understanding.",
+              "You are drawing with a butterfly set. Drag the steps into the order you perform them, then click Submit."
+            ],
+            "reveal": {
+              "mode": "together",
+              "note": "all lines reveal as one group with the narration; the detail is carried on the slide that follows",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_18_question",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_18_question",
+                  "itemIndex": 1,
+                  "lineIndex": null
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_18_question",
+                  "itemIndex": 2,
+                  "lineIndex": null
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_18_question",
+                  "itemIndex": 3,
+                  "lineIndex": null
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_1_18_question",
+                  "itemIndex": 4,
+                  "lineIndex": null
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "onSubmit": "pause the question narration and seek to 0"
+          }
+        },
+        {
+          "slideId": "slide_1_19",
+          "sourceSlideId": "1.19",
+          "base": {
+            "audioFile": "m1_1_19_base.mp3",
+            "words": 62,
+            "approxSeconds": 27,
+            "lines": [
+              "Bloodstream infections can be caused by bacteria and fungi.",
+              "Among Gram-positive organisms, common pathogens include Staphylococcus aureus, coagulase-negative staphylococci, streptococci and enterococci.",
+              "Among Gram-negative organisms, frequently isolated pathogens include Escherichia coli, Klebsiella, Pseudomonas and Acinetobacter species.",
+              "Fungal bloodstream infections are most commonly caused by Candida species, a condition known as candidaemia.",
+              "Identification of the causative organism is what guides appropriate antimicrobial therapy."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_19_cards",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_19_cards",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_19_cards",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_20",
+          "sourceSlideId": "1.20",
+          "base": null,
+          "layers": [],
+          "playback": {
+            "autoplayBase": false,
+            "sequence": [],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "note": "No narration on this slide in the source."
+          }
+        }
+      ]
+    }
+  ]
+}
