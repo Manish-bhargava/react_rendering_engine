@@ -7,12 +7,19 @@ button { font: inherit; cursor: pointer; }
 button:disabled { cursor: default; opacity: .45; }
 .loading, .load-error { padding: 40px; font-size: 18px; }
 
-.app { font-family: var(--font); color: var(--c-text); line-height: var(--lh); }
+.app { font-family: var(--font); color: var(--c-text); line-height: var(--lh); overflow-wrap: break-word; }
 
 /* ---------- stage ---------- */
 .stage-wrap { width: 100%; display: flex; justify-content: center; overflow: hidden; padding-top: 0; }
 .stage { position: relative; transform-origin: top center; background: var(--c-background); box-shadow: var(--sh-raised); overflow: hidden; flex: none; }
 .c { position: absolute; }
+.c.is-scroll { overflow: auto; overscroll-behavior: contain; }
+.c.is-scroll .data-table thead th { position: sticky; top: 0; z-index: 1; }
+/* overlay scrollbars hide until used; a visible thin bar says there is more to see */
+.c.is-scroll, .stage-tabs { scrollbar-width: thin; scrollbar-color: var(--c-primary) transparent; }
+.c.is-scroll::-webkit-scrollbar, .stage-tabs::-webkit-scrollbar { width: 8px; height: 8px; }
+.c.is-scroll::-webkit-scrollbar-thumb, .stage-tabs::-webkit-scrollbar-thumb { background: var(--c-primary); border-radius: 4px; }
+.c.is-scroll::-webkit-scrollbar-track, .stage-tabs::-webkit-scrollbar-track { background: var(--c-primaryTint); border-radius: 4px; }
 .header-band { position: absolute; left: 0; top: 0; width: 1280px; height: 56px; background: var(--c-secondary); color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 64px; font-size: var(--fs-small); }
 .breadcrumb { opacity: .9; letter-spacing: .02em; }
 .top-links button { background: none; border: 0; color: #fff; font-weight: 600; letter-spacing: .08em; margin-left: 20px; font-size: 13px; }
@@ -43,12 +50,13 @@ button:disabled { cursor: default; opacity: .45; }
 
 /* ---------- image ---------- */
 .image { width: 100%; height: 100%; object-fit: cover; border-radius: var(--item-radius, var(--r-md)); display: block; }
-.image-slot { position: relative; margin: 0; width: 100%; height: 100%; }
+.image-slot { margin: 0; width: 100%; height: 100%; display: flex; flex-direction: column; gap: 10px; }
+.image-slot .image.unresolved { flex: 1 1 auto; min-height: 0; height: auto; }
 /* house placeholder: tinted panel, "IMAGE" over the description in green, search note underneath */
 .image.unresolved { background: var(--c-surface); border: 1px dashed var(--c-border); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 24px 40px; gap: 6px; }
 .unresolved-tag { font-size: 16px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--c-secondary); }
 .unresolved-alt { font-size: 16px; font-weight: 700; color: var(--c-secondary); line-height: 1.35; }
-.unresolved-meta { position: absolute; left: 0; right: 0; top: calc(100% + 10px); display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 12.5px; color: var(--c-textMuted); text-align: center; }
+.unresolved-meta { flex: none; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 12.5px; color: var(--c-textMuted); text-align: center; }
 /* title slide: the byline is set in regular weight on the teal field */
 .layout-title .c-paragraph .paragraph { font-weight: 400; }
 
@@ -105,7 +113,7 @@ button:disabled { cursor: default; opacity: .45; }
 .vs { position: absolute; right: -40px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border-radius: 50%; background: #fff; border: 2px solid var(--c-primary); color: var(--c-primaryDark); display: grid; place-items: center; font-weight: 700; font-size: 12px; z-index: 1; }
 
 /* ---------- table ---------- */
-.data-table { width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--c-border); border-radius: var(--r-md); overflow: hidden; font-size: 16.5px; }
+.data-table { width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--c-border); border-radius: var(--r-md); overflow: clip; font-size: 16.5px; }
 .data-table th { background: var(--c-primaryDark); color: #fff; text-align: left; padding: 12px 16px; font-size: 15px; letter-spacing: .02em; }
 .data-table td { padding: 12px 16px; border-top: 1px solid var(--c-border); vertical-align: top; }
 .data-table tbody tr:nth-child(even) td { background: var(--c-surface); }
@@ -117,7 +125,8 @@ button:disabled { cursor: default; opacity: .45; }
 .step .step-label { font-size: 19px; font-weight: 600; color: var(--c-secondary); }
 .step:not(:last-child)::after { content: '→'; position: absolute; right: -32px; top: 50%; transform: translateY(-50%); color: var(--c-primary); font-size: 26px; font-weight: 700; }
 .badge { flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--c-primary); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 18px; }
-.process-layers { height: 100%; }
+.process-layers { height: 100%; grid-template-rows: minmax(0, 1fr); }
+.stage-tabs { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 2px; }
 .stage-tabs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
 .stage-tab { width: 100%; display: flex; align-items: center; gap: 12px; background: #fff; border: 1px solid var(--c-border); border-radius: var(--r-md); padding: 12px 14px; font-size: 16.5px; text-align: left; color: var(--c-secondary); font-weight: 600; box-shadow: var(--sh-card); }
 .stage-tab .badge { width: 32px; height: 32px; font-size: 15px; }
@@ -380,6 +389,14 @@ button:disabled { cursor: default; opacity: .45; }
   margin: 0 calc(var(--flow-pad) * -1); padding: 0 var(--flow-pad);
   background: linear-gradient(to left, rgba(0,0,0,.10), rgba(0,0,0,0) 28px) right / 28px 100% no-repeat; }
 .stage.stacked .m-table th, .stage.stacked .m-table td { font-size: 14px; }
+
+/* fallback tables: same rule as measured ones */
+.stage.stacked .c-table { overflow-x: auto; -webkit-overflow-scrolling: touch;
+  background: linear-gradient(to left, rgba(0,0,0,.10), rgba(0,0,0,0) 28px) right / 28px 100% no-repeat; }
+.stage.stacked .data-table { font-size: 15px; }
+.stage.stacked .data-table th, .stage.stacked .data-table td { padding: 10px 12px; overflow-wrap: normal; }
+.stage.stacked .stage-tabs { overflow: visible; }
+.stage.stacked .process-layers { grid-template-rows: none; }
 
 /* process stages: a vertical list */
 .stage.stacked .m-step { display: flex; align-items: center; gap: 12px; margin-bottom: var(--flow-tight); }

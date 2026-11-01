@@ -618,7 +618,7 @@
             "x": 64,
             "y": 144,
             "w": 774,
-            "h": 404
+            "h": 496
           },
           "arrange": {
             "display": "flex",
@@ -636,17 +636,6 @@
             "y": 144,
             "w": 346,
             "h": 269
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_1_04_callout_1",
-          "order": 4,
-          "frame": {
-            "x": 64,
-            "y": 568,
-            "w": 1152,
-            "h": 72
           },
           "source": "inferred"
         }
@@ -680,7 +669,7 @@
             "x": 64,
             "y": 144,
             "w": 1152,
-            "h": 496
+            "h": 404
           },
           "arrange": {
             "display": "grid",
@@ -689,13 +678,24 @@
             "alignContent": "center"
           },
           "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_05_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
+          },
+          "source": "inferred"
         }
       ]
     },
     {
       "slideId": "slide_1_06",
       "moduleId": "module_01",
-      "template": "chip-detail",
+      "template": "process",
       "background": {
         "color": "background"
       },
@@ -714,19 +714,40 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_1_06_cards",
+          "componentId": "slide_1_06_process",
           "order": 2,
           "frame": {
             "x": 64,
             "y": 144,
             "w": 1152,
-            "h": 496
+            "h": 404
           },
           "arrange": {
             "display": "grid",
-            "columns": 2,
-            "gap": 20,
-            "alignContent": "center"
+            "columns": "300px 1fr",
+            "gap": 24,
+            "tabs": {
+              "direction": "column",
+              "gap": 10
+            },
+            "layerPanel": {
+              "background": "background",
+              "border": "primary",
+              "shadow": "raised",
+              "radius": "md",
+              "padding": "lg"
+            }
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_06_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
           },
           "source": "inferred"
         }
@@ -735,7 +756,7 @@
     {
       "slideId": "slide_1_07",
       "moduleId": "module_01",
-      "template": "chip-detail",
+      "template": "definition",
       "background": {
         "color": "background"
       },
@@ -754,19 +775,41 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_1_07_cards",
+          "componentId": "slide_1_07_definition",
           "order": 2,
           "frame": {
             "x": 64,
             "y": 144,
-            "w": 1152,
-            "h": 496
+            "w": 813,
+            "h": 404
           },
           "arrange": {
-            "display": "grid",
-            "columns": 3,
-            "gap": 20,
-            "alignContent": "center"
+            "display": "flex",
+            "direction": "column",
+            "gap": 24,
+            "justify": "center"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_07_image_1",
+          "order": 3,
+          "frame": {
+            "x": 909,
+            "y": 144,
+            "w": 307,
+            "h": 250
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_07_callout_1",
+          "order": 4,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
           },
           "source": "inferred"
         }
@@ -775,7 +818,7 @@
     {
       "slideId": "slide_1_08",
       "moduleId": "module_01",
-      "template": "table",
+      "template": "icon-row",
       "background": {
         "color": "background"
       },
@@ -794,29 +837,19 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_1_08_table",
+          "componentId": "slide_1_08_icons",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 152,
+            "y": 144,
             "w": 1152,
-            "h": 396
+            "h": 496
           },
           "arrange": {
-            "display": "table",
-            "columnTemplate": "3.0fr 5.2fr 4.2fr",
-            "align": "start"
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_1_08_callout_1",
-          "order": 3,
-          "frame": {
-            "x": 64,
-            "y": 568,
-            "w": 1152,
-            "h": 72
+            "display": "grid",
+            "columns": 4,
+            "gap": 16,
+            "alignContent": "center"
           },
           "source": "inferred"
         }
@@ -825,7 +858,7 @@
     {
       "slideId": "slide_1_09",
       "moduleId": "module_01",
-      "template": "table",
+      "template": "process",
       "background": {
         "color": "background"
       },
@@ -844,86 +877,35 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_1_09_table",
+          "componentId": "slide_1_09_process",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 152,
+            "y": 144,
             "w": 1152,
-            "h": 396
+            "h": 404
           },
           "arrange": {
-            "display": "table",
-            "columnTemplate": "2.6fr 4.9fr 4.9fr",
-            "align": "start"
+            "display": "grid",
+            "columns": "300px 1fr",
+            "gap": 24,
+            "tabs": {
+              "direction": "column",
+              "gap": 10
+            },
+            "layerPanel": {
+              "background": "background",
+              "border": "primary",
+              "shadow": "raised",
+              "radius": "md",
+              "padding": "lg"
+            }
           },
           "source": "inferred"
         },
         {
           "componentId": "slide_1_09_callout_1",
           "order": 3,
-          "frame": {
-            "x": 64,
-            "y": 568,
-            "w": 1152,
-            "h": 72
-          },
-          "source": "inferred"
-        }
-      ]
-    },
-    {
-      "slideId": "slide_1_10",
-      "moduleId": "module_01",
-      "template": "icon-row",
-      "background": {
-        "color": "background"
-      },
-      "showHeaderBand": true,
-      "positionSource": "inferred",
-      "items": [
-        {
-          "componentId": "slide_1_10_heading",
-          "order": 1,
-          "frame": {
-            "x": 64,
-            "y": 76,
-            "w": 1152,
-            "h": 56
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_1_10_icons",
-          "order": 2,
-          "frame": {
-            "x": 64,
-            "y": 144,
-            "w": 794,
-            "h": 404
-          },
-          "arrange": {
-            "display": "grid",
-            "columns": 3,
-            "gap": 16,
-            "alignContent": "center"
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_1_10_image_1",
-          "order": 3,
-          "frame": {
-            "x": 890,
-            "y": 144,
-            "w": 326,
-            "h": 250
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_1_10_callout_1",
-          "order": 4,
           "frame": {
             "x": 64,
             "y": 568,
@@ -1000,9 +982,9 @@
     {
       "slideId": "slide_1_12",
       "moduleId": "module_01",
-      "template": "knowledge-check",
+      "template": "table",
       "background": {
-        "color": "primaryTint"
+        "color": "background"
       },
       "showHeaderBand": true,
       "positionSource": "inferred",
@@ -1019,42 +1001,40 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_1_12_instruction",
+          "componentId": "slide_1_12_table",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 136,
-            "w": 1152,
-            "h": 32
+            "y": 152,
+            "w": 813,
+            "h": 396
+          },
+          "arrange": {
+            "display": "table",
+            "columnTemplate": "1.4fr 3.6fr 4.4fr 3.0fr",
+            "align": "start"
           },
           "source": "inferred"
         },
         {
-          "componentId": "slide_1_12_question",
+          "componentId": "slide_1_12_image_1",
           "order": 3,
           "frame": {
-            "x": 160,
-            "y": 184,
-            "w": 960,
-            "h": 456
+            "x": 909,
+            "y": 144,
+            "w": 307,
+            "h": 250
           },
-          "arrange": {
-            "display": "flex",
-            "direction": "column",
-            "gap": 12,
-            "feedbackOverlay": {
-              "position": "absolute",
-              "frame": {
-                "x": 320,
-                "y": 200,
-                "w": 640,
-                "h": 320
-              },
-              "background": "background",
-              "shadow": "raised",
-              "radius": "lg",
-              "scrim": "rgba(16,42,67,0.45)"
-            }
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_12_callout_1",
+          "order": 4,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
           },
           "source": "inferred"
         }
@@ -1063,9 +1043,9 @@
     {
       "slideId": "slide_1_13",
       "moduleId": "module_01",
-      "template": "match",
+      "template": "icon-row",
       "background": {
-        "color": "primaryTint"
+        "color": "background"
       },
       "showHeaderBand": true,
       "positionSource": "inferred",
@@ -1082,42 +1062,30 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_1_13_instruction",
+          "componentId": "slide_1_13_icons",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 136,
+            "y": 144,
             "w": 1152,
-            "h": 32
+            "h": 404
+          },
+          "arrange": {
+            "display": "grid",
+            "columns": 4,
+            "gap": 16,
+            "alignContent": "center"
           },
           "source": "inferred"
         },
         {
-          "componentId": "slide_1_13_question",
+          "componentId": "slide_1_13_callout_1",
           "order": 3,
           "frame": {
-            "x": 160,
-            "y": 184,
-            "w": 960,
-            "h": 456
-          },
-          "arrange": {
-            "display": "flex",
-            "direction": "column",
-            "gap": 12,
-            "feedbackOverlay": {
-              "position": "absolute",
-              "frame": {
-                "x": 320,
-                "y": 200,
-                "w": 640,
-                "h": 320
-              },
-              "background": "background",
-              "shadow": "raised",
-              "radius": "lg",
-              "scrim": "rgba(16,42,67,0.45)"
-            }
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
           },
           "source": "inferred"
         }
@@ -1126,7 +1094,7 @@
     {
       "slideId": "slide_1_14",
       "moduleId": "module_01",
-      "template": "summary",
+      "template": "icon-row",
       "background": {
         "color": "background"
       },
@@ -1145,7 +1113,460 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_1_14_summary",
+          "componentId": "slide_1_14_icons",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 144,
+            "w": 1152,
+            "h": 404
+          },
+          "arrange": {
+            "display": "grid",
+            "columns": 4,
+            "gap": 16,
+            "alignContent": "center"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_14_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_15",
+      "moduleId": "module_01",
+      "template": "table",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_1_15_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_15_table",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 152,
+            "w": 1152,
+            "h": 396
+          },
+          "arrange": {
+            "display": "table",
+            "columnTemplate": "2.2fr 5.0fr 5.2fr",
+            "align": "start"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_15_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_16",
+      "moduleId": "module_01",
+      "template": "table",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_1_16_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_16_table",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 152,
+            "w": 1152,
+            "h": 396
+          },
+          "arrange": {
+            "display": "table",
+            "columnTemplate": "6.4fr 6.0fr",
+            "align": "start"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_16_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_17",
+      "moduleId": "module_01",
+      "template": "process",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_1_17_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_17_process",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 144,
+            "w": 1152,
+            "h": 496
+          },
+          "arrange": {
+            "display": "grid",
+            "columns": "300px 1fr",
+            "gap": 24,
+            "tabs": {
+              "direction": "column",
+              "gap": 10
+            },
+            "layerPanel": {
+              "background": "background",
+              "border": "primary",
+              "shadow": "raised",
+              "radius": "md",
+              "padding": "lg"
+            }
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_19",
+      "moduleId": "module_01",
+      "template": "knowledge-check",
+      "background": {
+        "color": "primaryTint"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_1_19_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_19_instruction",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 136,
+            "w": 1152,
+            "h": 32
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_19_question",
+          "order": 3,
+          "frame": {
+            "x": 160,
+            "y": 184,
+            "w": 960,
+            "h": 456
+          },
+          "arrange": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 12,
+            "feedbackOverlay": {
+              "position": "absolute",
+              "frame": {
+                "x": 320,
+                "y": 200,
+                "w": 640,
+                "h": 320
+              },
+              "background": "background",
+              "shadow": "raised",
+              "radius": "lg",
+              "scrim": "rgba(16,42,67,0.45)"
+            }
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_20",
+      "moduleId": "module_01",
+      "template": "true-false",
+      "background": {
+        "color": "primaryTint"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_1_20_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_20_instruction",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 136,
+            "w": 1152,
+            "h": 32
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_20_question",
+          "order": 3,
+          "frame": {
+            "x": 160,
+            "y": 184,
+            "w": 960,
+            "h": 456
+          },
+          "arrange": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 12,
+            "feedbackOverlay": {
+              "position": "absolute",
+              "frame": {
+                "x": 320,
+                "y": 200,
+                "w": 640,
+                "h": 320
+              },
+              "background": "background",
+              "shadow": "raised",
+              "radius": "lg",
+              "scrim": "rgba(16,42,67,0.45)"
+            }
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_21",
+      "moduleId": "module_01",
+      "template": "match",
+      "background": {
+        "color": "primaryTint"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_1_21_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_21_instruction",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 136,
+            "w": 1152,
+            "h": 32
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_21_question",
+          "order": 3,
+          "frame": {
+            "x": 160,
+            "y": 184,
+            "w": 960,
+            "h": 456
+          },
+          "arrange": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 12,
+            "feedbackOverlay": {
+              "position": "absolute",
+              "frame": {
+                "x": 320,
+                "y": 200,
+                "w": 640,
+                "h": 320
+              },
+              "background": "background",
+              "shadow": "raised",
+              "radius": "lg",
+              "scrim": "rgba(16,42,67,0.45)"
+            }
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_22",
+      "moduleId": "module_01",
+      "template": "multi-select",
+      "background": {
+        "color": "primaryTint"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_1_22_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_22_instruction",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 136,
+            "w": 1152,
+            "h": 32
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_22_question",
+          "order": 3,
+          "frame": {
+            "x": 160,
+            "y": 184,
+            "w": 960,
+            "h": 456
+          },
+          "arrange": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 12,
+            "feedbackOverlay": {
+              "position": "absolute",
+              "frame": {
+                "x": 320,
+                "y": 200,
+                "w": 640,
+                "h": 320
+              },
+              "background": "background",
+              "shadow": "raised",
+              "radius": "lg",
+              "scrim": "rgba(16,42,67,0.45)"
+            }
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_1_23",
+      "moduleId": "module_01",
+      "template": "summary",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_1_23_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_1_23_summary",
           "order": 2,
           "frame": {
             "x": 64,
@@ -1164,7 +1585,7 @@
       ]
     },
     {
-      "slideId": "slide_1_15",
+      "slideId": "slide_1_24",
       "moduleId": "module_01",
       "template": "results",
       "background": {
@@ -1174,7 +1595,7 @@
       "positionSource": "inferred",
       "items": [
         {
-          "componentId": "slide_1_15_heading",
+          "componentId": "slide_1_24_heading",
           "order": 1,
           "frame": {
             "x": 64,
@@ -1185,7 +1606,7 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_1_15_results",
+          "componentId": "slide_1_24_results",
           "order": 2,
           "frame": {
             "x": 240,
@@ -1393,36 +1814,14 @@
           "frame": {
             "x": 64,
             "y": 144,
-            "w": 774,
-            "h": 404
+            "w": 1152,
+            "h": 496
           },
           "arrange": {
             "display": "grid",
-            "columns": 3,
+            "columns": 4,
             "gap": 16,
             "alignContent": "center"
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_2_03_image_1",
-          "order": 3,
-          "frame": {
-            "x": 870,
-            "y": 144,
-            "w": 346,
-            "h": 269
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_2_03_callout_1",
-          "order": 4,
-          "frame": {
-            "x": 64,
-            "y": 568,
-            "w": 1152,
-            "h": 72
           },
           "source": "inferred"
         }
@@ -1454,25 +1853,88 @@
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 144,
-            "w": 1152,
-            "h": 496
+            "y": 214,
+            "w": 832,
+            "h": 240
           },
           "arrange": {
             "display": "grid",
-            "columns": "300px 1fr",
-            "gap": 24,
-            "tabs": {
-              "direction": "column",
-              "gap": 10
-            },
-            "layerPanel": {
-              "background": "background",
-              "border": "primary",
-              "shadow": "raised",
-              "radius": "md",
-              "padding": "lg"
-            }
+            "columns": 7,
+            "gap": 40,
+            "connector": "arrow"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_2_04_image_1",
+          "order": 3,
+          "frame": {
+            "x": 928,
+            "y": 144,
+            "w": 288,
+            "h": 230
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_2_04_callout_1",
+          "order": 4,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_2_05",
+      "moduleId": "module_02",
+      "template": "comparison",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_2_05_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_2_05_comparison",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 144,
+            "w": 1152,
+            "h": 404
+          },
+          "arrange": {
+            "display": "grid",
+            "columns": 2,
+            "gap": 48,
+            "divider": "vs"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_2_05_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
           },
           "source": "inferred"
         }
@@ -1567,36 +2029,77 @@
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 144,
-            "w": 794,
-            "h": 496
+            "y": 214,
+            "w": 1152,
+            "h": 240
           },
           "arrange": {
             "display": "grid",
-            "columns": "300px 1fr",
-            "gap": 24,
-            "tabs": {
-              "direction": "column",
-              "gap": 10
-            },
-            "layerPanel": {
-              "background": "background",
-              "border": "primary",
-              "shadow": "raised",
-              "radius": "md",
-              "padding": "lg"
-            }
+            "columns": 7,
+            "gap": 40,
+            "connector": "arrow"
           },
           "source": "inferred"
         },
         {
-          "componentId": "slide_2_07_image_1",
+          "componentId": "slide_2_07_callout_1",
           "order": 3,
           "frame": {
-            "x": 890,
-            "y": 144,
-            "w": 326,
-            "h": 250
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_2_08",
+      "moduleId": "module_02",
+      "template": "process",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_2_08_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_2_08_process",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 214,
+            "w": 1152,
+            "h": 240
+          },
+          "arrange": {
+            "display": "grid",
+            "columns": 7,
+            "gap": 40,
+            "connector": "arrow"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_2_08_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
           },
           "source": "inferred"
         }
@@ -1605,7 +2108,7 @@
     {
       "slideId": "slide_2_09",
       "moduleId": "module_02",
-      "template": "image-focus",
+      "template": "table",
       "background": {
         "color": "background"
       },
@@ -1624,36 +2127,24 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_2_09_points",
+          "componentId": "slide_2_09_table",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 144,
-            "w": 678,
-            "h": 404
+            "y": 152,
+            "w": 1152,
+            "h": 396
           },
           "arrange": {
-            "display": "flex",
-            "direction": "column",
-            "gap": 16,
-            "justify": "center"
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_2_09_image_1",
-          "order": 3,
-          "frame": {
-            "x": 774,
-            "y": 144,
-            "w": 442,
-            "h": 326
+            "display": "table",
+            "columnTemplate": "3.2fr 3.6fr 5.6fr",
+            "align": "start"
           },
           "source": "inferred"
         },
         {
           "componentId": "slide_2_09_callout_1",
-          "order": 4,
+          "order": 3,
           "frame": {
             "x": 64,
             "y": 568,
@@ -1667,7 +2158,7 @@
     {
       "slideId": "slide_2_10",
       "moduleId": "module_02",
-      "template": "process",
+      "template": "definition",
       "background": {
         "color": "background"
       },
@@ -1686,25 +2177,36 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_2_10_process",
+          "componentId": "slide_2_10_definition",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 214,
-            "w": 1152,
-            "h": 240
+            "y": 144,
+            "w": 813,
+            "h": 404
           },
           "arrange": {
-            "display": "grid",
-            "columns": 5,
-            "gap": 40,
-            "connector": "arrow"
+            "display": "flex",
+            "direction": "column",
+            "gap": 24,
+            "justify": "center"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_2_10_image_1",
+          "order": 3,
+          "frame": {
+            "x": 909,
+            "y": 144,
+            "w": 307,
+            "h": 250
           },
           "source": "inferred"
         },
         {
           "componentId": "slide_2_10_callout_1",
-          "order": 3,
+          "order": 4,
           "frame": {
             "x": 64,
             "y": 568,
@@ -1747,7 +2249,7 @@
           },
           "arrange": {
             "display": "grid",
-            "columns": 3,
+            "columns": 4,
             "gap": 16,
             "alignContent": "center"
           },
@@ -1769,7 +2271,7 @@
     {
       "slideId": "slide_2_12",
       "moduleId": "module_02",
-      "template": "icon-row",
+      "template": "process",
       "background": {
         "color": "background"
       },
@@ -1788,19 +2290,19 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_2_12_icons",
+          "componentId": "slide_2_12_process",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 144,
+            "y": 214,
             "w": 1152,
-            "h": 404
+            "h": 240
           },
           "arrange": {
             "display": "grid",
             "columns": 4,
-            "gap": 16,
-            "alignContent": "center"
+            "gap": 40,
+            "connector": "arrow"
           },
           "source": "inferred"
         },
@@ -1883,9 +2385,9 @@
     {
       "slideId": "slide_2_14",
       "moduleId": "module_02",
-      "template": "sequence",
+      "template": "comparison",
       "background": {
-        "color": "primaryTint"
+        "color": "background"
       },
       "showHeaderBand": true,
       "positionSource": "inferred",
@@ -1902,7 +2404,58 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_2_14_instruction",
+          "componentId": "slide_2_14_comparison",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 144,
+            "w": 1152,
+            "h": 404
+          },
+          "arrange": {
+            "display": "grid",
+            "columns": 2,
+            "gap": 48,
+            "divider": "vs"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_2_14_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_2_15",
+      "moduleId": "module_02",
+      "template": "match",
+      "background": {
+        "color": "primaryTint"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_2_15_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_2_15_instruction",
           "order": 2,
           "frame": {
             "x": 64,
@@ -1913,7 +2466,7 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_2_14_question",
+          "componentId": "slide_2_15_question",
           "order": 3,
           "frame": {
             "x": 160,
@@ -1944,7 +2497,7 @@
       ]
     },
     {
-      "slideId": "slide_2_15",
+      "slideId": "slide_2_16",
       "moduleId": "module_02",
       "template": "summary",
       "background": {
@@ -1954,7 +2507,7 @@
       "positionSource": "inferred",
       "items": [
         {
-          "componentId": "slide_2_15_heading",
+          "componentId": "slide_2_16_heading",
           "order": 1,
           "frame": {
             "x": 64,
@@ -1965,7 +2518,7 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_2_15_summary",
+          "componentId": "slide_2_16_summary",
           "order": 2,
           "frame": {
             "x": 64,
@@ -1984,7 +2537,7 @@
       ]
     },
     {
-      "slideId": "slide_2_16",
+      "slideId": "slide_2_17",
       "moduleId": "module_02",
       "template": "results",
       "background": {
@@ -1994,7 +2547,7 @@
       "positionSource": "inferred",
       "items": [
         {
-          "componentId": "slide_2_16_heading",
+          "componentId": "slide_2_17_heading",
           "order": 1,
           "frame": {
             "x": 64,
@@ -2005,7 +2558,7 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_2_16_results",
+          "componentId": "slide_2_17_results",
           "order": 2,
           "frame": {
             "x": 240,
@@ -2189,7 +2742,7 @@
     {
       "slideId": "slide_3_03",
       "moduleId": "module_03",
-      "template": "icon-row",
+      "template": "table",
       "background": {
         "color": "background"
       },
@@ -2208,25 +2761,35 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_3_03_icons",
+          "componentId": "slide_3_03_table",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 144,
-            "w": 1152,
-            "h": 404
+            "y": 152,
+            "w": 832,
+            "h": 396
           },
           "arrange": {
-            "display": "grid",
-            "columns": 4,
-            "gap": 16,
-            "alignContent": "center"
+            "display": "table",
+            "columnTemplate": "2.4fr 4.4fr 5.6fr",
+            "align": "start"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_03_image_1",
+          "order": 3,
+          "frame": {
+            "x": 928,
+            "y": 144,
+            "w": 288,
+            "h": 230
           },
           "source": "inferred"
         },
         {
           "componentId": "slide_3_03_callout_1",
-          "order": 3,
+          "order": 4,
           "frame": {
             "x": 64,
             "y": 568,
@@ -2240,7 +2803,7 @@
     {
       "slideId": "slide_3_04",
       "moduleId": "module_03",
-      "template": "table",
+      "template": "icon-row",
       "background": {
         "color": "background"
       },
@@ -2259,18 +2822,19 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_3_04_table",
+          "componentId": "slide_3_04_icons",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 152,
+            "y": 144,
             "w": 1152,
-            "h": 396
+            "h": 404
           },
           "arrange": {
-            "display": "table",
-            "columnTemplate": "2.6fr 4.6fr 5.2fr",
-            "align": "start"
+            "display": "grid",
+            "columns": 4,
+            "gap": 16,
+            "alignContent": "center"
           },
           "source": "inferred"
         },
@@ -2341,7 +2905,7 @@
     {
       "slideId": "slide_3_06",
       "moduleId": "module_03",
-      "template": "icon-row",
+      "template": "table",
       "background": {
         "color": "background"
       },
@@ -2360,41 +2924,18 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_3_06_icons",
+          "componentId": "slide_3_06_table",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 144,
-            "w": 794,
-            "h": 404
+            "y": 152,
+            "w": 1152,
+            "h": 488
           },
           "arrange": {
-            "display": "grid",
-            "columns": 3,
-            "gap": 16,
-            "alignContent": "center"
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_3_06_image_1",
-          "order": 3,
-          "frame": {
-            "x": 890,
-            "y": 144,
-            "w": 326,
-            "h": 250
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_3_06_callout_1",
-          "order": 4,
-          "frame": {
-            "x": 64,
-            "y": 568,
-            "w": 1152,
-            "h": 72
+            "display": "table",
+            "columnTemplate": "2.6fr 5.0fr 4.8fr",
+            "align": "start"
           },
           "source": "inferred"
         }
@@ -2403,9 +2944,9 @@
     {
       "slideId": "slide_3_07",
       "moduleId": "module_03",
-      "template": "multi-select",
+      "template": "icon-row",
       "background": {
-        "color": "primaryTint"
+        "color": "background"
       },
       "showHeaderBand": true,
       "positionSource": "inferred",
@@ -2422,42 +2963,19 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_3_07_instruction",
+          "componentId": "slide_3_07_icons",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 136,
+            "y": 144,
             "w": 1152,
-            "h": 32
-          },
-          "source": "inferred"
-        },
-        {
-          "componentId": "slide_3_07_question",
-          "order": 3,
-          "frame": {
-            "x": 160,
-            "y": 184,
-            "w": 960,
-            "h": 456
+            "h": 496
           },
           "arrange": {
-            "display": "flex",
-            "direction": "column",
-            "gap": 12,
-            "feedbackOverlay": {
-              "position": "absolute",
-              "frame": {
-                "x": 320,
-                "y": 200,
-                "w": 640,
-                "h": 320
-              },
-              "background": "background",
-              "shadow": "raised",
-              "radius": "lg",
-              "scrim": "rgba(16,42,67,0.45)"
-            }
+            "display": "grid",
+            "columns": 4,
+            "gap": 16,
+            "alignContent": "center"
           },
           "source": "inferred"
         }
@@ -2466,9 +2984,9 @@
     {
       "slideId": "slide_3_08",
       "moduleId": "module_03",
-      "template": "knowledge-check",
+      "template": "icon-row",
       "background": {
-        "color": "primaryTint"
+        "color": "background"
       },
       "showHeaderBand": true,
       "positionSource": "inferred",
@@ -2485,42 +3003,30 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_3_08_instruction",
+          "componentId": "slide_3_08_icons",
           "order": 2,
           "frame": {
             "x": 64,
-            "y": 136,
+            "y": 144,
             "w": 1152,
-            "h": 32
+            "h": 404
+          },
+          "arrange": {
+            "display": "grid",
+            "columns": 4,
+            "gap": 16,
+            "alignContent": "center"
           },
           "source": "inferred"
         },
         {
-          "componentId": "slide_3_08_question",
+          "componentId": "slide_3_08_callout_1",
           "order": 3,
           "frame": {
-            "x": 160,
-            "y": 184,
-            "w": 960,
-            "h": 456
-          },
-          "arrange": {
-            "display": "flex",
-            "direction": "column",
-            "gap": 12,
-            "feedbackOverlay": {
-              "position": "absolute",
-              "frame": {
-                "x": 320,
-                "y": 200,
-                "w": 640,
-                "h": 320
-              },
-              "background": "background",
-              "shadow": "raised",
-              "radius": "lg",
-              "scrim": "rgba(16,42,67,0.45)"
-            }
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
           },
           "source": "inferred"
         }
@@ -2529,7 +3035,7 @@
     {
       "slideId": "slide_3_09",
       "moduleId": "module_03",
-      "template": "summary",
+      "template": "icon-row",
       "background": {
         "color": "background"
       },
@@ -2548,19 +3054,41 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_3_09_summary",
+          "componentId": "slide_3_09_icons",
           "order": 2,
           "frame": {
             "x": 64,
             "y": 144,
-            "w": 1152,
-            "h": 496
+            "w": 813,
+            "h": 404
           },
           "arrange": {
             "display": "grid",
-            "columns": 2,
+            "columns": 3,
             "gap": 16,
             "alignContent": "center"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_09_image_1",
+          "order": 3,
+          "frame": {
+            "x": 909,
+            "y": 144,
+            "w": 307,
+            "h": 250
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_09_callout_1",
+          "order": 4,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
           },
           "source": "inferred"
         }
@@ -2569,7 +3097,7 @@
     {
       "slideId": "slide_3_10",
       "moduleId": "module_03",
-      "template": "references",
+      "template": "table",
       "background": {
         "color": "background"
       },
@@ -2588,7 +3116,263 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_3_10_references",
+          "componentId": "slide_3_10_table",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 152,
+            "w": 1152,
+            "h": 488
+          },
+          "arrange": {
+            "display": "table",
+            "columnTemplate": "2.0fr 4.2fr 2.0fr 4.2fr",
+            "align": "start"
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_3_11",
+      "moduleId": "module_03",
+      "template": "icon-row",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_3_11_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_11_icons",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 144,
+            "w": 1152,
+            "h": 404
+          },
+          "arrange": {
+            "display": "grid",
+            "columns": 4,
+            "gap": 16,
+            "alignContent": "center"
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_11_callout_1",
+          "order": 3,
+          "frame": {
+            "x": 64,
+            "y": 568,
+            "w": 1152,
+            "h": 72
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_3_12",
+      "moduleId": "module_03",
+      "template": "multi-select",
+      "background": {
+        "color": "primaryTint"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_3_12_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_12_instruction",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 136,
+            "w": 1152,
+            "h": 32
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_12_question",
+          "order": 3,
+          "frame": {
+            "x": 160,
+            "y": 184,
+            "w": 960,
+            "h": 456
+          },
+          "arrange": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 12,
+            "feedbackOverlay": {
+              "position": "absolute",
+              "frame": {
+                "x": 320,
+                "y": 200,
+                "w": 640,
+                "h": 320
+              },
+              "background": "background",
+              "shadow": "raised",
+              "radius": "lg",
+              "scrim": "rgba(16,42,67,0.45)"
+            }
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_3_13",
+      "moduleId": "module_03",
+      "template": "match",
+      "background": {
+        "color": "primaryTint"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_3_13_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_13_instruction",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 136,
+            "w": 1152,
+            "h": 32
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_13_question",
+          "order": 3,
+          "frame": {
+            "x": 160,
+            "y": 184,
+            "w": 960,
+            "h": 456
+          },
+          "arrange": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 12,
+            "feedbackOverlay": {
+              "position": "absolute",
+              "frame": {
+                "x": 320,
+                "y": 200,
+                "w": 640,
+                "h": 320
+              },
+              "background": "background",
+              "shadow": "raised",
+              "radius": "lg",
+              "scrim": "rgba(16,42,67,0.45)"
+            }
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_3_14",
+      "moduleId": "module_03",
+      "template": "summary",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_3_14_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_14_summary",
+          "order": 2,
+          "frame": {
+            "x": 64,
+            "y": 144,
+            "w": 1152,
+            "h": 496
+          },
+          "arrange": {
+            "display": "grid",
+            "columns": 2,
+            "gap": 16,
+            "alignContent": "center"
+          },
+          "source": "inferred"
+        }
+      ]
+    },
+    {
+      "slideId": "slide_3_15",
+      "moduleId": "module_03",
+      "template": "references",
+      "background": {
+        "color": "background"
+      },
+      "showHeaderBand": true,
+      "positionSource": "inferred",
+      "items": [
+        {
+          "componentId": "slide_3_15_heading",
+          "order": 1,
+          "frame": {
+            "x": 64,
+            "y": 76,
+            "w": 1152,
+            "h": 56
+          },
+          "source": "inferred"
+        },
+        {
+          "componentId": "slide_3_15_references",
           "order": 2,
           "frame": {
             "x": 64,
@@ -2607,7 +3391,7 @@
       ]
     },
     {
-      "slideId": "slide_3_11",
+      "slideId": "slide_3_16",
       "moduleId": "module_03",
       "template": "results",
       "background": {
@@ -2617,7 +3401,7 @@
       "positionSource": "inferred",
       "items": [
         {
-          "componentId": "slide_3_11_heading",
+          "componentId": "slide_3_16_heading",
           "order": 1,
           "frame": {
             "x": 64,
@@ -2628,7 +3412,7 @@
           "source": "inferred"
         },
         {
-          "componentId": "slide_3_11_results",
+          "componentId": "slide_3_16_results",
           "order": 2,
           "frame": {
             "x": 240,

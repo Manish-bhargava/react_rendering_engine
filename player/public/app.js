@@ -24044,6 +24044,7 @@
 
   // player/src/components/Quiz.jsx
   var import_react3 = __toESM(require_react(), 1);
+  var import_react_dom = __toESM(require_react_dom(), 1);
   var import_jsx_runtime4 = __toESM(require_jsx_runtime(), 1);
   function useAttempts(c, narr, nav) {
     const [tries, setTries] = (0, import_react3.useState)(0);
@@ -24072,11 +24073,13 @@
     if (!f) return null;
     const o = overlay?.frame;
     const style = o ? { left: o.x, top: o.y, width: o.w, maxHeight: o.h } : {};
-    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "feedback-scrim", style: frame ? { left: -frame.x, top: -frame.y } : {}, children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: `feedback ${f.kind}`, role: "dialog", "aria-label": f.heading, style, children: [
+    const stage = typeof document !== "undefined" && document.querySelector(".stage");
+    const scrim = /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "feedback-scrim", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: `feedback ${f.kind}`, role: "dialog", "aria-label": f.heading, style, children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h3", { children: f.heading }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: f.body }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { className: "btn primary", onClick: () => onAction(f.onClick), children: f.button })
     ] }) });
+    return stage ? (0, import_react_dom.createPortal)(scrim, stage) : scrim;
   }
   function MultipleChoice({ c, arrange, frame, narr, nav }) {
     const [sel, setSel] = (0, import_react3.useState)(null);
@@ -25049,7 +25052,7 @@
     const { width: W, height: H } = layout.canvas;
     const { stackBelowPx = 900, minScale = 0.5, maxScale = 1.6 } = layout.responsive || {};
     (0, import_react6.useEffect)(() => {
-      const fit = () => {
+      const fit2 = () => {
         const el = wrapRef.current;
         if (!el) return;
         const availW = el.clientWidth;
@@ -25059,18 +25062,21 @@
         setStacked(narrow);
         if (!narrow) setScale(Math.min(Math.max(Math.min(availW / W, availH / H), minScale), maxScale));
       };
-      fit();
-      const ro = new ResizeObserver(fit);
+      fit2();
+      const ro = new ResizeObserver(fit2);
       if (wrapRef.current) ro.observe(wrapRef.current);
-      window.addEventListener("resize", fit);
-      window.addEventListener("orientationchange", fit);
+      window.addEventListener("resize", fit2);
+      window.addEventListener("orientationchange", fit2);
       return () => {
         ro.disconnect();
-        window.removeEventListener("resize", fit);
-        window.removeEventListener("orientationchange", fit);
+        window.removeEventListener("resize", fit2);
+        window.removeEventListener("orientationchange", fit2);
       };
     }, [layout, W, H, stackBelowPx, minScale, maxScale]);
     const L = layoutBySlide[slide.slideId];
+    const stageRef = (0, import_react6.useRef)(null);
+    const floor = (layout.furniture?.playerBar?.frame?.y ?? 670) - 14;
+    const fit = useContentFit(stageRef, L, !stacked, floor);
     const compById = Object.fromEntries(slide.components.map((c) => [c.id, c]));
     const bar = mod.player?.bottom_bar || {};
     const links = mod.player?.top_right_links || [];
@@ -25079,6 +25085,7 @@
     return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: `app ${stacked ? "is-flow" : "is-stage"}`, style: tokenVars(layout.tokens), children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "stage-wrap", ref: wrapRef, style: stacked ? {} : { height: H * scale }, children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(
       "div",
       {
+        ref: stageRef,
         className: `stage ${stacked ? "stacked" : ""} layout-${slide.layout}`,
         style: stacked ? { background: bg } : { width: W, height: H, transform: `scale(${scale})`, background: bg },
         children: [
@@ -25091,11 +25098,12 @@
             const measured = it.source && it.source !== "inferred";
             const Comp = measured && measuredRegistry[c.type] || registry[c.type];
             const f = it.frame;
-            const style = stacked || !f ? {} : { left: f.x, top: f.y, width: f.w, height: f.h };
+            const fz = !stacked && fit[c.id];
+            const style = stacked || !f ? {} : { left: f.x, top: fz ? fz.y : f.y, width: f.w, height: fz ? fz.h : f.h };
             return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
               "div",
               {
-                className: `c c-${c.type} ${measured ? "measured" : ""}`,
+                className: `c c-${c.type} ${measured ? "measured" : ""} ${fz?.scroll ? "is-scroll" : ""}`,
                 "data-id": c.id,
                 style: { ...style, ...overrideStyle(it.style, layout.tokens) },
                 children: Comp ? /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(Comp, { c, lay: it, arrange: it.arrange, frame: stacked ? null : f, narr, nav, stacked }) : /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "unknown", children: [
@@ -25139,6 +25147,81 @@
         ]
       }
     ) }) });
+  }
+  var FIT_GAP = 16;
+  function useContentFit(stageRef, L, enabled, floor) {
+    const [fit, setFit] = (0, import_react6.useState)({});
+    (0, import_react6.useLayoutEffect)(() => {
+      const stage = stageRef.current;
+      if (!enabled || !stage) {
+        setFit((p) => Object.keys(p).length ? {} : p);
+        return void 0;
+      }
+      let raf = 0;
+      const run = () => {
+        raf = 0;
+        const nat = {};
+        for (const el of stage.querySelectorAll(":scope > .c[data-id]")) {
+          const keep = el.style.height;
+          el.style.height = "auto";
+          nat[el.dataset.id] = { h: el.offsetHeight, wide: el.scrollWidth > el.clientWidth + 1 };
+          el.style.height = keep;
+        }
+        const items = L.items.filter((it) => it.frame && nat[it.componentId]).map((it) => ({ id: it.componentId, f: it.frame, nat: nat[it.componentId].h, wide: nat[it.componentId].wide })).sort((a, b) => a.f.y - b.f.y || a.f.x - b.f.x);
+        const sameColumn = (a, b) => a.x < b.x + b.w - 1 && b.x < a.x + a.w - 1;
+        const cap = {};
+        let placed = [];
+        for (let pass = 0; pass < 2 * items.length + 2; pass++) {
+          placed = [];
+          for (const it of items) {
+            const h = Math.max(it.f.h, Math.min(it.nat, cap[it.id] ?? Infinity));
+            let y = it.f.y;
+            let by = null;
+            for (const p2 of placed) {
+              if (!sameColumn(p2.f, it.f) || p2.f.y + p2.f.h > it.f.y + 1) continue;
+              const need = p2.y + p2.h + Math.min(FIT_GAP, it.f.y - (p2.f.y + p2.f.h));
+              if (need > y) {
+                y = need;
+                by = p2;
+              }
+            }
+            placed.push({ ...it, y, h, by });
+          }
+          const worst = placed.filter((p2) => p2.y + p2.h > floor + 0.5).sort((a, b) => b.y + b.h - (a.y + a.h))[0];
+          if (!worst) break;
+          let over = worst.y + worst.h - floor;
+          let p = worst;
+          while (p && over > 0.5) {
+            const grown = p.h - p.f.h;
+            if (grown > 0.5) {
+              const give = Math.min(grown, over);
+              cap[p.id] = p.h - give;
+              over -= give;
+            }
+            p = p.by;
+          }
+          if (over > 0.5) break;
+        }
+        const next = {};
+        for (const p of placed) {
+          const scroll = p.nat > p.h + 1 || p.wide;
+          if (p.y !== p.f.y || p.h !== p.f.h || scroll) next[p.id] = { y: p.y, h: p.h, scroll };
+        }
+        setFit((prev) => JSON.stringify(prev) === JSON.stringify(next) ? prev : next);
+      };
+      const schedule = () => {
+        if (!raf) raf = requestAnimationFrame(run);
+      };
+      run();
+      document.fonts?.ready.then(schedule);
+      const mo = new MutationObserver(schedule);
+      mo.observe(stage, { childList: true, subtree: true, characterData: true });
+      return () => {
+        mo.disconnect();
+        if (raf) cancelAnimationFrame(raf);
+      };
+    }, [stageRef, L, enabled, floor]);
+    return enabled ? fit : {};
   }
   function AudioControls({ narr, bar }) {
     return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("span", { className: "audio-ctl", children: [

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { registry, measuredRegistry } from './registry.js';
 import { tokenVars, overrideStyle } from './theme.js';
 import { useNarration } from './useNarration.js';
@@ -85,6 +85,10 @@ function Player({ components, layout, voiceover }) {
   }, [layout, W, H, stackBelowPx, minScale, maxScale]);
 
   const L = layoutBySlide[slide.slideId];
+  const stageRef = useRef(null);
+  // content stays above the player bar (or the inferred body bottom when there is no bar)
+  const floor = (layout.furniture?.playerBar?.frame?.y ?? 670) - 14;
+  const fit = useContentFit(stageRef, L, !stacked, floor);
   const compById = Object.fromEntries(slide.components.map((c) => [c.id, c]));
   const bar = mod.player?.bottom_bar || {};
   const links = mod.player?.top_right_links || [];
@@ -94,7 +98,7 @@ function Player({ components, layout, voiceover }) {
   return (
     <div className={`app ${stacked ? 'is-flow' : 'is-stage'}`} style={tokenVars(layout.tokens)}>
       <div className="stage-wrap" ref={wrapRef} style={stacked ? {} : { height: H * scale }}>
-        <div className={`stage ${stacked ? 'stacked' : ''} layout-${slide.layout}`}
+        <div ref={stageRef} className={`stage ${stacked ? 'stacked' : ''} layout-${slide.layout}`}
           style={stacked ? { background: bg } : { width: W, height: H, transform: `scale(${scale})`, background: bg }}>
           {furn.measured ? <DeckChrome L={L} furn={furn} slide={slide} links={links} nav={nav} stacked={stacked} /> : (L.showHeaderBand && (
             <header className="header-band">
@@ -112,9 +116,10 @@ function Player({ components, layout, voiceover }) {
             const measured = it.source && it.source !== 'inferred';
             const Comp = (measured && measuredRegistry[c.type]) || registry[c.type];
             const f = it.frame;
-            const style = stacked || !f ? {} : { left: f.x, top: f.y, width: f.w, height: f.h };
+            const fz = !stacked && fit[c.id];
+            const style = stacked || !f ? {} : { left: f.x, top: fz ? fz.y : f.y, width: f.w, height: fz ? fz.h : f.h };
             return (
-              <div key={c.id} className={`c c-${c.type} ${measured ? 'measured' : ''}`} data-id={c.id}
+              <div key={c.id} className={`c c-${c.type} ${measured ? 'measured' : ''} ${fz?.scroll ? 'is-scroll' : ''}`} data-id={c.id}
                 style={{ ...style, ...overrideStyle(it.style, layout.tokens) }}>
                 {Comp ? <Comp c={c} lay={it} arrange={it.arrange} frame={stacked ? null : f} narr={narr} nav={nav} stacked={stacked} />
                   : <div className="unknown">Unknown component type: {c.type}</div>}
@@ -149,6 +154,81 @@ function Player({ components, layout, voiceover }) {
       </div>
     </div>
   );
+}
+
+// ---------------------------------------------------------------------------------
+// Content fit for the scaled stage. layout.json frames are planned before anything is
+// rendered, so a component can need more height than its frame (a long table, many
+// steps, a wrapped title). After each render this measures every component's natural
+// height and returns per-component overrides { y, h, scroll }:
+//   1. a component that needs more room grows; whatever sits below it in the same
+//      column moves down by the same amount (a frame never shrinks);
+//   2. if that would run into the player bar, the component that grew is capped and
+//      scrolls inside its own frame, so nothing is clipped, hidden or overlapped.
+// Frames themselves are untouched; in the single-column layout this does nothing.
+const FIT_GAP = 16;            // largest gap kept between a grown component and the next one down
+
+function useContentFit(stageRef, L, enabled, floor) {
+  const [fit, setFit] = useState({});
+  useLayoutEffect(() => {
+    const stage = stageRef.current;
+    if (!enabled || !stage) { setFit((p) => (Object.keys(p).length ? {} : p)); return undefined; }
+    let raf = 0;
+    const run = () => {
+      raf = 0;
+      // natural size of each component: the same box with its height released
+      const nat = {};
+      for (const el of stage.querySelectorAll(':scope > .c[data-id]')) {
+        const keep = el.style.height;
+        el.style.height = 'auto';
+        nat[el.dataset.id] = { h: el.offsetHeight, wide: el.scrollWidth > el.clientWidth + 1 };
+        el.style.height = keep;
+      }
+      const items = L.items.filter((it) => it.frame && nat[it.componentId])
+        .map((it) => ({ id: it.componentId, f: it.frame, nat: nat[it.componentId].h, wide: nat[it.componentId].wide }))
+        .sort((a, b) => a.f.y - b.f.y || a.f.x - b.f.x);
+      const sameColumn = (a, b) => a.x < b.x + b.w - 1 && b.x < a.x + a.w - 1;
+      const cap = {};
+      let placed = [];
+      for (let pass = 0; pass < 2 * items.length + 2; pass++) {
+        placed = [];
+        for (const it of items) {
+          const h = Math.max(it.f.h, Math.min(it.nat, cap[it.id] ?? Infinity));
+          let y = it.f.y; let by = null;
+          for (const p of placed) {
+            if (!sameColumn(p.f, it.f) || p.f.y + p.f.h > it.f.y + 1) continue;   // only what was planned above it
+            const need = p.y + p.h + Math.min(FIT_GAP, it.f.y - (p.f.y + p.f.h));
+            if (need > y) { y = need; by = p; }
+          }
+          placed.push({ ...it, y, h, by });
+        }
+        // the lowest component past the floor gives back the growth that pushed it there
+        const worst = placed.filter((p) => p.y + p.h > floor + 0.5).sort((a, b) => b.y + b.h - (a.y + a.h))[0];
+        if (!worst) break;
+        let over = worst.y + worst.h - floor; let p = worst;
+        while (p && over > 0.5) {
+          const grown = p.h - p.f.h;
+          if (grown > 0.5) { const give = Math.min(grown, over); cap[p.id] = p.h - give; over -= give; }
+          p = p.by;
+        }
+        if (over > 0.5) break;      // the planned frames themselves run past the floor: leave them as planned
+      }
+      const next = {};
+      for (const p of placed) {
+        const scroll = p.nat > p.h + 1 || p.wide;
+        if (p.y !== p.f.y || p.h !== p.f.h || scroll) next[p.id] = { y: p.y, h: p.h, scroll };
+      }
+      setFit((prev) => (JSON.stringify(prev) === JSON.stringify(next) ? prev : next));
+    };
+    const schedule = () => { if (!raf) raf = requestAnimationFrame(run); };
+    run();
+    document.fonts?.ready.then(schedule);
+    // content that changes after load (an opened layer, a validation message) is measured again
+    const mo = new MutationObserver(schedule);
+    mo.observe(stage, { childList: true, subtree: true, characterData: true });
+    return () => { mo.disconnect(); if (raf) cancelAnimationFrame(raf); };
+  }, [stageRef, L, enabled, floor]);
+  return enabled ? fit : {};
 }
 
 function AudioControls({ narr, bar }) {

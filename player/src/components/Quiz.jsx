@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 
 // Shared attempt logic: correct -> "correct" layer; wrong -> "try_again" until the
 // last attempt, then "incorrect". Layer buttons run the source on_click actions.
@@ -26,10 +27,12 @@ function useAttempts(c, narr, nav) {
 function Feedback({ f, frame, overlay, onAction }) {
   if (!f) return null;
   const o = overlay?.frame;
-  // the scrim is pinned to the stage origin, so the overlay frame is used as-is
+  // the scrim is rendered into the stage itself, so it covers the whole slide even when
+  // the quiz box scrolls; the overlay frame is in stage coordinates and is used as-is
   const style = o ? { left: o.x, top: o.y, width: o.w, maxHeight: o.h } : {};
-  return (
-    <div className="feedback-scrim" style={frame ? { left: -frame.x, top: -frame.y } : {}}>
+  const stage = typeof document !== 'undefined' && document.querySelector('.stage');
+  const scrim = (
+    <div className="feedback-scrim">
       <div className={`feedback ${f.kind}`} role="dialog" aria-label={f.heading} style={style}>
         <h3>{f.heading}</h3>
         <p>{f.body}</p>
@@ -37,6 +40,7 @@ function Feedback({ f, frame, overlay, onAction }) {
       </div>
     </div>
   );
+  return stage ? createPortal(scrim, stage) : scrim;
 }
 
 export function MultipleChoice({ c, arrange, frame, narr, nav }) {

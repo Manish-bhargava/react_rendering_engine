@@ -1,6 +1,6 @@
 {
   "specVersion": "v1",
-  "course": "Sitz Bath",
+  "course": "Patient Preparation and Specimen Collection",
   "audio": {
     "basePath": "audio/",
     "format": "mp3",
@@ -12,24 +12,24 @@
     "revealTiming": "line start = audio duration x (words before the line / total words); an item with lineIndex null takes the previous item's cue, or shows at start",
     "missingAudio": "do not block navigation; show the narration text instead"
   },
-  "manifestEntries": 52,
+  "manifestEntries": 67,
   "modules": [
     {
       "moduleId": "module_01",
-      "title": "Section 1: Understanding the Procedure",
+      "title": "Section 1: Understanding Pathology and Blood Collection",
       "slides": [
         {
           "slideId": "slide_1_01",
           "sourceSlideId": "1.01",
           "base": {
             "audioFile": "m1_1_01_base.mp3",
-            "words": 103,
-            "approxSeconds": 44,
+            "words": 88,
+            "approxSeconds": 38,
             "lines": [
-              "Welcome to the module on the Sitz Bath Procedure, prepared by Bodhi Learning Labs.",
-              "Comfort and hygiene are essential parts of quality nursing care, particularly for patients in pain, swollen or uncomfortable in the perineal area.",
-              "A sitz bath is a simple but highly effective nursing intervention. It relieves pain, improves circulation, promotes healing and helps the patient relax after childbirth, surgery or an anorectal condition.",
-              "In this first section you will learn what a sitz bath is, when it is indicated, when it must not be used, the three types, and the temperature, duration and frequency that make it safe and effective."
+              "Welcome to the module on Patient Preparation and Specimen Collection for Nurses, prepared by Bodhi Learning Labs.",
+              "Accurate diagnosis begins long before the laboratory report is generated. It starts at the bedside, with proper patient preparation and correct specimen collection.",
+              "A simple mistake - the wrong label, improper fasting, a delayed transport - leads to an inaccurate result and inappropriate treatment.",
+              "In this first section you will learn what pathology testing is, where errors actually occur, and how to take a blood sample that the laboratory can use."
             ],
             "reveal": {
               "mode": "per_line",
@@ -53,15 +53,16 @@
           "sourceSlideId": "1.02",
           "base": {
             "audioFile": "m1_1_02_base.mp3",
-            "words": 61,
-            "approxSeconds": 26,
+            "words": 78,
+            "approxSeconds": 33,
             "lines": [
               "By the end of this section, you will be able to:",
-              "Define a sitz bath and explain its purpose.",
-              "Identify the conditions for which a sitz bath is indicated.",
-              "Recognise the contraindications and precautions, and the patients most at risk.",
-              "Select the type of sitz bath that suits the patient's condition.",
-              "And state the water temperature, duration and frequency of treatment."
+              "Define pathology and explain why specimen collection decides the result.",
+              "Describe the three phases of laboratory testing and name the one where most errors occur.",
+              "Identify a patient correctly before collecting any specimen.",
+              "Apply the order of draw and select the correct vial for a given test.",
+              "State the fasting and timing requirements for the common blood tests.",
+              "And collect a blood sample by the correct technique."
             ],
             "reveal": {
               "mode": "per_line",
@@ -85,37 +86,37 @@
           "sourceSlideId": "1.03",
           "base": {
             "audioFile": "m1_1_03_base.mp3",
-            "words": 36,
-            "approxSeconds": 15,
+            "words": 41,
+            "approxSeconds": 18,
             "lines": [
               "The course menu is displayed.",
-              "This course runs in three sections: understanding the procedure, performing it and caring for the patient, and the benefits, risks and teaching that surround it.",
+              "This course runs in three sections: understanding pathology and blood collection; collecting urine, sputum, stool, cerebrospinal fluid and swabs; and what happens to a specimen after you have taken it.",
               "Click on a section to proceed."
             ],
             "reveal": {
-              "mode": "per_line",
-              "note": "one cue per line, synced to the narration line beside it",
+              "mode": "together",
+              "note": "all lines reveal as one group with the narration; the detail is carried on the slide that follows",
               "cues": [
                 {
                   "order": 1,
                   "componentId": "slide_1_03_icons",
                   "itemIndex": 0,
                   "lineIndex": 0,
-                  "text": "Understanding the procedure — Definition · purpose · indications · contraindications and precautions · types of sitz bath · temperature, duration and frequency"
+                  "text": "Understanding pathology and blood collection — Definition and importance · the three laboratory phases · patient identification · order of draw · vials · fasting and timing · taking the sample"
                 },
                 {
                   "order": 2,
                   "componentId": "slide_1_03_icons",
                   "itemIndex": 1,
                   "lineIndex": 1,
-                  "text": "Procedure and nursing care — Articles required · preparation of patient and equipment · procedure for ambulatory and bedridden patients · aftercare · documentation"
+                  "text": "Collecting urine, sputum, stool, CSF and swabs — Routine and culture urine · 24-hour collection · sputum · stool · lumbar puncture · nasopharyngeal and oropharyngeal swabs"
                 },
                 {
                   "order": 3,
                   "componentId": "slide_1_03_icons",
                   "itemIndex": 2,
                   "lineIndex": 2,
-                  "text": "Benefits and safety — Advantages and benefits · complications · nursing responsibilities · patient education"
+                  "text": "Transport, documentation and safe practice — Transport requirements · critical specimens · documentation · complications · patient education · waste disposal · common errors"
                 }
               ]
             }
@@ -136,13 +137,12 @@
           "sourceSlideId": "1.04",
           "base": {
             "audioFile": "m1_1_04_base.mp3",
-            "words": 84,
-            "approxSeconds": 36,
+            "words": 64,
+            "approxSeconds": 27,
             "lines": [
-              "A sitz bath is a warm water bath used to relieve discomfort in the perineal region.",
-              "During the procedure the affected area is soaked in warm water. This relaxes the anal sphincter and improves blood circulation to the anal and perineal tissues.",
-              "That increased blood flow promotes healing, and reduces the pain, itching, irritation and discomfort caused by a range of conditions.",
-              "The main purpose of a sitz bath is to enhance healing and relieve pain, while providing comfort and relaxation to the patient."
+              "Pathology is the branch of medical science that studies the causes and effects of diseases and injuries. It explains how disease develops and how it affects tissues and organs.",
+              "In day-to-day practice, the word also means the laboratory testing of blood, urine, stool, body fluids and tissue samples, used for diagnosis and treatment.",
+              "A doctor who specialises in this field is called a pathologist."
             ],
             "reveal": {
               "mode": "per_line",
@@ -152,19 +152,19 @@
                   "order": 1,
                   "componentId": "slide_1_04_definition",
                   "itemIndex": 0,
-                  "lineIndex": 1
+                  "lineIndex": 0
                 },
                 {
                   "order": 2,
                   "componentId": "slide_1_04_definition",
                   "itemIndex": 1,
-                  "lineIndex": 2
+                  "lineIndex": 1
                 },
                 {
                   "order": 3,
                   "componentId": "slide_1_04_definition",
                   "itemIndex": 2,
-                  "lineIndex": 3
+                  "lineIndex": 2
                 }
               ]
             }
@@ -185,22 +185,24 @@
           "sourceSlideId": "1.05",
           "base": {
             "audioFile": "m1_1_05_base.mp3",
-            "words": 66,
-            "approxSeconds": 28,
+            "words": 61,
+            "approxSeconds": 26,
             "lines": [
-              "A sitz bath is a simple, safe and effective intervention, used across a range of perineal and anorectal conditions.",
-              "It is indicated for hemorrhoids, episiotomy wounds, postpartum perineal pain, anal fissure, rectal surgery, perianal abscess, and discomfort following urinary catheterisation.",
-              "Each of these is a different problem, and the sitz bath helps each one in a slightly different way. Let us take them in two groups."
+              "A pathology test examines a sample taken from the body.",
+              "Blood is the commonest specimen, and the one you will collect most often.",
+              "Urine, stool, body fluids, sputum, swabs and tissue biopsies are all also sent for testing.",
+              "These tests give the information that lets doctors diagnose disease, plan treatment and monitor progress - detecting infection, allergy, chronic disease and cancer."
             ],
             "reveal": {
-              "mode": "together",
-              "note": "all lines reveal as one group with the narration; the detail is carried on the slide that follows",
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
               "cues": [
                 {
                   "order": 1,
                   "componentId": "slide_1_05_icons",
                   "itemIndex": 0,
-                  "lineIndex": 1
+                  "lineIndex": 1,
+                  "text": "Blood — The commonest specimen"
                 },
                 {
                   "order": 2,
@@ -212,7 +214,7 @@
                   "order": 3,
                   "componentId": "slide_1_05_icons",
                   "itemIndex": 2,
-                  "lineIndex": null
+                  "lineIndex": 3
                 },
                 {
                   "order": 4,
@@ -257,13 +259,14 @@
           "sourceSlideId": "1.06",
           "base": {
             "audioFile": "m1_1_06_base.mp3",
-            "words": 132,
-            "approxSeconds": 57,
+            "words": 102,
+            "approxSeconds": 44,
             "lines": [
-              "Hemorrhoids are swollen veins around the rectal area, causing severe pain, itching, swelling and discomfort, especially during bowel movements. A warm sitz bath relaxes the muscles, improves blood circulation, reduces inflammation and soothes the area.",
-              "An anal fissure is a small tear in the lining of the anus, causing intense pain and bleeding on defecation. The sitz bath relaxes the anal sphincter, reduces spasm, relieves pain and promotes faster healing of the fissure.",
-              "Patients who undergo surgery involving the rectum or anal area may have pain, swelling and irritation afterwards. A sitz bath is commonly advised to maintain hygiene, reduce discomfort and support wound healing during recovery.",
-              "In a perianal abscess, pus collects near the anus causing swelling, redness and pain. A sitz bath helps improve drainage, reduce inflammation and relieve discomfort."
+              "Laboratory testing is divided into three phases.",
+              "The pre-analytical phase includes patient preparation, correct specimen collection, proper labelling and timely transport to the laboratory.",
+              "The analytical phase is the processing and testing of the specimen in the laboratory.",
+              "The post-analytical phase is the reporting and interpretation of the results.",
+              "Errors can occur in any phase, but most occur during the pre-analytical phase - which makes the nurse's role the decisive one. A sample collected at the wrong time or by the wrong technique gives a misleading result, forces a repeat test, adds to the patient's discomfort, and delays the start of treatment."
             ],
             "reveal": {
               "mode": "per_line",
@@ -271,40 +274,68 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_1_06_cards",
+                  "componentId": "slide_1_06_process",
                   "itemIndex": 0,
-                  "lineIndex": 0
+                  "lineIndex": 1,
+                  "text": "Pre-analytical — Patient preparation · correct collection · proper labelling · timely transport"
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_1_06_cards",
+                  "componentId": "slide_1_06_process",
                   "itemIndex": 1,
-                  "lineIndex": 1
+                  "lineIndex": 2,
+                  "text": "Analytical — Processing and testing in the laboratory"
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_1_06_cards",
+                  "componentId": "slide_1_06_process",
                   "itemIndex": 2,
-                  "lineIndex": 2
-                },
-                {
-                  "order": 4,
-                  "componentId": "slide_1_06_cards",
-                  "itemIndex": 3,
-                  "lineIndex": 3
+                  "lineIndex": 3,
+                  "text": "Post-analytical — Reporting and interpretation of results"
                 }
               ]
             }
           },
-          "layers": [],
+          "layers": [
+            {
+              "layerId": "slide_1_06_layer_1",
+              "componentId": "slide_1_06_process",
+              "index": 1,
+              "audioFile": "m1_1_06_L1.mp3",
+              "words": null,
+              "approxSeconds": null,
+              "lines": []
+            },
+            {
+              "layerId": "slide_1_06_layer_2",
+              "componentId": "slide_1_06_process",
+              "index": 2,
+              "audioFile": "m1_1_06_L2.mp3",
+              "words": null,
+              "approxSeconds": null,
+              "lines": []
+            },
+            {
+              "layerId": "slide_1_06_layer_3",
+              "componentId": "slide_1_06_process",
+              "index": 3,
+              "audioFile": "m1_1_06_L3.mp3",
+              "words": null,
+              "approxSeconds": null,
+              "lines": []
+            }
+          ],
           "playback": {
             "autoplayBase": true,
             "sequence": [
-              "base"
+              "base",
+              "on_open:slide_1_06_layer_1",
+              "on_open:slide_1_06_layer_2",
+              "on_open:slide_1_06_layer_3"
             ],
-            "pauseBaseOnLayerOpen": null,
-            "resumeBaseOnLayerClose": null,
-            "stopLayerAudioOnLayerSwitch": null
+            "pauseBaseOnLayerOpen": true,
+            "resumeBaseOnLayerClose": true,
+            "stopLayerAudioOnLayerSwitch": true
           }
         },
         {
@@ -312,12 +343,13 @@
           "sourceSlideId": "1.07",
           "base": {
             "audioFile": "m1_1_07_base.mp3",
-            "words": 99,
-            "approxSeconds": 42,
+            "words": 64,
+            "approxSeconds": 27,
             "lines": [
-              "After childbirth some mothers have an episiotomy, a surgical incision made in the perineal area during delivery. The wound causes pain and tenderness. A sitz bath keeps the area clean, reduces swelling, promotes healing and provides comfort during the postpartum period.",
-              "Many women experience soreness, bruising or discomfort in the perineal region after a normal vaginal delivery. Warm water therapy relaxes the tissues, improves circulation, decreases pain, and makes movement and sitting more comfortable.",
-              "Some patients have irritation or soreness in the perineal region after urinary catheterisation. A sitz bath provides soothing relief, improves comfort and maintains local hygiene."
+              "Correct patient identification is the most important step before collecting any specimen.",
+              "Always use at least two identifiers - the patient's full name, the UHID or medical record number, and the date of birth.",
+              "Match these details against the laboratory request form and the patient's identification band.",
+              "And never collect a specimen without confirming identity, because misidentification leads directly to diagnostic and treatment errors."
             ],
             "reveal": {
               "mode": "per_line",
@@ -325,20 +357,14 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_1_07_cards",
+                  "componentId": "slide_1_07_definition",
                   "itemIndex": 0,
-                  "lineIndex": 0
-                },
-                {
-                  "order": 2,
-                  "componentId": "slide_1_07_cards",
-                  "itemIndex": 1,
                   "lineIndex": 1
                 },
                 {
-                  "order": 3,
-                  "componentId": "slide_1_07_cards",
-                  "itemIndex": 2,
+                  "order": 2,
+                  "componentId": "slide_1_07_definition",
+                  "itemIndex": 1,
                   "lineIndex": 2
                 }
               ]
@@ -360,16 +386,15 @@
           "sourceSlideId": "1.08",
           "base": {
             "audioFile": "m1_1_08_base.mp3",
-            "words": 193,
-            "approxSeconds": 83,
+            "words": 51,
+            "approxSeconds": 22,
             "lines": [
-              "Before performing a sitz bath, it is very important to understand its contraindications and precautions, to ensure patient safety and prevent complications.",
-              "A sitz bath should be avoided, or performed only with caution, in patients with active or excessive bleeding from the perineal or rectal area, because warm water may increase circulation and worsen the bleeding.",
-              "Patients with severe infection, extensive tissue damage or deep wounds may require medical evaluation before the procedure, as improper technique can spread infection.",
-              "A sitz bath needs the patient's cooperation and their ability to communicate discomfort. Unconscious, confused or uncooperative patients are at higher risk of falls, burns and injury.",
-              "If any antiseptic or medicated solution is to be added to the water, check for allergies first, to avoid skin irritation, redness or an allergic reaction.",
-              "Patients with impaired sensation or neuropathy - diabetic patients in particular - may not feel excessive heat. These patients are at greater risk of burns and skin damage, so extra caution and careful temperature assessment are necessary.",
-              "And excessively hot water is itself a major risk. It causes burns, tissue injury and discomfort, so always check the water temperature before starting."
+              "Standard precautions apply to every specimen collection procedure.",
+              "Perform hand hygiene before and after the procedure.",
+              "Wear gloves and other personal protective equipment as needed.",
+              "Use sterile equipment wherever it is required.",
+              "Dispose of needles and other sharps safely, in puncture-proof containers.",
+              "And clean any spill immediately with an appropriate disinfectant."
             ],
             "reveal": {
               "mode": "per_line",
@@ -377,45 +402,33 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_1_08_table",
+                  "componentId": "slide_1_08_icons",
                   "itemIndex": 0,
-                  "lineIndex": 0
-                },
-                {
-                  "order": 2,
-                  "componentId": "slide_1_08_table",
-                  "itemIndex": 1,
                   "lineIndex": 1
                 },
                 {
-                  "order": 3,
-                  "componentId": "slide_1_08_table",
-                  "itemIndex": 2,
+                  "order": 2,
+                  "componentId": "slide_1_08_icons",
+                  "itemIndex": 1,
                   "lineIndex": 2
                 },
                 {
-                  "order": 4,
-                  "componentId": "slide_1_08_table",
-                  "itemIndex": 3,
+                  "order": 3,
+                  "componentId": "slide_1_08_icons",
+                  "itemIndex": 2,
                   "lineIndex": 3
                 },
                 {
-                  "order": 5,
-                  "componentId": "slide_1_08_table",
-                  "itemIndex": 4,
+                  "order": 4,
+                  "componentId": "slide_1_08_icons",
+                  "itemIndex": 3,
                   "lineIndex": 4
                 },
                 {
-                  "order": 6,
-                  "componentId": "slide_1_08_table",
-                  "itemIndex": 5,
+                  "order": 5,
+                  "componentId": "slide_1_08_icons",
+                  "itemIndex": 4,
                   "lineIndex": 5
-                },
-                {
-                  "order": 7,
-                  "componentId": "slide_1_08_table",
-                  "itemIndex": 6,
-                  "lineIndex": 6
                 }
               ]
             }
@@ -436,108 +449,136 @@
           "sourceSlideId": "1.09",
           "base": {
             "audioFile": "m1_1_09_base.mp3",
-            "words": 122,
-            "approxSeconds": 52,
+            "words": 37,
+            "approxSeconds": 16,
             "lines": [
-              "Sitz baths are classified into three types, chosen by the patient's condition and the treatment goal.",
-              "The warm sitz bath is the most commonly used. The patient sits in comfortably warm water for fifteen to twenty minutes - it improves circulation, relaxes muscles, reduces pain and swelling, and promotes healing.",
-              "The cold sitz bath uses cool or cold water for a short duration, reducing inflammation and local edema by vasoconstriction. Use it carefully: excessive cold is uncomfortable for the patient.",
-              "In the medicated sitz bath, a prescribed antiseptic or medicated solution is added to the water as advised by the doctor, to reduce infection and cleanse the wound area.",
-              "The type follows the goal, and the goal comes from the doctor's order."
+              "The order of draw is the sequence in which blood collection tubes are filled during a venipuncture, and following it matters because it prevents additive carrying over from one tube to the next and altering the result."
             ],
             "reveal": {
-              "mode": "per_line",
-              "note": "one cue per line, synced to the narration line beside it",
+              "mode": "together",
+              "note": "all lines reveal as one group with the narration; the detail is carried on the slide that follows",
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_1_09_table",
+                  "componentId": "slide_1_09_process",
                   "itemIndex": 0,
-                  "lineIndex": 0
+                  "lineIndex": null
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_1_09_table",
+                  "componentId": "slide_1_09_process",
                   "itemIndex": 1,
-                  "lineIndex": 1
+                  "lineIndex": null
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_1_09_table",
+                  "componentId": "slide_1_09_process",
                   "itemIndex": 2,
-                  "lineIndex": 2
+                  "lineIndex": null
                 },
                 {
                   "order": 4,
-                  "componentId": "slide_1_09_table",
+                  "componentId": "slide_1_09_process",
                   "itemIndex": 3,
-                  "lineIndex": 3
+                  "lineIndex": null
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_1_09_process",
+                  "itemIndex": 4,
+                  "lineIndex": null
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_1_09_process",
+                  "itemIndex": 5,
+                  "lineIndex": null
                 }
               ]
             }
           },
-          "layers": [],
-          "playback": {
-            "autoplayBase": true,
-            "sequence": [
-              "base"
-            ],
-            "pauseBaseOnLayerOpen": null,
-            "resumeBaseOnLayerClose": null,
-            "stopLayerAudioOnLayerSwitch": null
-          }
-        },
-        {
-          "slideId": "slide_1_10",
-          "sourceSlideId": "1.10",
-          "base": {
-            "audioFile": "m1_1_10_base.mp3",
-            "words": 118,
-            "approxSeconds": 51,
-            "lines": [
-              "Maintaining the correct water temperature is very important for patient comfort and safety.",
-              "The recommended water temperature for a warm sitz bath is between forty and forty-five degrees Celsius. Water that is too hot causes burns and tissue damage; water that is too cold does not produce the therapeutic effect. Always check the temperature before starting.",
-              "The usual duration is about fifteen to twenty minutes. That is generally enough to improve blood circulation, relieve pain, reduce swelling and promote healing in the perineal area.",
-              "The frequency is usually two to three times a day, or as ordered by the physician depending on the patient's condition.",
-              "Temperature, duration and frequency together are what make the therapy effective and safe."
-            ],
-            "reveal": {
-              "mode": "per_line",
-              "note": "one cue per line, synced to the narration line beside it",
-              "cues": [
-                {
-                  "order": 1,
-                  "componentId": "slide_1_10_icons",
-                  "itemIndex": 0,
-                  "lineIndex": 1,
-                  "text": "40°C – 45°C — Recommended water temperature for a warm sitz bath"
-                },
-                {
-                  "order": 2,
-                  "componentId": "slide_1_10_icons",
-                  "itemIndex": 1,
-                  "lineIndex": 2,
-                  "text": "15 – 20 minutes — Long enough to improve circulation and relieve pain"
-                },
-                {
-                  "order": 3,
-                  "componentId": "slide_1_10_icons",
-                  "itemIndex": 2,
-                  "lineIndex": 3,
-                  "text": "2 – 3 times a day — Or as ordered by the physician"
-                }
+          "layers": [
+            {
+              "layerId": "slide_1_09_layer_1",
+              "componentId": "slide_1_09_process",
+              "index": 1,
+              "audioFile": "m1_1_09_L1.mp3",
+              "words": 25,
+              "approxSeconds": 11,
+              "lines": [
+                "The first tube is the blood culture bottle. It is collected first to maintain sterility and avoid contamination, which matters most when infection is suspected."
+              ]
+            },
+            {
+              "layerId": "slide_1_09_layer_2",
+              "componentId": "slide_1_09_process",
+              "index": 2,
+              "audioFile": "m1_1_09_L2.mp3",
+              "words": 41,
+              "approxSeconds": 18,
+              "lines": [
+                "Second is the citrate tube, with a blue cap. It contains sodium citrate and is used for coagulation tests such as PT, INR and APTT. This tube must be filled to the exact marked level or the result will be wrong."
+              ]
+            },
+            {
+              "layerId": "slide_1_09_layer_3",
+              "componentId": "slide_1_09_process",
+              "index": 3,
+              "audioFile": "m1_1_09_L3.mp3",
+              "words": 37,
+              "approxSeconds": 16,
+              "lines": [
+                "Third is the serum tube, with a red or yellow cap. It may be plain or contain a clot activator and gel separator, and it is used for biochemistry, liver function tests, kidney function tests and serology."
+              ]
+            },
+            {
+              "layerId": "slide_1_09_layer_4",
+              "componentId": "slide_1_09_process",
+              "index": 4,
+              "audioFile": "m1_1_09_L4.mp3",
+              "words": 20,
+              "approxSeconds": 9,
+              "lines": [
+                "Fourth is the heparin tube, with a green cap. It is used for electrolyte testing and some special chemistry tests."
+              ]
+            },
+            {
+              "layerId": "slide_1_09_layer_5",
+              "componentId": "slide_1_09_process",
+              "index": 5,
+              "audioFile": "m1_1_09_L5.mp3",
+              "words": 30,
+              "approxSeconds": 13,
+              "lines": [
+                "Fifth is the EDTA tube, with a purple or lavender cap, used for haematology tests such as complete blood count, haemoglobin and blood grouping. EDTA prevents clotting by binding calcium."
+              ]
+            },
+            {
+              "layerId": "slide_1_09_layer_6",
+              "componentId": "slide_1_09_process",
+              "index": 6,
+              "audioFile": "m1_1_09_L6.mp3",
+              "words": 28,
+              "approxSeconds": 12,
+              "lines": [
+                "And last is the fluoride tube, with a grey cap. It contains sodium fluoride and potassium oxalate, and is used mainly for blood glucose, because it prevents glycolysis."
               ]
             }
-          },
-          "layers": [],
+          ],
           "playback": {
             "autoplayBase": true,
             "sequence": [
-              "base"
+              "base",
+              "on_open:slide_1_09_layer_1",
+              "on_open:slide_1_09_layer_2",
+              "on_open:slide_1_09_layer_3",
+              "on_open:slide_1_09_layer_4",
+              "on_open:slide_1_09_layer_5",
+              "on_open:slide_1_09_layer_6"
             ],
-            "pauseBaseOnLayerOpen": null,
-            "resumeBaseOnLayerClose": null,
-            "stopLayerAudioOnLayerSwitch": null
+            "pauseBaseOnLayerOpen": true,
+            "resumeBaseOnLayerClose": true,
+            "stopLayerAudioOnLayerSwitch": true
           }
         },
         {
@@ -545,11 +586,11 @@
           "sourceSlideId": "1.11",
           "base": {
             "audioFile": "m1_1_11_base.mp3",
-            "words": 48,
-            "approxSeconds": 21,
+            "words": 55,
+            "approxSeconds": 24,
             "lines": [
               "Now, let us answer a question to check our understanding.",
-              "A postpartum mother complains of perineal pain after a normal vaginal delivery. The nurse recommends a warm sitz bath. What is the primary benefit of the sitz bath in this situation?",
+              "A nurse is collecting blood samples for a patient requiring a blood culture, PT and INR, a liver function test, a complete blood count, and blood glucose. To prevent contamination of additives, which sequence should the nurse follow?",
               "Select the correct answer and click Submit."
             ],
             "reveal": {
@@ -575,11 +616,585 @@
           "sourceSlideId": "1.12",
           "base": {
             "audioFile": "m1_1_12_base.mp3",
-            "words": 37,
-            "approxSeconds": 16,
+            "words": 190,
+            "approxSeconds": 81,
+            "lines": [
+              "Each vial contains a specific additive that preserves the sample for a particular kind of test.",
+              "The yellow top is a serum separator tube containing clot activator and gel, used for most biochemistry tests and for some microbiology and serology.",
+              "The red top is a plain tube with no preservative, used for biochemistry and serology. It should not be shaken - the blood is allowed to clot naturally.",
+              "The purple or lavender top contains EDTA, an anticoagulant, and is used for haematology tests such as complete blood count, haemoglobin and peripheral smear. Invert it gently several times after collection.",
+              "The grey top contains sodium fluoride and potassium oxalate and is used mainly for glucose, because the fluoride prevents blood cells breaking the glucose down. Mix it gently.",
+              "The blue top contains sodium citrate and is used for coagulation studies such as PT, INR and APTT. It must be filled to the correct level and inverted gently.",
+              "The green top contains heparin and is used for ammonia and certain special chemistry tests.",
+              "And the black top contains sodium citrate and is used specifically for erythrocyte sedimentation rate, by the Westergren method."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_12_table",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_12_table",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_12_table",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_12_table",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_1_12_table",
+                  "itemIndex": 4,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_1_12_table",
+                  "itemIndex": 5,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_1_12_table",
+                  "itemIndex": 6,
+                  "lineIndex": 6
+                },
+                {
+                  "order": 8,
+                  "componentId": "slide_1_12_table",
+                  "itemIndex": 7,
+                  "lineIndex": 7
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_13",
+          "sourceSlideId": "1.13",
+          "base": {
+            "audioFile": "m1_1_13_base.mp3",
+            "words": 58,
+            "approxSeconds": 25,
+            "lines": [
+              "Laboratories reject specimens that do not meet quality requirements, and every rejection means the patient is stuck again.",
+              "Specimens are rejected for incorrect or missing labels.",
+              "For haemolysis.",
+              "For insufficient quantity.",
+              "For use of the wrong container.",
+              "For contamination.",
+              "For delayed transport.",
+              "And for clotting in a sample that should have been anticoagulated, such as a CBC specimen."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_13_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_13_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_13_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_13_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_1_13_icons",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_1_13_icons",
+                  "itemIndex": 5,
+                  "lineIndex": 6
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_1_13_icons",
+                  "itemIndex": 6,
+                  "lineIndex": 7
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_14",
+          "sourceSlideId": "1.14",
+          "base": {
+            "audioFile": "m1_1_14_base.mp3",
+            "words": 68,
+            "approxSeconds": 29,
+            "lines": [
+              "Many factors influence laboratory results without anything being wrong with the technique.",
+              "The patient's fasting status, their current medications, their body posture, recent exercise, emotional stress, smoking, alcohol intake, and the menstrual cycle all affect particular tests.",
+              "If these are not taken into account, the result may be altered and misinterpreted. So give the patient proper instructions beforehand, and document any relevant factor before the specimen is collected."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_14_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_14_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_14_icons",
+                  "itemIndex": 2,
+                  "lineIndex": null
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_14_icons",
+                  "itemIndex": 3,
+                  "lineIndex": null
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_1_14_icons",
+                  "itemIndex": 4,
+                  "lineIndex": null
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_1_14_icons",
+                  "itemIndex": 5,
+                  "lineIndex": null
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_1_14_icons",
+                  "itemIndex": 6,
+                  "lineIndex": null
+                },
+                {
+                  "order": 8,
+                  "componentId": "slide_1_14_icons",
+                  "itemIndex": 7,
+                  "lineIndex": null
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_15",
+          "sourceSlideId": "1.15",
+          "base": {
+            "audioFile": "m1_1_15_base.mp3",
+            "words": 106,
+            "approxSeconds": 45,
+            "lines": [
+              "Some tests need handling that nothing else does.",
+              "Blood cultures should always be collected before antibiotics are started, using strict aseptic technique and preferably from two separate sites, which improves the detection of infection.",
+              "Arterial blood gas samples should be transported on ice if there is any delay in processing.",
+              "Ammonia samples must go to the laboratory immediately, on ice, because the level rises quickly if the sample is mishandled.",
+              "Lactate samples should be collected without prolonged tourniquet application, which falsely raises the lactate.",
+              "And troponin is usually performed as a series at specific intervals, because the pattern over time is what identifies heart muscle injury."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_15_table",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_15_table",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_15_table",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_15_table",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_1_15_table",
+                  "itemIndex": 4,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_1_15_table",
+                  "itemIndex": 5,
+                  "lineIndex": 5
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_16",
+          "sourceSlideId": "1.16",
+          "base": {
+            "audioFile": "m1_1_16_base.mp3",
+            "words": 106,
+            "approxSeconds": 45,
+            "lines": [
+              "Different blood tests need different timing and fasting.",
+              "For a fasting blood sugar, the patient fasts for at least six hours.",
+              "A random blood sugar can be collected at any time of day.",
+              "A postprandial blood sugar is collected exactly two hours after a meal - the timing is what makes it that test.",
+              "A liver function test is usually done after six hours of fasting.",
+              "A lipid profile requires twelve hours of fasting for an accurate cholesterol and triglyceride measurement.",
+              "And haematology, routine biochemistry, renal function tests, coagulation profile and serology can generally be collected at any time of day, unless the physician specifies otherwise."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_16_table",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_16_table",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_16_table",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_16_table",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_1_16_table",
+                  "itemIndex": 4,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_1_16_table",
+                  "itemIndex": 5,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_1_16_table",
+                  "itemIndex": 6,
+                  "lineIndex": 6
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_1_17",
+          "sourceSlideId": "1.17",
+          "base": {
+            "audioFile": "m1_1_17_base.mp3",
+            "words": 22,
+            "approxSeconds": 9,
+            "lines": [
+              "Blood sample collection follows a set sequence, and each step protects either the patient or the sample. Nine steps, in this order."
+            ],
+            "reveal": {
+              "mode": "together",
+              "note": "all lines reveal as one group with the narration; the detail is carried on the slide that follows",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_1_17_process",
+                  "itemIndex": 0,
+                  "lineIndex": null
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_1_17_process",
+                  "itemIndex": 1,
+                  "lineIndex": null
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_1_17_process",
+                  "itemIndex": 2,
+                  "lineIndex": null
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_17_process",
+                  "itemIndex": 3,
+                  "lineIndex": null
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_1_17_process",
+                  "itemIndex": 4,
+                  "lineIndex": null
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_1_17_process",
+                  "itemIndex": 5,
+                  "lineIndex": null
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_1_17_process",
+                  "itemIndex": 6,
+                  "lineIndex": null
+                },
+                {
+                  "order": 8,
+                  "componentId": "slide_1_17_process",
+                  "itemIndex": 7,
+                  "lineIndex": null
+                },
+                {
+                  "order": 9,
+                  "componentId": "slide_1_17_process",
+                  "itemIndex": 8,
+                  "lineIndex": null
+                }
+              ]
+            }
+          },
+          "layers": [
+            {
+              "layerId": "slide_1_17_layer_1",
+              "componentId": "slide_1_17_process",
+              "index": 1,
+              "audioFile": "m1_1_17_L1.mp3",
+              "words": 33,
+              "approxSeconds": 14,
+              "lines": [
+                "First, review the physician's order and confirm the investigations required. Verify the cost where your unit requires it, complete the requisition, and obtain any consent or administrative clearance before the sample is sent."
+              ]
+            },
+            {
+              "layerId": "slide_1_17_layer_2",
+              "componentId": "slide_1_17_process",
+              "index": 2,
+              "audioFile": "m1_1_17_L2.mp3",
+              "words": 17,
+              "approxSeconds": 7,
+              "lines": [
+                "Identify the patient using at least two identifiers, matched against the request form and the identification band."
+              ]
+            },
+            {
+              "layerId": "slide_1_17_layer_3",
+              "componentId": "slide_1_17_process",
+              "index": 3,
+              "audioFile": "m1_1_17_L3.mp3",
+              "words": 46,
+              "approxSeconds": 20,
+              "lines": [
+                "Gather all the articles you need and take them to the bedside - syringes or vacutainers, tourniquet, alcohol swabs, gloves, labels and the correct collection tubes. If you are unsure which vial a test needs, check with a senior nurse or the laboratory rather than guessing."
+              ]
+            },
+            {
+              "layerId": "slide_1_17_layer_4",
+              "componentId": "slide_1_17_process",
+              "index": 4,
+              "audioFile": "m1_1_17_L4.mp3",
+              "words": 14,
+              "approxSeconds": 6,
+              "lines": [
+                "Label the tubes with the barcode or the patient's details, according to hospital policy."
+              ]
+            },
+            {
+              "layerId": "slide_1_17_layer_5",
+              "componentId": "slide_1_17_process",
+              "index": 5,
+              "audioFile": "m1_1_17_L5.mp3",
+              "words": 22,
+              "approxSeconds": 9,
+              "lines": [
+                "Explain the procedure to the patient to reduce anxiety and gain cooperation, and obtain verbal or written consent where it is required."
+              ]
+            },
+            {
+              "layerId": "slide_1_17_layer_6",
+              "componentId": "slide_1_17_process",
+              "index": 6,
+              "audioFile": "m1_1_17_L6.mp3",
+              "words": 21,
+              "approxSeconds": 9,
+              "lines": [
+                "Perform hand hygiene and put on disposable gloves, then apply the tourniquet about two inches above the vein you have chosen."
+              ]
+            },
+            {
+              "layerId": "slide_1_17_layer_7",
+              "componentId": "slide_1_17_process",
+              "index": 7,
+              "audioFile": "m1_1_17_L7.mp3",
+              "words": 25,
+              "approxSeconds": 11,
+              "lines": [
+                "Clean the site with an alcohol swab and allow it to dry. Insert the needle and collect the sample in the correct order of draw."
+              ]
+            },
+            {
+              "layerId": "slide_1_17_layer_8",
+              "componentId": "slide_1_17_process",
+              "index": 8,
+              "audioFile": "m1_1_17_L8.mp3",
+              "words": 51,
+              "approxSeconds": 22,
+              "lines": [
+                "Transfer the blood into the appropriate vial. With a vacuum tube, do not remove the cap - puncture the rubber stopper and let the vacuum draw the blood in. Check that the blood has reached the fill mark, which matters most for coagulation tubes, and invert gently if mixing is required."
+              ]
+            },
+            {
+              "layerId": "slide_1_17_layer_9",
+              "componentId": "slide_1_17_process",
+              "index": 9,
+              "audioFile": "m1_1_17_L9.mp3",
+              "words": 28,
+              "approxSeconds": 12,
+              "lines": [
+                "Finally, document in the laboratory register, the billing card, the nursing notes and the patient file, and send the sample to the laboratory with the completed requisition form."
+              ]
+            }
+          ],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base",
+              "on_open:slide_1_17_layer_1",
+              "on_open:slide_1_17_layer_2",
+              "on_open:slide_1_17_layer_3",
+              "on_open:slide_1_17_layer_4",
+              "on_open:slide_1_17_layer_5",
+              "on_open:slide_1_17_layer_6",
+              "on_open:slide_1_17_layer_7",
+              "on_open:slide_1_17_layer_8",
+              "on_open:slide_1_17_layer_9"
+            ],
+            "pauseBaseOnLayerOpen": true,
+            "resumeBaseOnLayerClose": true,
+            "stopLayerAudioOnLayerSwitch": true
+          }
+        },
+        {
+          "slideId": "slide_1_19",
+          "sourceSlideId": "1.19",
+          "base": {
+            "audioFile": "m1_1_19_base.mp3",
+            "words": 57,
+            "approxSeconds": 24,
             "lines": [
               "Now, let us answer a question to check our understanding.",
-              "A diabetic patient with peripheral neuropathy is prescribed a sitz bath. Which nursing action is most important before the procedure?",
+              "A nurse is preparing to collect a blood sample for a coagulation profile. While checking the patient's identity, she notices that the UHID on the laboratory request form does not match the patient's wristband. What should the nurse do first?",
               "Select the correct answer and click Submit."
             ],
             "reveal": {
@@ -601,15 +1216,45 @@
           }
         },
         {
-          "slideId": "slide_1_13",
-          "sourceSlideId": "1.13",
+          "slideId": "slide_1_20",
+          "sourceSlideId": "1.20",
           "base": {
-            "audioFile": "m1_1_13_base.mp3",
-            "words": 26,
-            "approxSeconds": 11,
+            "audioFile": "m1_1_20_base.mp3",
+            "words": 31,
+            "approxSeconds": 13,
             "lines": [
               "Now, let us answer a question to check our understanding.",
-              "Drag each clinical situation onto the type of sitz bath it calls for, then click Submit."
+              "True or false - most laboratory errors occur inside the laboratory, during the analytical phase.",
+              "Select your answer and click Submit."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "onSubmit": "pause the question narration and seek to 0"
+          }
+        },
+        {
+          "slideId": "slide_1_21",
+          "sourceSlideId": "1.21",
+          "base": {
+            "audioFile": "m1_1_21_base.mp3",
+            "words": 20,
+            "approxSeconds": 9,
+            "lines": [
+              "Now, let us answer a question to check our understanding.",
+              "Drag each test onto its fasting requirement, then click Submit."
             ],
             "reveal": {
               "mode": "together",
@@ -617,20 +1262,26 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_1_13_question",
+                  "componentId": "slide_1_21_question",
                   "itemIndex": 0,
                   "lineIndex": 1
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_1_13_question",
+                  "componentId": "slide_1_21_question",
                   "itemIndex": 1,
                   "lineIndex": null
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_1_13_question",
+                  "componentId": "slide_1_21_question",
                   "itemIndex": 2,
+                  "lineIndex": null
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_1_21_question",
+                  "itemIndex": 3,
                   "lineIndex": null
                 }
               ]
@@ -649,20 +1300,51 @@
           }
         },
         {
-          "slideId": "slide_1_14",
-          "sourceSlideId": "1.14",
+          "slideId": "slide_1_22",
+          "sourceSlideId": "1.22",
           "base": {
-            "audioFile": "m1_1_14_base.mp3",
-            "words": 154,
-            "approxSeconds": 66,
+            "audioFile": "m1_1_22_base.mp3",
+            "words": 34,
+            "approxSeconds": 15,
             "lines": [
-              "Let us consolidate this section before moving on to the procedure.",
-              "A sitz bath is a warm water bath used for the perineal region. It relaxes the anal sphincter and increases blood flow through the tissues, and that improved circulation is what relieves pain, itching and irritation and promotes healing.",
-              "It is indicated for hemorrhoids, episiotomy wounds, postpartum perineal pain, anal fissure, rectal surgery, perianal abscess and post-catheterisation discomfort.",
-              "It is avoided, or used only with caution, in active bleeding, severe infection, an unconscious or uncooperative patient, allergy to a medicated solution, and impaired sensation or neuropathy.",
-              "There are three types - warm to heal and relieve pain, cold to reduce swelling, and medicated to control infection.",
-              "And a warm sitz bath runs at forty to forty-five degrees Celsius, for fifteen to twenty minutes, two to three times a day or as ordered.",
-              "In Section 2 you will learn how to perform the procedure."
+              "Now, let us answer a question to check our understanding.",
+              "A coagulation sample is returned by the laboratory as unusable. Which of these could have caused it? Select all that apply, then click Submit."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "onSubmit": "pause the question narration and seek to 0"
+          }
+        },
+        {
+          "slideId": "slide_1_23",
+          "sourceSlideId": "1.23",
+          "base": {
+            "audioFile": "m1_1_23_base.mp3",
+            "words": 162,
+            "approxSeconds": 69,
+            "lines": [
+              "Let us consolidate this section before moving on.",
+              "Pathology testing of blood, urine, stool, body fluids and tissue is what diagnosis, treatment and monitoring rest on.",
+              "Laboratory testing has three phases, and most errors occur in the pre-analytical phase - the one the nurse owns.",
+              "Use at least two identifiers, matched against the request form and the identification band, before collecting any specimen.",
+              "The order of draw is blood culture, blue citrate, red or yellow serum, green heparin, purple EDTA, grey fluoride.",
+              "The cap colour tells you the additive, and the additive tells you which test the tube is for.",
+              "Fasting blood sugar and liver function tests need six hours, a lipid profile needs twelve, and a postprandial sugar is taken exactly two hours after a meal.",
+              "And at the bedside: never open a vacuum cap, always fill to the mark, and invert gently rather than shaking.",
+              "In Section 2 you will learn to collect urine, sputum, stool, cerebrospinal fluid and swabs."
             ],
             "reveal": {
               "mode": "per_line",
@@ -670,39 +1352,45 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_1_14_summary",
+                  "componentId": "slide_1_23_summary",
                   "itemIndex": 0,
                   "lineIndex": 1
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_1_14_summary",
+                  "componentId": "slide_1_23_summary",
                   "itemIndex": 1,
                   "lineIndex": 2
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_1_14_summary",
+                  "componentId": "slide_1_23_summary",
                   "itemIndex": 2,
                   "lineIndex": 3
                 },
                 {
                   "order": 4,
-                  "componentId": "slide_1_14_summary",
+                  "componentId": "slide_1_23_summary",
                   "itemIndex": 3,
                   "lineIndex": 4
                 },
                 {
                   "order": 5,
-                  "componentId": "slide_1_14_summary",
+                  "componentId": "slide_1_23_summary",
                   "itemIndex": 4,
                   "lineIndex": 5
                 },
                 {
                   "order": 6,
-                  "componentId": "slide_1_14_summary",
+                  "componentId": "slide_1_23_summary",
                   "itemIndex": 5,
                   "lineIndex": 6
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_1_23_summary",
+                  "itemIndex": 6,
+                  "lineIndex": 7
                 }
               ]
             }
@@ -719,8 +1407,8 @@
           }
         },
         {
-          "slideId": "slide_1_15",
-          "sourceSlideId": "1.15",
+          "slideId": "slide_1_24",
+          "sourceSlideId": "1.24",
           "base": null,
           "layers": [],
           "playback": {
@@ -736,19 +1424,19 @@
     },
     {
       "moduleId": "module_02",
-      "title": "Section 2: Procedure and Nursing Care",
+      "title": "Section 2: Collecting Urine, Sputum, Stool, CSF and Swabs",
       "slides": [
         {
           "slideId": "slide_2_01",
           "sourceSlideId": "2.01",
           "base": {
             "audioFile": "m2_2_01_base.mp3",
-            "words": 71,
+            "words": 69,
             "approxSeconds": 30,
             "lines": [
-              "Welcome to Section 2 of the module on the Sitz Bath Procedure.",
-              "In this section you will learn what to gather, how to prepare the patient, how to perform the sitz bath for an ambulatory patient and how to adapt it for a bedridden one, and how to complete, clean up and document the procedure.",
-              "Proper technique is what makes the difference between a comfortable, healing treatment and an avoidable injury."
+              "Welcome to Section 2 of the module on Patient Preparation and Specimen Collection.",
+              "Each specimen type has its own container, its own timing and its own technique - and most of the errors that reach the laboratory come from mixing them up.",
+              "In this section you will learn to collect urine for routine examination and for culture, a twenty-four-hour collection, sputum, stool, cerebrospinal fluid, and nasopharyngeal and oropharyngeal swabs."
             ],
             "reveal": {
               "mode": "per_line",
@@ -772,15 +1460,16 @@
           "sourceSlideId": "2.02",
           "base": {
             "audioFile": "m2_2_02_base.mp3",
-            "words": 54,
-            "approxSeconds": 23,
+            "words": 63,
+            "approxSeconds": 27,
             "lines": [
               "By the end of this section, you will be able to:",
-              "Assemble the articles required for a sitz bath.",
-              "Prepare the patient, including identification, consent, privacy and hand hygiene.",
-              "Perform the sitz bath correctly for an ambulatory patient.",
-              "Adapt the procedure for a bedridden patient.",
-              "And complete the aftercare and document the procedure accurately."
+              "Collect a midstream urine specimen for routine examination.",
+              "Collect urine for culture and sensitivity, including from a Foley catheter.",
+              "Carry out a 24-hour urine collection correctly.",
+              "Collect sputum and stool specimens by the correct technique.",
+              "Assist with a lumbar puncture and care for the patient afterwards.",
+              "And collect nasopharyngeal and oropharyngeal swabs."
             ],
             "reveal": {
               "mode": "per_line",
@@ -804,15 +1493,15 @@
           "sourceSlideId": "2.03",
           "base": {
             "audioFile": "m2_2_03_base.mp3",
-            "words": 72,
-            "approxSeconds": 31,
+            "words": 90,
+            "approxSeconds": 39,
             "lines": [
-              "Before starting, assemble everything you need.",
-              "The doctor's order sheet, which confirms the type of sitz bath, the duration, the frequency and any solution prescribed.",
-              "The sitz bath basin or tub, cleaned and disinfected before use.",
-              "Plain water, or the medicated solution as prescribed.",
-              "A clean bath towel for drying the area afterwards.",
-              "And a bucket, if the procedure is to be done at the patient's bedside rather than in the bathroom."
+              "Urine tests assess kidney function, detect infection and identify metabolic disorders.",
+              "Urine for routine and microscopic examination evaluates colour, specific gravity, protein, sugar, and microscopic elements such as cells and crystals.",
+              "Urine for culture and sensitivity identifies the organism causing an infection and determines which antibiotic will work.",
+              "A twenty-four-hour collection measures substances such as protein and creatinine across a full day.",
+              "Spot sodium assesses sodium excretion and is collected at any time.",
+              "And microalbumin is a sensitive test for early kidney damage, particularly in patients with diabetes and hypertension."
             ],
             "reveal": {
               "mode": "per_line",
@@ -823,35 +1512,35 @@
                   "componentId": "slide_2_03_icons",
                   "itemIndex": 0,
                   "lineIndex": 1,
-                  "text": "Doctor's order sheet — Confirms type, duration, frequency and any solution"
+                  "text": "Urine R/E and M/E — Colour, specific gravity, protein, sugar, cells and crystals"
                 },
                 {
                   "order": 2,
                   "componentId": "slide_2_03_icons",
                   "itemIndex": 1,
                   "lineIndex": 2,
-                  "text": "Sitz bath basin or tub — Clean and disinfected before use"
+                  "text": "Urine C/S — Identifies the organism and the effective antibiotic"
                 },
                 {
                   "order": 3,
                   "componentId": "slide_2_03_icons",
                   "itemIndex": 2,
                   "lineIndex": 3,
-                  "text": "Plain water or medicated solution — As prescribed"
+                  "text": "24-hour urine for protein — Total protein or creatinine over a full day"
                 },
                 {
                   "order": 4,
                   "componentId": "slide_2_03_icons",
                   "itemIndex": 3,
                   "lineIndex": 4,
-                  "text": "Bath towel — Clean and soft, for drying afterwards"
+                  "text": "Spot sodium — Sodium excretion, collected stat"
                 },
                 {
                   "order": 5,
                   "componentId": "slide_2_03_icons",
                   "itemIndex": 4,
                   "lineIndex": 5,
-                  "text": "Bucket — If the procedure is done at the bedside"
+                  "text": "Microalbumin — Early kidney damage in diabetes and hypertension"
                 }
               ]
             }
@@ -872,172 +1561,118 @@
           "sourceSlideId": "2.04",
           "base": {
             "audioFile": "m2_2_04_base.mp3",
-            "words": 23,
-            "approxSeconds": 10,
+            "words": 131,
+            "approxSeconds": 56,
             "lines": [
-              "Proper preparation of the patient ensures comfort, safety, cooperation and an effective result. There are eight steps, and they run in this order."
+              "Inform the patient the previous night, especially when an early morning specimen is needed, and leave a clean, labelled container at the bedside.",
+              "Explain that they should wash the perineal area with soap and water to reduce contamination.",
+              "Early morning urine is preferred because it is more concentrated and gives more reliable results.",
+              "After cleaning, the patient begins to void, discards the first portion, then collects the midstream urine in a clean, screw-capped container. This is the midstream clean-catch technique.",
+              "Perform hand hygiene before and after handling the specimen.",
+              "Label the container immediately with the patient's details and the date and time of collection.",
+              "Then document in the pathology register and send the specimen with the requisition form within fifteen to twenty minutes, before the urine composition changes and bacteria multiply."
             ],
             "reveal": {
-              "mode": "together",
-              "note": "all lines reveal as one group with the narration; the detail is carried on the slide that follows",
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
               "cues": [
                 {
                   "order": 1,
                   "componentId": "slide_2_04_process",
                   "itemIndex": 0,
-                  "lineIndex": null
+                  "lineIndex": 0
                 },
                 {
                   "order": 2,
                   "componentId": "slide_2_04_process",
                   "itemIndex": 1,
-                  "lineIndex": null
+                  "lineIndex": 1
                 },
                 {
                   "order": 3,
                   "componentId": "slide_2_04_process",
                   "itemIndex": 2,
-                  "lineIndex": null
+                  "lineIndex": 2
                 },
                 {
                   "order": 4,
                   "componentId": "slide_2_04_process",
                   "itemIndex": 3,
-                  "lineIndex": null
+                  "lineIndex": 3
                 },
                 {
                   "order": 5,
                   "componentId": "slide_2_04_process",
                   "itemIndex": 4,
-                  "lineIndex": null
+                  "lineIndex": 4
                 },
                 {
                   "order": 6,
                   "componentId": "slide_2_04_process",
                   "itemIndex": 5,
-                  "lineIndex": null
+                  "lineIndex": 5
                 },
                 {
                   "order": 7,
                   "componentId": "slide_2_04_process",
                   "itemIndex": 6,
-                  "lineIndex": null
-                },
-                {
-                  "order": 8,
-                  "componentId": "slide_2_04_process",
-                  "itemIndex": 7,
-                  "lineIndex": null
+                  "lineIndex": 6
                 }
               ]
             }
           },
-          "layers": [
-            {
-              "layerId": "slide_2_04_layer_1",
-              "componentId": "slide_2_04_process",
-              "index": 1,
-              "audioFile": "m2_2_04_L1.mp3",
-              "words": 17,
-              "approxSeconds": 7,
-              "lines": [
-                "Introduce yourself to the patient. Good communication establishes trust, reduces anxiety and improves cooperation during the procedure."
-              ]
-            },
-            {
-              "layerId": "slide_2_04_layer_2",
-              "componentId": "slide_2_04_process",
-              "index": 2,
-              "audioFile": "m2_2_04_L2.mp3",
-              "words": 29,
-              "approxSeconds": 12,
-              "lines": [
-                "Identify the patient correctly by confirming their name and PRN or hospital identification number according to hospital policy. This ensures the right procedure is performed on the right patient."
-              ]
-            },
-            {
-              "layerId": "slide_2_04_layer_3",
-              "componentId": "slide_2_04_process",
-              "index": 3,
-              "audioFile": "m2_2_04_L3.mp3",
-              "words": 29,
-              "approxSeconds": 12,
-              "lines": [
-                "Explain the procedure clearly in simple language and reassure the patient. Tell them the purpose, the duration and the expected benefits. This gains cooperation and reduces fear or embarrassment."
-              ]
-            },
-            {
-              "layerId": "slide_2_04_layer_4",
-              "componentId": "slide_2_04_process",
-              "index": 4,
-              "audioFile": "m2_2_04_L4.mp3",
-              "words": 29,
-              "approxSeconds": 12,
-              "lines": [
-                "Obtain the patient's consent if applicable, and provide privacy by closing the curtains or the door. Since the procedure involves the perineal area, dignity and privacy are extremely important."
-              ]
-            },
-            {
-              "layerId": "slide_2_04_layer_5",
-              "componentId": "slide_2_04_process",
-              "index": 5,
-              "audioFile": "m2_2_04_L5.mp3",
-              "words": 15,
-              "approxSeconds": 6,
-              "lines": [
-                "Perform hand hygiene before starting, to reduce the risk of infection and maintain aseptic practice."
-              ]
-            },
-            {
-              "layerId": "slide_2_04_layer_6",
-              "componentId": "slide_2_04_process",
-              "index": 6,
-              "audioFile": "m2_2_04_L6.mp3",
-              "words": 33,
-              "approxSeconds": 14,
-              "lines": [
-                "Assess the patient for any circulatory impairment, skin problems or contraindications in the area where the sitz bath or warm compress is to be applied. This prevents complications and keeps the patient safe."
-              ]
-            },
-            {
-              "layerId": "slide_2_04_layer_7",
-              "componentId": "slide_2_04_process",
-              "index": 7,
-              "audioFile": "m2_2_04_L7.mp3",
-              "words": 30,
-              "approxSeconds": 13,
-              "lines": [
-                "Check the doctor's order carefully to confirm the type of sitz bath, the duration, the frequency and any medicated solution prescribed. Explain the procedure again if the patient needs it."
-              ]
-            },
-            {
-              "layerId": "slide_2_04_layer_8",
-              "componentId": "slide_2_04_process",
-              "index": 8,
-              "audioFile": "m2_2_04_L8.mp3",
-              "words": 35,
-              "approxSeconds": 15,
-              "lines": [
-                "Finally, mix hot and cold water in the basin to reach the recommended temperature, and check it for tolerance by testing it on the back of your hand before assisting the patient into the bath."
-              ]
-            }
-          ],
+          "layers": [],
           "playback": {
             "autoplayBase": true,
             "sequence": [
-              "base",
-              "on_open:slide_2_04_layer_1",
-              "on_open:slide_2_04_layer_2",
-              "on_open:slide_2_04_layer_3",
-              "on_open:slide_2_04_layer_4",
-              "on_open:slide_2_04_layer_5",
-              "on_open:slide_2_04_layer_6",
-              "on_open:slide_2_04_layer_7",
-              "on_open:slide_2_04_layer_8"
+              "base"
             ],
-            "pauseBaseOnLayerOpen": true,
-            "resumeBaseOnLayerClose": true,
-            "stopLayerAudioOnLayerSwitch": true
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_05",
+          "sourceSlideId": "2.05",
+          "base": {
+            "audioFile": "m2_2_05_base.mp3",
+            "words": 154,
+            "approxSeconds": 66,
+            "lines": [
+              "Urine for culture and sensitivity identifies the organism causing a urinary tract infection and determines the most effective antibiotic. It must always be collected in a sterile, screw-capped container.",
+              "For a patient who can void normally, the method is the same midstream clean-catch technique - clean the perineal area, discard the first part of the urine, and collect the midstream portion.",
+              "If the patient has a Foley catheter, never collect from the drainage bag, because it is contaminated. Clamp the catheter tubing below the sampling port for twenty to thirty minutes so fresh urine collects. Clean the sampling port with an alcohol swab and let it dry. Then aspirate urine from the port with a sterile syringe and transfer it to the sterile container.",
+              "Wherever possible, collect the sample before antibiotics are started, which improves the chance of identifying the organism. Label it and send it to the laboratory immediately with the requisition form."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_05_comparison",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_05_comparison",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
           }
         },
         {
@@ -1045,11 +1680,11 @@
           "sourceSlideId": "2.06",
           "base": {
             "audioFile": "m2_2_06_base.mp3",
-            "words": 33,
-            "approxSeconds": 14,
+            "words": 40,
+            "approxSeconds": 17,
             "lines": [
               "Now, let us answer a question to check our understanding.",
-              "A nurse is preparing a patient for a sitz bath. Which action should be performed first?",
+              "A patient with an indwelling Foley catheter requires a urine sample for culture and sensitivity. What is the correct method of specimen collection?",
               "Select the correct answer and click Submit."
             ],
             "reveal": {
@@ -1075,169 +1710,17 @@
           "sourceSlideId": "2.07",
           "base": {
             "audioFile": "m2_2_07_base.mp3",
-            "words": 23,
-            "approxSeconds": 10,
+            "words": 171,
+            "approxSeconds": 73,
             "lines": [
-              "Now the procedure itself, for a patient who can walk to the bathroom or sit at the bedside. Seven steps, in this order."
-            ],
-            "reveal": {
-              "mode": "together",
-              "note": "all lines reveal as one group with the narration; the detail is carried on the slide that follows",
-              "cues": [
-                {
-                  "order": 1,
-                  "componentId": "slide_2_07_process",
-                  "itemIndex": 0,
-                  "lineIndex": null
-                },
-                {
-                  "order": 2,
-                  "componentId": "slide_2_07_process",
-                  "itemIndex": 1,
-                  "lineIndex": null
-                },
-                {
-                  "order": 3,
-                  "componentId": "slide_2_07_process",
-                  "itemIndex": 2,
-                  "lineIndex": null
-                },
-                {
-                  "order": 4,
-                  "componentId": "slide_2_07_process",
-                  "itemIndex": 3,
-                  "lineIndex": null
-                },
-                {
-                  "order": 5,
-                  "componentId": "slide_2_07_process",
-                  "itemIndex": 4,
-                  "lineIndex": null
-                },
-                {
-                  "order": 6,
-                  "componentId": "slide_2_07_process",
-                  "itemIndex": 5,
-                  "lineIndex": null
-                },
-                {
-                  "order": 7,
-                  "componentId": "slide_2_07_process",
-                  "itemIndex": 6,
-                  "lineIndex": null
-                }
-              ]
-            }
-          },
-          "layers": [
-            {
-              "layerId": "slide_2_07_layer_1",
-              "componentId": "slide_2_07_process",
-              "index": 1,
-              "audioFile": "m2_2_07_L1.mp3",
-              "words": 28,
-              "approxSeconds": 12,
-              "lines": [
-                "First, assess the patient's condition and gather all the necessary equipment. Take it either to the bathroom or to the patient's bedside, depending on their mobility and condition."
-              ]
-            },
-            {
-              "layerId": "slide_2_07_layer_2",
-              "componentId": "slide_2_07_process",
-              "index": 2,
-              "audioFile": "m2_2_07_L2.mp3",
-              "words": 24,
-              "approxSeconds": 10,
-              "lines": [
-                "Prepare the basin by filling it about one-third full with warm water at the recommended temperature. Make sure the water is comfortable and safe."
-              ]
-            },
-            {
-              "layerId": "slide_2_07_layer_3",
-              "componentId": "slide_2_07_process",
-              "index": 3,
-              "audioFile": "m2_2_07_L3.mp3",
-              "words": 19,
-              "approxSeconds": 8,
-              "lines": [
-                "Provide privacy by closing the door or drawing the curtains. This maintains dignity and reduces embarrassment during the procedure."
-              ]
-            },
-            {
-              "layerId": "slide_2_07_layer_4",
-              "componentId": "slide_2_07_process",
-              "index": 4,
-              "audioFile": "m2_2_07_L4.mp3",
-              "words": 7,
-              "approxSeconds": 3,
-              "lines": [
-                "Instruct the patient to expose the buttocks."
-              ]
-            },
-            {
-              "layerId": "slide_2_07_layer_5",
-              "componentId": "slide_2_07_process",
-              "index": 5,
-              "audioFile": "m2_2_07_L5.mp3",
-              "words": 24,
-              "approxSeconds": 10,
-              "lines": [
-                "Assist the patient carefully into a sitting position in the basin, making sure they are comfortable and properly supported, to prevent falls or discomfort."
-              ]
-            },
-            {
-              "layerId": "slide_2_07_layer_6",
-              "componentId": "slide_2_07_process",
-              "index": 6,
-              "audioFile": "m2_2_07_L6.mp3",
-              "words": 26,
-              "approxSeconds": 11,
-              "lines": [
-                "Once the patient is seated, ask about their comfort level and whether the water temperature feels comfortable. Continuous communication helps identify discomfort early and improves cooperation."
-              ]
-            },
-            {
-              "layerId": "slide_2_07_layer_7",
-              "componentId": "slide_2_07_process",
-              "index": 7,
-              "audioFile": "m2_2_07_L7.mp3",
-              "words": 25,
-              "approxSeconds": 11,
-              "lines": [
-                "During the treatment, remain with the patient or check frequently - monitor comfort, observe for dizziness, irritation or any untoward reaction, and ensure safety throughout."
-              ]
-            }
-          ],
-          "playback": {
-            "autoplayBase": true,
-            "sequence": [
-              "base",
-              "on_open:slide_2_07_layer_1",
-              "on_open:slide_2_07_layer_2",
-              "on_open:slide_2_07_layer_3",
-              "on_open:slide_2_07_layer_4",
-              "on_open:slide_2_07_layer_5",
-              "on_open:slide_2_07_layer_6",
-              "on_open:slide_2_07_layer_7"
-            ],
-            "pauseBaseOnLayerOpen": true,
-            "resumeBaseOnLayerClose": true,
-            "stopLayerAudioOnLayerSwitch": true
-          }
-        },
-        {
-          "slideId": "slide_2_09",
-          "sourceSlideId": "2.09",
-          "base": {
-            "audioFile": "m2_2_09_base.mp3",
-            "words": 76,
-            "approxSeconds": 33,
-            "lines": [
-              "If the patient is bedridden and unable to sit in the basin, an alternative method is used.",
-              "Take an adequate amount of cotton roll or gauze and soak it in warm water.",
-              "Place the wet cotton gently on the anal or perineal area.",
-              "Replace the warm application and repeat the process as required, to maintain the warmth and the therapeutic effect.",
-              "As with the basin method, remain with the patient or check frequently throughout the treatment."
+              "Spot sodium and microalbumin are stat samples - collected at any time of day as ordered, in a clean labelled container, and sent promptly.",
+              "A twenty-four-hour urine for protein is different, and it is the one most often spoiled.",
+              "Follow the physician's order, and obtain the special collection jar from the laboratory. Label it with the patient's details and the start time.",
+              "At the beginning of the test, ask the patient to empty the bladder completely - and discard that urine.",
+              "Record the exact time, because that is when the twenty-four hours begin.",
+              "After that, collect every urine the patient passes for the next twenty-four hours in the laboratory jar. Instruct the patient or caregiver to tell you each time they void, so none is missed.",
+              "At the same time on the following day, collect the final specimen and add it to the container.",
+              "Close the lid securely and send the whole specimen to the laboratory with the requisition form. Accurate timing and complete collection are what make the result meaningful."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1245,27 +1728,177 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_2_09_points",
+                  "componentId": "slide_2_07_process",
                   "itemIndex": 0,
                   "lineIndex": 1
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_2_09_points",
+                  "componentId": "slide_2_07_process",
                   "itemIndex": 1,
                   "lineIndex": 2
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_2_09_points",
+                  "componentId": "slide_2_07_process",
                   "itemIndex": 2,
                   "lineIndex": 3
                 },
                 {
                   "order": 4,
-                  "componentId": "slide_2_09_points",
+                  "componentId": "slide_2_07_process",
                   "itemIndex": 3,
                   "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_07_process",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_2_07_process",
+                  "itemIndex": 5,
+                  "lineIndex": 6
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_2_07_process",
+                  "itemIndex": 6,
+                  "lineIndex": 7
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_08",
+          "sourceSlideId": "2.08",
+          "base": {
+            "audioFile": "m2_2_08_base.mp3",
+            "words": 152,
+            "approxSeconds": 65,
+            "lines": [
+              "Sputum for Gram stain and culture identifies the organism causing a respiratory infection.",
+              "Inform the patient the previous night and, according to your protocol, advise them not to brush their teeth on the morning of collection. Leave a sterile, screw-capped container at the bedside.",
+              "Early morning sputum is preferred, because secretions accumulate overnight and give a better sample.",
+              "Ask the patient to rinse the mouth thoroughly with plain water, to remove food particles and reduce contamination.",
+              "Instruct them to take two or three deep breaths, then cough deeply from the chest to bring up sputum from the lungs - not saliva from the mouth or throat.",
+              "The sputum should be expectorated directly into the sterile container, and it should be thick and mucoid rather than watery.",
+              "Close the container securely, label it with the patient's details and the date and time, and send it to the laboratory promptly with the requisition form."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_08_process",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_08_process",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_08_process",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_08_process",
+                  "itemIndex": 3,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_08_process",
+                  "itemIndex": 4,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_2_08_process",
+                  "itemIndex": 5,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_2_08_process",
+                  "itemIndex": 6,
+                  "lineIndex": 6
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_09",
+          "sourceSlideId": "2.09",
+          "base": {
+            "audioFile": "m2_2_09_base.mp3",
+            "words": 128,
+            "approxSeconds": 55,
+            "lines": [
+              "Stool specimens are collected for different purposes, and each test has its own instructions.",
+              "For stool for ova, parasite and cyst, collect three samples on three different days, with one to three days between collections, and send each sample to the laboratory within two hours.",
+              "For stool routine examination, collect a small, fresh sample, and avoid sending the specimen at night so it can be processed in time.",
+              "For the occult blood test, NSAIDs such as aspirin, ibuprofen and indomethacin are stopped for seven days and iron supplements for three days, where that is medically advised. In women, the sample is not collected during menstruation - take it three days before or after the period.",
+              "Always collect stool in a clean, dry, labelled container and send it promptly."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_09_table",
+                  "itemIndex": 0,
+                  "lineIndex": 0
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_09_table",
+                  "itemIndex": 1,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_2_09_table",
+                  "itemIndex": 2,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_09_table",
+                  "itemIndex": 3,
+                  "lineIndex": 3
                 }
               ]
             }
@@ -1286,14 +1919,12 @@
           "sourceSlideId": "2.10",
           "base": {
             "audioFile": "m2_2_10_base.mp3",
-            "words": 151,
-            "approxSeconds": 65,
+            "words": 71,
+            "approxSeconds": 30,
             "lines": [
-              "Continue the sitz bath for about twenty minutes, or as prescribed by the physician. That duration improves circulation, reduces pain and swelling and promotes healing in the perineal area.",
-              "Throughout, assess the patient for untoward reactions - dizziness, discomfort, excessive pain, skin redness, or intolerance of the water temperature. If any abnormal reaction occurs, stop the procedure immediately and report to the senior staff or physician.",
-              "After completion, assist the patient carefully out of the basin. Support them while standing and walking, as some patients feel weak or dizzy afterwards.",
-              "Gently dry the perineal area with a clean, soft towel. Drying properly maintains hygiene and prevents skin irritation or infection. If there is a wound or surgical site, apply the appropriate dressing as prescribed, using aseptic precautions.",
-              "Finally, help the patient into comfortable clothing, position them comfortably in bed or in a chair, and make sure their immediate needs are met."
+              "Cerebrospinal fluid is a clear fluid in the subarachnoid space, surrounding the brain and spinal cord. It cushions and protects the central nervous system and helps transport nutrients and waste.",
+              "The normal volume in an adult is approximately one hundred and forty to one hundred and seventy millilitres, and in a child ten to sixty millilitres.",
+              "CSF is collected only by a trained clinician, by lumbar puncture, under strict aseptic precautions."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1301,33 +1932,21 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_2_10_process",
+                  "componentId": "slide_2_10_definition",
                   "itemIndex": 0,
                   "lineIndex": 0
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_2_10_process",
+                  "componentId": "slide_2_10_definition",
                   "itemIndex": 1,
                   "lineIndex": 1
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_2_10_process",
+                  "componentId": "slide_2_10_definition",
                   "itemIndex": 2,
                   "lineIndex": 2
-                },
-                {
-                  "order": 4,
-                  "componentId": "slide_2_10_process",
-                  "itemIndex": 3,
-                  "lineIndex": 3
-                },
-                {
-                  "order": 5,
-                  "componentId": "slide_2_10_process",
-                  "itemIndex": 4,
-                  "lineIndex": 4
                 }
               ]
             }
@@ -1348,14 +1967,15 @@
           "sourceSlideId": "2.11",
           "base": {
             "audioFile": "m2_2_11_base.mp3",
-            "words": 79,
-            "approxSeconds": 34,
+            "words": 70,
+            "approxSeconds": 30,
             "lines": [
-              "After completion of the sitz bath, proper aftercare maintains comfort, hygiene and safety.",
-              "Make the bed neat and tidy and help the patient into a comfortable position, leaving them relaxed and supported.",
-              "Discard all soiled linen according to infection control guidelines.",
-              "Clean the used equipment properly, to maintain hygiene and prevent cross infection.",
-              "Observe the patient for comfort and assess the perineal area if required. If there is any wound or discharge, note the colour, amount and characteristics carefully."
+              "Prepare all the necessary articles before the procedure begins.",
+              "Lumbar puncture needles of appropriate sizes, and sterile syringes.",
+              "Local anaesthetic, such as Lidocaine or Xylocaine.",
+              "A sterile cut sheet, a dressing trolley, antiseptic solution and sterile gloves.",
+              "And properly labelled sterile containers for the CSF.",
+              "During the procedure, the nurse assists with positioning the patient, monitors vital signs, maintains asepsis, and makes sure the specimen goes to the laboratory immediately."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1365,22 +1985,31 @@
                   "order": 1,
                   "componentId": "slide_2_11_icons",
                   "itemIndex": 0,
-                  "lineIndex": 1,
-                  "text": "Tidy the bed and position the patient — Leave them relaxed and supported"
+                  "lineIndex": 1
                 },
                 {
                   "order": 2,
                   "componentId": "slide_2_11_icons",
                   "itemIndex": 1,
-                  "lineIndex": 2,
-                  "text": "Discard soiled linen — Per infection control guidelines"
+                  "lineIndex": 2
                 },
                 {
                   "order": 3,
                   "componentId": "slide_2_11_icons",
                   "itemIndex": 2,
-                  "lineIndex": 3,
-                  "text": "Clean the used equipment — Prevents cross infection between patients"
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_2_11_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_2_11_icons",
+                  "itemIndex": 4,
+                  "lineIndex": 5
                 }
               ]
             }
@@ -1401,16 +2030,14 @@
           "sourceSlideId": "2.12",
           "base": {
             "audioFile": "m2_2_12_base.mp3",
-            "words": 105,
-            "approxSeconds": 45,
+            "words": 123,
+            "approxSeconds": 53,
             "lines": [
-              "Record the procedure in the nurse's notes.",
-              "Document the treatment given and the duration of the sitz bath.",
-              "Record the type of solution used - plain water, or the prescribed medicated solution.",
-              "Record the patient's tolerance of the procedure, and any observation such as redness, swelling, pain, bleeding or wound discharge.",
-              "If a wound is present, document the colour, amount and nature of the discharge.",
-              "Report any abnormal findings or complications immediately to the senior staff or physician.",
-              "And complete the documentation with the date, the time and your signature, according to hospital policy. Accurate documentation is what gives the next nurse continuity of care."
+              "After the lumbar puncture, help the patient lie flat for at least thirty minutes, or as your protocol specifies, to reduce the risk of a post-lumbar-puncture headache. Encourage them to report any headache, nausea, dizziness or back pain.",
+              "Monitor vital signs regularly, observe the puncture site for leakage of cerebrospinal fluid or bleeding, and check the neurological status and level of consciousness.",
+              "In some settings the foot end of the bed is elevated, according to physician preference or institutional policy.",
+              "A blood glucose sample may be collected after the procedure if ordered, because it is compared with the CSF glucose level.",
+              "Keep the patient comfortable, encourage oral fluids if not contraindicated, document the procedure and the observations, and report any abnormal finding immediately."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1418,45 +2045,27 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_2_12_icons",
+                  "componentId": "slide_2_12_process",
                   "itemIndex": 0,
-                  "lineIndex": 1,
-                  "text": "Treatment given — Type of sitz bath performed"
+                  "lineIndex": 1
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_2_12_icons",
+                  "componentId": "slide_2_12_process",
                   "itemIndex": 1,
-                  "lineIndex": 2,
-                  "text": "Duration — How long the bath ran"
+                  "lineIndex": 2
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_2_12_icons",
+                  "componentId": "slide_2_12_process",
                   "itemIndex": 2,
-                  "lineIndex": 3,
-                  "text": "Solution used — Plain water or the prescribed solution"
+                  "lineIndex": 3
                 },
                 {
                   "order": 4,
-                  "componentId": "slide_2_12_icons",
+                  "componentId": "slide_2_12_process",
                   "itemIndex": 3,
-                  "lineIndex": 4,
-                  "text": "Patient's tolerance — How the patient responded to the procedure"
-                },
-                {
-                  "order": 5,
-                  "componentId": "slide_2_12_icons",
-                  "itemIndex": 4,
-                  "lineIndex": 5,
-                  "text": "Wound findings — Colour, amount and nature of any discharge"
-                },
-                {
-                  "order": 6,
-                  "componentId": "slide_2_12_icons",
-                  "itemIndex": 5,
-                  "lineIndex": 6,
-                  "text": "Date, time and signature — Per hospital policy"
+                  "lineIndex": 4
                 }
               ]
             }
@@ -1477,11 +2086,11 @@
           "sourceSlideId": "2.13",
           "base": {
             "audioFile": "m2_2_13_base.mp3",
-            "words": 34,
-            "approxSeconds": 15,
+            "words": 39,
+            "approxSeconds": 17,
             "lines": [
               "Now, let us answer a question to check our understanding.",
-              "After completing a sitz bath for a patient with an episiotomy wound, which documentation is most appropriate?",
+              "Following a lumbar puncture for cerebrospinal fluid analysis, which nursing intervention is most appropriate to reduce the risk of post-lumbar puncture headache?",
               "Select the correct answer and click Submit."
             ],
             "reveal": {
@@ -1507,11 +2116,54 @@
           "sourceSlideId": "2.14",
           "base": {
             "audioFile": "m2_2_14_base.mp3",
+            "words": 112,
+            "approxSeconds": 48,
+            "lines": [
+              "Nasopharyngeal and oropharyngeal swabs diagnose respiratory infections such as influenza, COVID-19 and bacterial throat infections.",
+              "For a nasopharyngeal swab, the direction of insertion is what matters. Parallel to the palate and straight back towards the ear - angled upward, the swab is painful and samples the wrong place. Advance until you feel resistance at the nasopharynx, rotate gently to absorb secretions, then withdraw slowly.",
+              "For an oropharyngeal swab, the risk is contamination rather than direction. Rub both tonsillar pillars and the posterior pharynx without letting the swab touch the tongue, the teeth or the gums.",
+              "In both cases, place the swab straight into the transport medium, label it, and send it immediately."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_2_14_comparison",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_2_14_comparison",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_2_15",
+          "sourceSlideId": "2.15",
+          "base": {
+            "audioFile": "m2_2_15_base.mp3",
             "words": 23,
             "approxSeconds": 10,
             "lines": [
               "Now, let us answer a question to check our understanding.",
-              "Drag the five actions into the order you perform them, then click Submit."
+              "Drag each specimen onto the instruction that belongs to it, then click Submit."
             ],
             "reveal": {
               "mode": "together",
@@ -1519,32 +2171,26 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_2_14_question",
+                  "componentId": "slide_2_15_question",
                   "itemIndex": 0,
                   "lineIndex": 1
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_2_14_question",
+                  "componentId": "slide_2_15_question",
                   "itemIndex": 1,
                   "lineIndex": null
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_2_14_question",
+                  "componentId": "slide_2_15_question",
                   "itemIndex": 2,
                   "lineIndex": null
                 },
                 {
                   "order": 4,
-                  "componentId": "slide_2_14_question",
+                  "componentId": "slide_2_15_question",
                   "itemIndex": 3,
-                  "lineIndex": null
-                },
-                {
-                  "order": 5,
-                  "componentId": "slide_2_14_question",
-                  "itemIndex": 4,
                   "lineIndex": null
                 }
               ]
@@ -1563,22 +2209,22 @@
           }
         },
         {
-          "slideId": "slide_2_15",
-          "sourceSlideId": "2.15",
+          "slideId": "slide_2_16",
+          "sourceSlideId": "2.16",
           "base": {
-            "audioFile": "m2_2_15_base.mp3",
-            "words": 157,
-            "approxSeconds": 67,
+            "audioFile": "m2_2_16_base.mp3",
+            "words": 180,
+            "approxSeconds": 77,
             "lines": [
-              "Let us consolidate the procedure before moving on.",
-              "Gather the doctor's order sheet, the basin, plain water or the prescribed solution, a bath towel, and a bucket if you are working at the bedside.",
-              "Identify the patient, explain the procedure, obtain consent and provide privacy.",
-              "Perform hand hygiene and assess the area before any water is applied.",
-              "Fill the basin one-third full with warm water and test the temperature yourself before the patient sits.",
-              "For a bedridden patient, soak cotton or gauze in warm water, apply it to the perineal area, and replace it as it cools.",
-              "Continue for twenty minutes, watching for dizziness or any other untoward reaction, then assist the patient out, dry the area and dress any wound.",
-              "And document the treatment, the duration, the solution, the patient's tolerance and any wound findings.",
-              "In Section 3 you will learn the benefits, the complications to watch for, your responsibilities, and what to teach the patient."
+              "Let us consolidate this section.",
+              "A routine urine specimen is early morning, midstream clean catch, and sent within fifteen to twenty minutes.",
+              "Urine for culture goes in a sterile container, and from a Foley catheter it is aspirated from the sampling port after clamping for twenty to thirty minutes - never from the drainage bag.",
+              "For a twenty-four-hour collection, discard the first void, record that time, and collect every void after it.",
+              "Sputum is early morning, after rinsing the mouth, coughed from the chest rather than spat from the mouth.",
+              "Stool for ova, parasite and cyst is three samples across three days, and the occult blood test needs NSAIDs stopped for seven days and iron for three.",
+              "Cerebrospinal fluid is taken by a clinician - you prepare the articles, position and monitor the patient, and send the specimen immediately.",
+              "And a nasopharyngeal swab goes parallel to the palate towards the ear, while an oropharyngeal swab rubs the tonsillar pillars without touching tongue or teeth.",
+              "In Section 3 you will learn what happens to the specimen after you have taken it."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1586,43 +2232,43 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_2_15_summary",
+                  "componentId": "slide_2_16_summary",
                   "itemIndex": 0,
                   "lineIndex": 1
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_2_15_summary",
+                  "componentId": "slide_2_16_summary",
                   "itemIndex": 1,
                   "lineIndex": 2
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_2_15_summary",
+                  "componentId": "slide_2_16_summary",
                   "itemIndex": 2,
                   "lineIndex": 3
                 },
                 {
                   "order": 4,
-                  "componentId": "slide_2_15_summary",
+                  "componentId": "slide_2_16_summary",
                   "itemIndex": 3,
                   "lineIndex": 4
                 },
                 {
                   "order": 5,
-                  "componentId": "slide_2_15_summary",
+                  "componentId": "slide_2_16_summary",
                   "itemIndex": 4,
                   "lineIndex": 5
                 },
                 {
                   "order": 6,
-                  "componentId": "slide_2_15_summary",
+                  "componentId": "slide_2_16_summary",
                   "itemIndex": 5,
                   "lineIndex": 6
                 },
                 {
                   "order": 7,
-                  "componentId": "slide_2_15_summary",
+                  "componentId": "slide_2_16_summary",
                   "itemIndex": 6,
                   "lineIndex": 7
                 }
@@ -1641,8 +2287,8 @@
           }
         },
         {
-          "slideId": "slide_2_16",
-          "sourceSlideId": "2.16",
+          "slideId": "slide_2_17",
+          "sourceSlideId": "2.17",
           "base": null,
           "layers": [],
           "playback": {
@@ -1658,18 +2304,19 @@
     },
     {
       "moduleId": "module_03",
-      "title": "Section 3: Benefits and Safety Considerations",
+      "title": "Section 3: Transport, Documentation and Safe Practice",
       "slides": [
         {
           "slideId": "slide_3_01",
           "sourceSlideId": "3.01",
           "base": {
             "audioFile": "m3_3_01_base.mp3",
-            "words": 57,
-            "approxSeconds": 24,
+            "words": 74,
+            "approxSeconds": 32,
             "lines": [
-              "Welcome to Section 3 of the module on the Sitz Bath Procedure.",
-              "You now know what a sitz bath is and how to perform it. This section covers what it achieves, what can go wrong, what you are responsible for throughout, and what the patient needs to be taught before they continue the treatment on their own."
+              "Welcome to Section 3, the final section of the module on Patient Preparation and Specimen Collection.",
+              "A correctly taken specimen can still produce a wrong result if it reaches the laboratory late, unlabelled, or in the wrong container.",
+              "In this section you will learn the transport requirements, what to document, the complications to watch for, what to teach the patient, how to segregate the waste, and the errors that most often spoil a sample."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1693,14 +2340,16 @@
           "sourceSlideId": "3.02",
           "base": {
             "audioFile": "m3_3_02_base.mp3",
-            "words": 48,
-            "approxSeconds": 21,
+            "words": 59,
+            "approxSeconds": 25,
             "lines": [
               "By the end of this section, you will be able to:",
-              "State the benefits of a sitz bath.",
-              "Recognise the complications that can occur, and prevent each one.",
-              "Demonstrate the nursing responsibilities that run through the whole procedure.",
-              "And educate the patient on home care and safety measures."
+              "State the transport requirement for each specimen type.",
+              "Identify the critical specimens that need immediate transport.",
+              "Document a specimen collection completely.",
+              "Recognise the complications of blood collection, lumbar puncture and urine collection.",
+              "Segregate biomedical waste correctly.",
+              "And avoid the common errors that cause a specimen to be rejected."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1724,16 +2373,16 @@
           "sourceSlideId": "3.03",
           "base": {
             "audioFile": "m3_3_03_base.mp3",
-            "words": 82,
-            "approxSeconds": 35,
+            "words": 161,
+            "approxSeconds": 69,
             "lines": [
-              "A sitz bath offers several important benefits in patient care.",
-              "It improves blood circulation to the perineal area, which promotes faster healing.",
-              "The warm water reduces edema and swelling, providing relief and comfort.",
-              "It promotes relaxation by soothing the muscles and reducing stress and discomfort.",
-              "It maintains local hygiene by keeping the perineal area clean.",
-              "It reduces muscle spasm, particularly in the anal sphincter, decreasing pain.",
-              "And overall it enhances wound healing - a simple, effective intervention that measurably improves patient comfort."
+              "Proper transport preserves the sample. Delays or the wrong storage conditions cause bacterial overgrowth, cell destruction or chemical change, any of which alters the result.",
+              "Blood cultures go to the laboratory immediately, because delay reduces the recovery of pathogens.",
+              "Cerebrospinal fluid also goes immediately, and must not be refrigerated. CSF is a critical specimen, especially where meningitis is suspected, and some organisms do not survive cooling.",
+              "Urine for culture should reach the laboratory within one hour. Beyond that, bacteria multiply in the container and the count is no longer meaningful.",
+              "Sputum is best collected early in the morning, when secretions have accumulated overnight, and sent as soon as possible after collection.",
+              "Stool for occult blood must be collected without contamination by urine, water or menstrual blood, any of which affects the result.",
+              "And arterial blood gas samples are transported on ice if immediate analysis is not possible, because cooling slows cellular metabolism and preserves the oxygen, carbon dioxide and pH values."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1741,38 +2390,44 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_3_03_icons",
+                  "componentId": "slide_3_03_table",
                   "itemIndex": 0,
-                  "lineIndex": 1
+                  "lineIndex": 0
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_3_03_icons",
+                  "componentId": "slide_3_03_table",
                   "itemIndex": 1,
-                  "lineIndex": 2
+                  "lineIndex": 1
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_3_03_icons",
+                  "componentId": "slide_3_03_table",
                   "itemIndex": 2,
-                  "lineIndex": 3
+                  "lineIndex": 2
                 },
                 {
                   "order": 4,
-                  "componentId": "slide_3_03_icons",
+                  "componentId": "slide_3_03_table",
                   "itemIndex": 3,
-                  "lineIndex": 4
+                  "lineIndex": 3
                 },
                 {
                   "order": 5,
-                  "componentId": "slide_3_03_icons",
+                  "componentId": "slide_3_03_table",
                   "itemIndex": 4,
-                  "lineIndex": 5
+                  "lineIndex": 4
                 },
                 {
                   "order": 6,
-                  "componentId": "slide_3_03_icons",
+                  "componentId": "slide_3_03_table",
                   "itemIndex": 5,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_3_03_table",
+                  "itemIndex": 6,
                   "lineIndex": 6
                 }
               ]
@@ -1794,16 +2449,12 @@
           "sourceSlideId": "3.04",
           "base": {
             "audioFile": "m3_3_04_base.mp3",
-            "words": 127,
-            "approxSeconds": 54,
+            "words": 51,
+            "approxSeconds": 22,
             "lines": [
-              "A sitz bath is generally safe, but complications can occur if precautions are not followed.",
-              "Burns from hot water. If the temperature is too high it causes skin burns and tissue damage, so always check the temperature before the procedure.",
-              "Dizziness or fainting, especially while getting in or out of the basin. Continuous monitoring and assistance prevent falls and injury.",
-              "Infection, from poor hygiene or improperly cleaned equipment. Cleanliness and infection control practice are essential.",
-              "Skin irritation, from excessive heat, prolonged soaking, or allergy to a medicated solution used in the bath.",
-              "And cross contamination, which happens when equipment is not cleaned between patients. Proper disinfection and hand hygiene prevent the spread of infection.",
-              "Careful monitoring and adherence to these precautions are what make the procedure safe."
+              "Certain specimens are critical and must reach the laboratory immediately.",
+              "Blood cultures, cerebrospinal fluid, arterial blood gases, lactate, troponin and potassium.",
+              "A delay in processing any of these produces an inaccurate result and postpones an urgent treatment decision. Prompt transport of a critical specimen is a nursing responsibility, not a porter's."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1811,39 +2462,39 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_3_04_table",
+                  "componentId": "slide_3_04_icons",
                   "itemIndex": 0,
-                  "lineIndex": 0
-                },
-                {
-                  "order": 2,
-                  "componentId": "slide_3_04_table",
-                  "itemIndex": 1,
                   "lineIndex": 1
                 },
                 {
-                  "order": 3,
-                  "componentId": "slide_3_04_table",
-                  "itemIndex": 2,
+                  "order": 2,
+                  "componentId": "slide_3_04_icons",
+                  "itemIndex": 1,
                   "lineIndex": 2
                 },
                 {
+                  "order": 3,
+                  "componentId": "slide_3_04_icons",
+                  "itemIndex": 2,
+                  "lineIndex": null
+                },
+                {
                   "order": 4,
-                  "componentId": "slide_3_04_table",
+                  "componentId": "slide_3_04_icons",
                   "itemIndex": 3,
-                  "lineIndex": 3
+                  "lineIndex": null
                 },
                 {
                   "order": 5,
-                  "componentId": "slide_3_04_table",
+                  "componentId": "slide_3_04_icons",
                   "itemIndex": 4,
-                  "lineIndex": 4
+                  "lineIndex": null
                 },
                 {
                   "order": 6,
-                  "componentId": "slide_3_04_table",
+                  "componentId": "slide_3_04_icons",
                   "itemIndex": 5,
-                  "lineIndex": 5
+                  "lineIndex": null
                 }
               ]
             }
@@ -1864,16 +2515,16 @@
           "sourceSlideId": "3.05",
           "base": {
             "audioFile": "m3_3_05_base.mp3",
-            "words": 114,
-            "approxSeconds": 49,
+            "words": 103,
+            "approxSeconds": 44,
             "lines": [
-              "Nurses are responsible for the safety, comfort and effectiveness of the procedure.",
-              "Maintain the patient's privacy throughout, using curtains or closing the door, as the procedure involves the perineal area.",
-              "Always check the water temperature before starting, to prevent burns and ensure comfort.",
-              "Monitor the patient continuously for discomfort, pain, dizziness or intolerance of the treatment.",
-              "Prevent falls. Assist the patient in and out of the basin, especially elderly or weak patients.",
-              "Maintain infection control - hand hygiene, cleaning of equipment and disposal of soiled linen prevent infection and cross contamination.",
-              "And educate the patient about the purpose of the sitz bath, hygiene, safety precautions, and the importance of the prescribed duration and frequency."
+              "Accurate documentation gives traceability and protects the patient.",
+              "Record the date and exact time of collection, because some results depend entirely on when the sample was taken.",
+              "Record the type of specimen collected.",
+              "Record the name or signature of the person who collected it, for accountability.",
+              "Record any special patient preparation - fasting, a medication withheld, collection before antibiotics - because these influence the result.",
+              "And record any unusual observation: difficulty collecting the sample, haemolysis, insufficient quantity, contamination, or an adverse reaction such as dizziness or bleeding.",
+              "Enter all of it in the laboratory register, the nursing notes and the patient's medical record."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1883,7 +2534,8 @@
                   "order": 1,
                   "componentId": "slide_3_05_icons",
                   "itemIndex": 0,
-                  "lineIndex": 1
+                  "lineIndex": 1,
+                  "text": "Date and time of collection — Some results depend entirely on the timing"
                 },
                 {
                   "order": 2,
@@ -1895,25 +2547,22 @@
                   "order": 3,
                   "componentId": "slide_3_05_icons",
                   "itemIndex": 2,
-                  "lineIndex": 3
+                  "lineIndex": 3,
+                  "text": "Collector's name — For accountability"
                 },
                 {
                   "order": 4,
                   "componentId": "slide_3_05_icons",
                   "itemIndex": 3,
-                  "lineIndex": 4
+                  "lineIndex": 4,
+                  "text": "Patient preparation — Fasting, medication withheld, collected before antibiotics"
                 },
                 {
                   "order": 5,
                   "componentId": "slide_3_05_icons",
                   "itemIndex": 4,
-                  "lineIndex": 5
-                },
-                {
-                  "order": 6,
-                  "componentId": "slide_3_05_icons",
-                  "itemIndex": 5,
-                  "lineIndex": 6
+                  "lineIndex": 5,
+                  "text": "Unusual observations — Difficult collection, haemolysis, low volume, patient reaction"
                 }
               ]
             }
@@ -1934,15 +2583,14 @@
           "sourceSlideId": "3.06",
           "base": {
             "audioFile": "m3_3_06_base.mp3",
-            "words": 119,
-            "approxSeconds": 51,
+            "words": 111,
+            "approxSeconds": 48,
             "lines": [
-              "Patient education is what makes the therapy safe and effective once you are not there.",
-              "Instruct the patient not to use very hot water, as it may cause burns or skin damage. The water should always be warm and comfortable.",
-              "After the procedure, the patient should dry the perineal area properly with a clean, soft towel, to maintain hygiene and prevent infection or skin irritation.",
-              "Advise them to report any bleeding, increased pain, swelling or unusual discomfort to the nurse or doctor immediately.",
-              "Maintaining good personal hygiene is essential to promote healing and prevent infection in the affected area.",
-              "And the patient should follow the prescribed frequency and duration as advised by the healthcare provider, for maximum therapeutic benefit."
+              "Specimen collection is generally safe, but complications occur.",
+              "During blood collection, the common ones are haematoma from blood leaking into the surrounding tissue, prolonged bleeding, fainting, and rarely infection at the puncture site. Proper technique and firm pressure afterwards prevent most of them.",
+              "After a lumbar puncture, the patient may have a post-lumbar-puncture headache, leakage of cerebrospinal fluid from the site, or localised back pain. Close monitoring and correct positioning reduce these.",
+              "In urine collection, the common problem is contamination - with bacteria, vaginal secretions, stool or water - which produces an inaccurate result and a repeat test.",
+              "Recognising these early is what keeps the patient safe and the investigation accurate."
             ],
             "reveal": {
               "mode": "per_line",
@@ -1950,38 +2598,27 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_3_06_icons",
+                  "componentId": "slide_3_06_table",
                   "itemIndex": 0,
-                  "lineIndex": 1,
-                  "text": "Do not use very hot water — Warm and comfortable, never hot - hot water burns"
+                  "lineIndex": 0
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_3_06_icons",
+                  "componentId": "slide_3_06_table",
                   "itemIndex": 1,
-                  "lineIndex": 2,
-                  "text": "Dry the area properly afterwards — Clean, soft towel; prevents infection and irritation"
+                  "lineIndex": 1
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_3_06_icons",
+                  "componentId": "slide_3_06_table",
                   "itemIndex": 2,
-                  "lineIndex": 3,
-                  "text": "Report bleeding or increased pain — Also swelling or any unusual discomfort"
+                  "lineIndex": 2
                 },
                 {
                   "order": 4,
-                  "componentId": "slide_3_06_icons",
+                  "componentId": "slide_3_06_table",
                   "itemIndex": 3,
-                  "lineIndex": 4,
-                  "text": "Maintain personal hygiene — Promotes healing and prevents infection"
-                },
-                {
-                  "order": 5,
-                  "componentId": "slide_3_06_icons",
-                  "itemIndex": 4,
-                  "lineIndex": 5,
-                  "text": "Follow the prescribed frequency — As advised, for maximum benefit"
+                  "lineIndex": 3
                 }
               ]
             }
@@ -2002,78 +2639,15 @@
           "sourceSlideId": "3.07",
           "base": {
             "audioFile": "m3_3_07_base.mp3",
-            "words": 29,
-            "approxSeconds": 12,
+            "words": 111,
+            "approxSeconds": 48,
             "lines": [
-              "Now, let us answer a question to check our understanding.",
-              "Which nursing actions reduce the risk of complications during a sitz bath? Select all that apply, then click Submit."
-            ],
-            "reveal": {
-              "mode": "per_line",
-              "note": "one cue per line, synced to the narration line beside it",
-              "cues": []
-            }
-          },
-          "layers": [],
-          "playback": {
-            "autoplayBase": true,
-            "sequence": [
-              "base"
-            ],
-            "pauseBaseOnLayerOpen": null,
-            "resumeBaseOnLayerClose": null,
-            "stopLayerAudioOnLayerSwitch": null,
-            "onSubmit": "pause the question narration and seek to 0"
-          }
-        },
-        {
-          "slideId": "slide_3_08",
-          "sourceSlideId": "3.08",
-          "base": {
-            "audioFile": "m3_3_08_base.mp3",
-            "words": 39,
-            "approxSeconds": 17,
-            "lines": [
-              "Now, let us answer a question to check our understanding.",
-              "A patient is being discharged after an episiotomy and will continue sitz baths at home. Which instruction is most important to emphasise?",
-              "Select the correct answer and click Submit."
-            ],
-            "reveal": {
-              "mode": "per_line",
-              "note": "one cue per line, synced to the narration line beside it",
-              "cues": []
-            }
-          },
-          "layers": [],
-          "playback": {
-            "autoplayBase": true,
-            "sequence": [
-              "base"
-            ],
-            "pauseBaseOnLayerOpen": null,
-            "resumeBaseOnLayerClose": null,
-            "stopLayerAudioOnLayerSwitch": null,
-            "onSubmit": "pause the question narration and seek to 0"
-          }
-        },
-        {
-          "slideId": "slide_3_09",
-          "sourceSlideId": "3.09",
-          "base": {
-            "audioFile": "m3_3_09_base.mp3",
-            "words": 218,
-            "approxSeconds": 93,
-            "lines": [
-              "Let us summarise the key points of the whole module.",
-              "A sitz bath is a warm water bath used to relieve discomfort in the perineal region and promote healing, by improving blood circulation and reducing pain, itching and irritation.",
-              "It is indicated for hemorrhoids, episiotomy wounds, postpartum perineal pain, anal fissures, rectal surgery and perianal abscesses.",
-              "Before performing it, assess for contraindications and precautions - active bleeding, severe infection, impaired sensation, allergy to medicated solutions, and the risk of burns from hot water.",
-              "There are warm, cold and medicated types, and a warm sitz bath runs at forty to forty-five degrees Celsius for fifteen to twenty minutes, two to three times a day.",
-              "Proper preparation of articles and patient, privacy, infection control and correct technique are essential for safe and effective care.",
-              "The benefits include improved circulation, reduced edema, muscle relaxation, pain relief, better hygiene and enhanced wound healing - while you stay alert for burns, dizziness, infection, skin irritation and cross contamination.",
-              "Your responsibilities run throughout: monitor comfort, check the water temperature, prevent falls, maintain infection control and educate the patient.",
-              "And accurate aftercare and documentation are what give the next nurse continuity of care.",
-              "By following these principles you can perform a sitz bath safely and effectively, and contribute significantly to patient comfort, healing and recovery."
+              "Patient education is a nursing responsibility before any specimen is collected.",
+              "Explain the purpose of the test, so the patient understands why it is being done and how it helps.",
+              "Give clear fasting instructions, including how long the fast needs to be for tests like blood sugar or a lipid profile.",
+              "Tell them about any medication that needs to be withheld temporarily, where the physician has advised it.",
+              "Teach the correct collection method - midstream urine, deep sputum, stool technique - so the sample is not contaminated.",
+              "And explain why the specimen must reach the laboratory promptly, because delay affects the quality of the sample and the accuracy of the result."
             ],
             "reveal": {
               "mode": "per_line",
@@ -2081,51 +2655,151 @@
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_3_09_summary",
+                  "componentId": "slide_3_07_icons",
                   "itemIndex": 0,
                   "lineIndex": 1
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_3_09_summary",
+                  "componentId": "slide_3_07_icons",
                   "itemIndex": 1,
                   "lineIndex": 2
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_3_09_summary",
+                  "componentId": "slide_3_07_icons",
                   "itemIndex": 2,
                   "lineIndex": 3
                 },
                 {
                   "order": 4,
-                  "componentId": "slide_3_09_summary",
+                  "componentId": "slide_3_07_icons",
                   "itemIndex": 3,
-                  "lineIndex": 4
+                  "lineIndex": 4,
+                  "text": "The correct collection method — Midstream urine, deep sputum, stool technique"
                 },
                 {
                   "order": 5,
-                  "componentId": "slide_3_09_summary",
+                  "componentId": "slide_3_07_icons",
                   "itemIndex": 4,
                   "lineIndex": 5
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_3_08",
+          "sourceSlideId": "3.08",
+          "base": {
+            "audioFile": "m3_3_08_base.mp3",
+            "words": 68,
+            "approxSeconds": 29,
+            "lines": [
+              "Quality control and infection prevention run through every collection.",
+              "Maintain aseptic technique and avoid touching the sterile areas of equipment or containers, which would contaminate the specimen.",
+              "Use clean, intact, leak-proof containers, so nothing spills during transport.",
+              "Before sending the specimen, double-check the label for the correct patient details, date and time.",
+              "And dispose of used needles, gloves, swabs and other contaminated material according to biomedical waste guidelines."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_3_08_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1
                 },
                 {
-                  "order": 6,
-                  "componentId": "slide_3_09_summary",
-                  "itemIndex": 5,
-                  "lineIndex": 6
+                  "order": 2,
+                  "componentId": "slide_3_08_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2
                 },
                 {
-                  "order": 7,
-                  "componentId": "slide_3_09_summary",
-                  "itemIndex": 6,
-                  "lineIndex": 7
+                  "order": 3,
+                  "componentId": "slide_3_08_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3
                 },
                 {
-                  "order": 8,
-                  "componentId": "slide_3_09_summary",
-                  "itemIndex": 7,
-                  "lineIndex": 8
+                  "order": 4,
+                  "componentId": "slide_3_08_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_3_09",
+          "sourceSlideId": "3.09",
+          "base": {
+            "audioFile": "m3_3_09_base.mp3",
+            "words": 74,
+            "approxSeconds": 32,
+            "lines": [
+              "Correct biomedical waste segregation protects healthcare workers and the environment.",
+              "Infectious waste, such as contaminated dressings and swabs, goes in the yellow bag.",
+              "Contaminated plastic items - tubing, gloves and syringes without needles - go in the red bag.",
+              "Sharps, including needles and blades, go in a puncture-proof white container.",
+              "And broken glassware and medicine vials go in the blue container.",
+              "Correct segregation is a nursing responsibility and a key part of infection control."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_3_09_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1,
+                  "text": "Yellow bag — Infectious waste - contaminated dressings and swabs"
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_3_09_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2,
+                  "text": "Red bag — Contaminated plastic - tubing, gloves, syringes without needles"
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_3_09_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3,
+                  "text": "White container — Sharps - needles and blades, puncture-proof"
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_3_09_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4,
+                  "text": "Blue container — Broken glassware and medicine vials"
                 }
               ]
             }
@@ -2146,44 +2820,48 @@
           "sourceSlideId": "3.10",
           "base": {
             "audioFile": "m3_3_10_base.mp3",
-            "words": 9,
-            "approxSeconds": 4,
+            "words": 58,
+            "approxSeconds": 25,
             "lines": [
-              "These are the references used in preparing this module."
+              "These are the abbreviations you will see on request forms every day.",
+              "CBC is Complete Blood Count, and KFT is Kidney Function Test.",
+              "LFT is Liver Function Test, and C and S is Culture and Sensitivity.",
+              "R and E is Routine Examination, and ABG is Arterial Blood Gas.",
+              "CSF is Cerebrospinal Fluid, and OBT is Occult Blood Test."
             ],
             "reveal": {
-              "mode": "together",
-              "note": "all lines reveal as one group with the narration; the detail is carried on the slide that follows",
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
               "cues": [
                 {
                   "order": 1,
-                  "componentId": "slide_3_10_references",
+                  "componentId": "slide_3_10_table",
                   "itemIndex": 0,
-                  "lineIndex": null
+                  "lineIndex": 0
                 },
                 {
                   "order": 2,
-                  "componentId": "slide_3_10_references",
+                  "componentId": "slide_3_10_table",
                   "itemIndex": 1,
-                  "lineIndex": null
+                  "lineIndex": 1
                 },
                 {
                   "order": 3,
-                  "componentId": "slide_3_10_references",
+                  "componentId": "slide_3_10_table",
                   "itemIndex": 2,
-                  "lineIndex": null
+                  "lineIndex": 2
                 },
                 {
                   "order": 4,
-                  "componentId": "slide_3_10_references",
+                  "componentId": "slide_3_10_table",
                   "itemIndex": 3,
-                  "lineIndex": null
+                  "lineIndex": 3
                 },
                 {
                   "order": 5,
-                  "componentId": "slide_3_10_references",
+                  "componentId": "slide_3_10_table",
                   "itemIndex": 4,
-                  "lineIndex": null
+                  "lineIndex": 4
                 }
               ]
             }
@@ -2202,6 +2880,309 @@
         {
           "slideId": "slide_3_11",
           "sourceSlideId": "3.11",
+          "base": {
+            "audioFile": "m3_3_11_base.mp3",
+            "words": 91,
+            "approxSeconds": 39,
+            "lines": [
+              "Finally, the errors that most often spoil a sample.",
+              "Do not draw blood from a vein above an intravenous infusion line, because the fluid dilutes the sample.",
+              "Fill the citrate tube to the marked level - underfilling produces an incorrect coagulation result.",
+              "For sputum, make sure the patient provides deep respiratory secretions rather than saliva.",
+              "Always use a sterile container for a culture specimen.",
+              "Avoid delays in transport, which alter the composition of the sample.",
+              "And give correct fasting instructions, because the wrong ones produce a result that cannot be interpreted."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_3_11_icons",
+                  "itemIndex": 0,
+                  "lineIndex": 1,
+                  "text": "Drawing above an IV infusion line — IV fluid dilutes the sample"
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_3_11_icons",
+                  "itemIndex": 1,
+                  "lineIndex": 2,
+                  "text": "Underfilling the citrate tube — Coagulation results come out wrong"
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_3_11_icons",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_3_11_icons",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_3_11_icons",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_3_11_icons",
+                  "itemIndex": 5,
+                  "lineIndex": 6
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_3_12",
+          "sourceSlideId": "3.12",
+          "base": {
+            "audioFile": "m3_3_12_base.mp3",
+            "words": 29,
+            "approxSeconds": 12,
+            "lines": [
+              "Now, let us answer a question to check our understanding.",
+              "Which of the following will compromise a specimen you have just collected? Select all that apply, then click Submit."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": []
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "onSubmit": "pause the question narration and seek to 0"
+          }
+        },
+        {
+          "slideId": "slide_3_13",
+          "sourceSlideId": "3.13",
+          "base": {
+            "audioFile": "m3_3_13_base.mp3",
+            "words": 21,
+            "approxSeconds": 9,
+            "lines": [
+              "Now, let us answer a question to check our understanding.",
+              "Drag each item onto the correct waste container, then click Submit."
+            ],
+            "reveal": {
+              "mode": "together",
+              "note": "all lines reveal as one group with the narration; the detail is carried on the slide that follows",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_3_13_question",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_3_13_question",
+                  "itemIndex": 1,
+                  "lineIndex": null
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_3_13_question",
+                  "itemIndex": 2,
+                  "lineIndex": null
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_3_13_question",
+                  "itemIndex": 3,
+                  "lineIndex": null
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null,
+            "onSubmit": "pause the question narration and seek to 0"
+          }
+        },
+        {
+          "slideId": "slide_3_14",
+          "sourceSlideId": "3.14",
+          "base": {
+            "audioFile": "m3_3_14_base.mp3",
+            "words": 146,
+            "approxSeconds": 63,
+            "lines": [
+              "Let us summarise the key points of the whole module.",
+              "Pathology investigations are essential for accurate diagnosis, treatment planning and monitoring.",
+              "Most laboratory errors happen before the sample ever reaches the bench - in the preparation, the collection, the labelling and the transport.",
+              "Reliable results depend on correct patient identification with two identifiers, the right container, the correct order of draw and the correct fill level.",
+              "Follow the test-specific rules: fasting, timing, aseptic technique and any drug holds.",
+              "Blood cultures and cerebrospinal fluid go to the laboratory immediately, and CSF is never refrigerated.",
+              "Document the time, the specimen, the collector, the preparation and anything unusual, in the register, the notes and the file.",
+              "And teach the patient, segregate the waste correctly, and check the label twice.",
+              "Through careful preparation, correct collection and prompt transport, nurses make the laboratory result something a clinician can safely act on."
+            ],
+            "reveal": {
+              "mode": "per_line",
+              "note": "one cue per line, synced to the narration line beside it",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_3_14_summary",
+                  "itemIndex": 0,
+                  "lineIndex": 1
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_3_14_summary",
+                  "itemIndex": 1,
+                  "lineIndex": 2
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_3_14_summary",
+                  "itemIndex": 2,
+                  "lineIndex": 3
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_3_14_summary",
+                  "itemIndex": 3,
+                  "lineIndex": 4
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_3_14_summary",
+                  "itemIndex": 4,
+                  "lineIndex": 5
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_3_14_summary",
+                  "itemIndex": 5,
+                  "lineIndex": 6
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_3_14_summary",
+                  "itemIndex": 6,
+                  "lineIndex": 7
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_3_15",
+          "sourceSlideId": "3.15",
+          "base": {
+            "audioFile": "m3_3_15_base.mp3",
+            "words": 9,
+            "approxSeconds": 4,
+            "lines": [
+              "These are the references used in preparing this module."
+            ],
+            "reveal": {
+              "mode": "together",
+              "note": "all lines reveal as one group with the narration; the detail is carried on the slide that follows",
+              "cues": [
+                {
+                  "order": 1,
+                  "componentId": "slide_3_15_references",
+                  "itemIndex": 0,
+                  "lineIndex": null
+                },
+                {
+                  "order": 2,
+                  "componentId": "slide_3_15_references",
+                  "itemIndex": 1,
+                  "lineIndex": null
+                },
+                {
+                  "order": 3,
+                  "componentId": "slide_3_15_references",
+                  "itemIndex": 2,
+                  "lineIndex": null
+                },
+                {
+                  "order": 4,
+                  "componentId": "slide_3_15_references",
+                  "itemIndex": 3,
+                  "lineIndex": null
+                },
+                {
+                  "order": 5,
+                  "componentId": "slide_3_15_references",
+                  "itemIndex": 4,
+                  "lineIndex": null
+                },
+                {
+                  "order": 6,
+                  "componentId": "slide_3_15_references",
+                  "itemIndex": 5,
+                  "lineIndex": null
+                },
+                {
+                  "order": 7,
+                  "componentId": "slide_3_15_references",
+                  "itemIndex": 6,
+                  "lineIndex": null
+                }
+              ]
+            }
+          },
+          "layers": [],
+          "playback": {
+            "autoplayBase": true,
+            "sequence": [
+              "base"
+            ],
+            "pauseBaseOnLayerOpen": null,
+            "resumeBaseOnLayerClose": null,
+            "stopLayerAudioOnLayerSwitch": null
+          }
+        },
+        {
+          "slideId": "slide_3_16",
+          "sourceSlideId": "3.16",
           "base": null,
           "layers": [],
           "playback": {
